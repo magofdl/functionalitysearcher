@@ -1,20 +1,23 @@
-//
-//  SwiftUIFunctionality10.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import SwiftUI
 
 struct SwiftUIFunctionality10: View {
     let functionality: Functionality
+    let userId: String
+    let userRole: String?
     var onDismiss: (() -> Void)?
     
     var body: some View {
         BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
             .overlay(
                 VStack(spacing: 20) {
+                    if let role = userRole {
+                        Text("Role: \(role)")
+                            .font(.caption)
+                            .padding()
+                            .background(Color.secondary.opacity(0.1))
+                            .cornerRadius(8)
+                    }
+                    
                     HStack(spacing: 12) {
                         Button(action: {}) {
                             Label("Like", systemImage: "heart.fill")

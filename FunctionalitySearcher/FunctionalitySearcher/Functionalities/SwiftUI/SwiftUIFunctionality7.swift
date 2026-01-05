@@ -1,20 +1,21 @@
-//
-//  SwiftUIFunctionality7.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import SwiftUI
 
 struct SwiftUIFunctionality7: View {
     let functionality: Functionality
+    let userId: String
+    let region: String
     var onDismiss: (() -> Void)?
     
     var body: some View {
         BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
             .overlay(
                 VStack(spacing: 16) {
+                    Text("Region: \(region)")
+                        .font(.caption)
+                        .padding()
+                        .background(Color.secondary.opacity(0.1))
+                        .cornerRadius(8)
+                    
                     ProgressView(value: 0.6)
                         .progressViewStyle(.linear)
                     

@@ -1,20 +1,23 @@
-//
-//  UIKitFunctionality8.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import UIKit
 
 class UIKitFunctionality8: BaseFunctionalityViewController {
+    private let userId: String
+    
+    init(functionality: Functionality, userId: String, onDismiss: @escaping () -> Void) {
+        self.userId = userId
+        super.init(functionality: functionality, onDismiss: onDismiss)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCustomLayout()
     }
     
     private func setupCustomLayout() {
-        // Switch and stepper controls
         let switchControl = UISwitch()
         switchControl.translatesAutoresizingMaskIntoConstraints = false
         switchControl.isOn = true

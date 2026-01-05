@@ -1,10 +1,3 @@
-//
-//  FunctionalityCoordinator.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import UIKit
 
 class FunctionalityCoordinator {
@@ -17,8 +10,10 @@ class FunctionalityCoordinator {
     }
     
     func showFunctionality(_ functionality: Functionality) {
+        let context = AppContext.current
         let viewController = functionalityFactory.createViewController(
             for: functionality,
+            context: context,
             onDismiss: { [weak self] in
                 self?.dismissFunctionality()
             }

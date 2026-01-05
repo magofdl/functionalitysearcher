@@ -1,14 +1,9 @@
-//
-//  SwiftUIFunctionality5.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import SwiftUI
 
 struct SwiftUIFunctionality5: View {
     let functionality: Functionality
+    let userId: String
+    let contractCount: Int
     var onDismiss: (() -> Void)?
     
     @State private var isToggleOn = true
@@ -17,6 +12,12 @@ struct SwiftUIFunctionality5: View {
         BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
             .overlay(
                 VStack(spacing: 20) {
+                    Text("Contracts: \(contractCount)")
+                        .font(.caption)
+                        .padding()
+                        .background(Color.secondary.opacity(0.1))
+                        .cornerRadius(8)
+                    
                     Toggle("SwiftUI Toggle", isOn: $isToggleOn)
                         .padding()
                         .background(Color(.systemBackground))

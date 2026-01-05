@@ -1,14 +1,8 @@
-//
-//  SwiftUIFunctionality8.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import SwiftUI
 
 struct SwiftUIFunctionality8: View {
     let functionality: Functionality
+    let userId: String
     var onDismiss: (() -> Void)?
     
     @State private var selectedDate = Date()
@@ -17,6 +11,12 @@ struct SwiftUIFunctionality8: View {
         BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
             .overlay(
                 VStack(spacing: 20) {
+                    Text("User: \(userId)")
+                        .font(.caption)
+                        .padding()
+                        .background(Color.secondary.opacity(0.1))
+                        .cornerRadius(8)
+                    
                     DatePicker("SwiftUI Date Picker", selection: $selectedDate, displayedComponents: .date)
                         .datePickerStyle(.compact)
                         .padding()

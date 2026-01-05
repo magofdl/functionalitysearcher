@@ -1,20 +1,25 @@
-//
-//  UIKitFunctionality6.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import UIKit
 
 class UIKitFunctionality6: BaseFunctionalityViewController {
+    private let userId: String
+    private let timestamp: Date
+    
+    init(functionality: Functionality, userId: String, timestamp: Date, onDismiss: @escaping () -> Void) {
+        self.userId = userId
+        self.timestamp = timestamp
+        super.init(functionality: functionality, onDismiss: onDismiss)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCustomLayout()
     }
     
     private func setupCustomLayout() {
-        // Segmented control with labels
         let segmentedControl = UISegmentedControl(items: ["Option 1", "Option 2", "Option 3"])
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         segmentedControl.selectedSegmentIndex = 0

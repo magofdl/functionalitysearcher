@@ -1,32 +1,14 @@
-//
-//  FunctionalityDataProvider.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import Foundation
 
 struct FunctionalityDataProvider {
     static func generateMockFunctionalities() -> [Functionality] {
         var functionalities: [Functionality] = []
         
-        // Billing (20 functionalities: 10 UIKit + 10 SwiftUI)
         functionalities.append(contentsOf: generateBillingFunctionalities())
-        
-        // Returns (15 functionalities: 8 UIKit + 7 SwiftUI)
         functionalities.append(contentsOf: generateReturnsFunctionalities())
-        
-        // Certificates (10 functionalities: 5 UIKit + 5 SwiftUI)
         functionalities.append(contentsOf: generateCertificatesFunctionalities())
-        
-        // Profile (15 functionalities: 7 UIKit + 8 SwiftUI)
         functionalities.append(contentsOf: generateProfileFunctionalities())
-        
-        // Products (20 functionalities: 10 UIKit + 10 SwiftUI)
         functionalities.append(contentsOf: generateProductsFunctionalities())
-        
-        // Orders (20 functionalities: 10 UIKit + 10 SwiftUI)
         functionalities.append(contentsOf: generateOrdersFunctionalities())
         
         return functionalities
@@ -61,9 +43,11 @@ struct FunctionalityDataProvider {
         
         for (index, name) in names.enumerated() {
             let uiType: UIType = index % 2 == 0 ? .uikit : .swiftui
+            let code = "BILL_\(String(format: "%03d", index + 1))"
+            
             functionalities.append(Functionality(
-                id: "BILL_\(String(format: "%03d", index + 1))",
-                code: "BILL_\(String(format: "%03d", index + 1))",
+                id: code,
+                code: code,
                 name: name,
                 path: "/billing/\(index + 1)",
                 category: "Billing",
@@ -100,9 +84,11 @@ struct FunctionalityDataProvider {
         
         for (index, name) in names.enumerated() {
             let uiType: UIType = index < 8 ? .uikit : .swiftui
+            let code = "RET_\(String(format: "%03d", index + 1))"
+            
             functionalities.append(Functionality(
-                id: "RET_\(String(format: "%03d", index + 1))",
-                code: "RET_\(String(format: "%03d", index + 1))",
+                id: code,
+                code: code,
                 name: name,
                 path: "/returns/\(index + 1)",
                 category: "Returns",
@@ -134,9 +120,11 @@ struct FunctionalityDataProvider {
         
         for (index, name) in names.enumerated() {
             let uiType: UIType = index % 2 == 0 ? .uikit : .swiftui
+            let code = "CERT_\(String(format: "%03d", index + 1))"
+            
             functionalities.append(Functionality(
-                id: "CERT_\(String(format: "%03d", index + 1))",
-                code: "CERT_\(String(format: "%03d", index + 1))",
+                id: code,
+                code: code,
                 name: name,
                 path: "/certificates/\(index + 1)",
                 category: "Certificates",
@@ -173,9 +161,11 @@ struct FunctionalityDataProvider {
         
         for (index, name) in names.enumerated() {
             let uiType: UIType = index < 7 ? .uikit : .swiftui
+            let code = "PROF_\(String(format: "%03d", index + 1))"
+            
             functionalities.append(Functionality(
-                id: "PROF_\(String(format: "%03d", index + 1))",
-                code: "PROF_\(String(format: "%03d", index + 1))",
+                id: code,
+                code: code,
                 name: name,
                 path: "/profile/\(index + 1)",
                 category: "Profile",
@@ -217,9 +207,11 @@ struct FunctionalityDataProvider {
         
         for (index, name) in names.enumerated() {
             let uiType: UIType = index % 2 == 0 ? .uikit : .swiftui
+            let code = "PROD_\(String(format: "%03d", index + 1))"
+            
             functionalities.append(Functionality(
-                id: "PROD_\(String(format: "%03d", index + 1))",
-                code: "PROD_\(String(format: "%03d", index + 1))",
+                id: code,
+                code: code,
                 name: name,
                 path: "/products/\(index + 1)",
                 category: "Products",
@@ -261,9 +253,11 @@ struct FunctionalityDataProvider {
         
         for (index, name) in names.enumerated() {
             let uiType: UIType = index % 2 == 0 ? .uikit : .swiftui
+            let code = "ORD_\(String(format: "%03d", index + 1))"
+            
             functionalities.append(Functionality(
-                id: "ORD_\(String(format: "%03d", index + 1))",
-                code: "ORD_\(String(format: "%03d", index + 1))",
+                id: code,
+                code: code,
                 name: name,
                 path: "/orders/\(index + 1)",
                 category: "Orders",

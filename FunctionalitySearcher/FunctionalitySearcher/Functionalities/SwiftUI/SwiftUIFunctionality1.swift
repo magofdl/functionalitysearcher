@@ -1,14 +1,8 @@
-//
-//  SwiftUIFunctionality1.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import SwiftUI
 
 struct SwiftUIFunctionality1: View {
     let functionality: Functionality
+    let userId: String
     var onDismiss: (() -> Void)?
     
     var body: some View {
@@ -27,6 +21,18 @@ struct SwiftUIFunctionality1: View {
                     Text("SwiftUI Card")
                         .font(.headline)
                         .foregroundColor(.secondary)
+                    
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("User ID:")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                        Text(userId)
+                            .font(.caption)
+                            .foregroundColor(.primary)
+                    }
+                    .padding()
+                    .background(Color.secondary.opacity(0.1))
+                    .cornerRadius(8)
                 }
                 .padding()
             )

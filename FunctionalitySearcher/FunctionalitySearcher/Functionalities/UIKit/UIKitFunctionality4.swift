@@ -1,20 +1,25 @@
-//
-//  UIKitFunctionality4.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import UIKit
 
 class UIKitFunctionality4: BaseFunctionalityViewController {
+    private let userId: String
+    private let userEmail: String?
+    
+    init(functionality: Functionality, userId: String, userEmail: String?, onDismiss: @escaping () -> Void) {
+        self.userId = userId
+        self.userEmail = userEmail
+        super.init(functionality: functionality, onDismiss: onDismiss)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCustomLayout()
     }
     
     private func setupCustomLayout() {
-        // Collection view style with grid
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = CGSize(width: 100, height: 100)
         flowLayout.minimumInteritemSpacing = 10

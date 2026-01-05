@@ -1,20 +1,24 @@
-//
-//  UIKitFunctionality1.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import UIKit
 
 class UIKitFunctionality1: BaseFunctionalityViewController {
+    private let userId: String
+    
+    init(functionality: Functionality, userId: String, onDismiss: @escaping () -> Void) {
+        self.userId = userId
+        super.init(functionality: functionality, onDismiss: onDismiss)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCustomLayout()
+        displayUserInfo()
     }
     
     private func setupCustomLayout() {
-        // Card-based layout with shadow
         let cardView = UIView()
         cardView.translatesAutoresizingMaskIntoConstraints = false
         cardView.backgroundColor = .systemBackground
@@ -31,5 +35,9 @@ class UIKitFunctionality1: BaseFunctionalityViewController {
             cardView.widthAnchor.constraint(equalToConstant: 300),
             cardView.heightAnchor.constraint(equalToConstant: 200)
         ])
+    }
+    
+    private func displayUserInfo() {
+        print("User ID: \(userId)")
     }
 }

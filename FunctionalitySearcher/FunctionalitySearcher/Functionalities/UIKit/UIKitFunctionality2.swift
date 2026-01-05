@@ -1,20 +1,26 @@
-//
-//  UIKitFunctionality2.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import UIKit
 
 class UIKitFunctionality2: BaseFunctionalityViewController {
+    private let userId: String
+    private let timestamp: Date
+    
+    init(functionality: Functionality, userId: String, timestamp: Date, onDismiss: @escaping () -> Void) {
+        self.userId = userId
+        self.timestamp = timestamp
+        super.init(functionality: functionality, onDismiss: onDismiss)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCustomLayout()
+        displayUserInfo()
     }
     
     private func setupCustomLayout() {
-        // Table view style layout
         let tableView = UITableView(frame: .zero, style: .insetGrouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .systemGroupedBackground
@@ -26,5 +32,10 @@ class UIKitFunctionality2: BaseFunctionalityViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.heightAnchor.constraint(equalToConstant: 300)
         ])
+    }
+    
+    private func displayUserInfo() {
+        print("User ID: \(userId)")
+        print("Timestamp: \(timestamp)")
     }
 }

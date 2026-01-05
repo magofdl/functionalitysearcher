@@ -92,4 +92,41 @@ struct BaseFunctionalityView: View {
             return Color.gray.opacity(0.1)
         }
     }
+    
+    // MARK: - Argument Access Helpers
+    
+    /// Obtiene un argumento de tipo String
+    func getStringArgument(_ key: String) -> String? {
+        return functionality.arguments[key]?.stringValue
+    }
+    
+    /// Obtiene un argumento de tipo Int
+    func getIntArgument(_ key: String) -> Int? {
+        return functionality.arguments[key]?.intValue
+    }
+    
+    /// Obtiene un argumento de tipo Double
+    func getDoubleArgument(_ key: String) -> Double? {
+        return functionality.arguments[key]?.doubleValue
+    }
+    
+    /// Obtiene un argumento de tipo Bool
+    func getBoolArgument(_ key: String) -> Bool? {
+        return functionality.arguments[key]?.boolValue
+    }
+    
+    /// Obtiene un argumento de tipo Dictionary
+    func getDictionaryArgument(_ key: String) -> [String: FunctionalityArgumentValue]? {
+        return functionality.arguments[key]?.dictionaryValue
+    }
+    
+    /// Obtiene un argumento de tipo Array
+    func getArrayArgument(_ key: String) -> [FunctionalityArgumentValue]? {
+        return functionality.arguments[key]?.arrayValue
+    }
+    
+    /// Obtiene un argumento genérico
+    func getArgument(_ key: String) -> FunctionalityArgumentValue? {
+        return functionality.arguments[key]
+    }
 }

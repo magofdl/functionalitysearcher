@@ -1,14 +1,9 @@
-//
-//  SwiftUIFunctionality6.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import SwiftUI
 
 struct SwiftUIFunctionality6: View {
     let functionality: Functionality
+    let userId: String
+    let timestamp: Date
     var onDismiss: (() -> Void)?
     
     @State private var selectedSegment = 0
@@ -17,6 +12,12 @@ struct SwiftUIFunctionality6: View {
         BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
             .overlay(
                 VStack(spacing: 20) {
+                    Text("User: \(userId)")
+                        .font(.caption)
+                        .padding()
+                        .background(Color.secondary.opacity(0.1))
+                        .cornerRadius(8)
+                    
                     Picker("Options", selection: $selectedSegment) {
                         Text("Option 1").tag(0)
                         Text("Option 2").tag(1)

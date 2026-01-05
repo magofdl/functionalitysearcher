@@ -1,10 +1,3 @@
-//
-//  Functionality.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import Foundation
 
 struct Functionality: Codable, Identifiable, Hashable {
@@ -16,8 +9,9 @@ struct Functionality: Codable, Identifiable, Hashable {
     let description: String
     let keywords: [String]
     let uiType: UIType
+    let arguments: [String: FunctionalityArgumentValue]
     
-    init(id: String, code: String, name: String, path: String, category: String, description: String, keywords: [String], uiType: UIType) {
+    init(id: String, code: String, name: String, path: String, category: String, description: String, keywords: [String], uiType: UIType, arguments: [String: FunctionalityArgumentValue] = [:]) {
         self.id = id
         self.code = code
         self.name = name
@@ -26,5 +20,6 @@ struct Functionality: Codable, Identifiable, Hashable {
         self.description = description
         self.keywords = keywords
         self.uiType = uiType
+        self.arguments = arguments
     }
 }

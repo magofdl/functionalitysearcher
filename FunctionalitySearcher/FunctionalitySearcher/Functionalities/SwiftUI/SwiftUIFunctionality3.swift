@@ -1,14 +1,9 @@
-//
-//  SwiftUIFunctionality3.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import SwiftUI
 
 struct SwiftUIFunctionality3: View {
     let functionality: Functionality
+    let userId: String
+    let region: String
     var onDismiss: (() -> Void)?
     
     @State private var sliderValue: Double = 50
@@ -17,6 +12,16 @@ struct SwiftUIFunctionality3: View {
         BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
             .overlay(
                 VStack(spacing: 30) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("User ID: \(userId)")
+                            .font(.caption)
+                        Text("Region: \(region)")
+                            .font(.caption)
+                    }
+                    .padding()
+                    .background(Color.secondary.opacity(0.1))
+                    .cornerRadius(8)
+                    
                     VStack {
                         Text("SwiftUI Slider")
                             .font(.headline)

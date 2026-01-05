@@ -54,6 +54,8 @@
 		8724B9D52F0C464100E6D8D0 /* SwiftUIFunctionality8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9CB2F0C464100E6D8D0 /* SwiftUIFunctionality8.swift */; };
 		8724B9D62F0C464100E6D8D0 /* SwiftUIFunctionality9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9CC2F0C464100E6D8D0 /* SwiftUIFunctionality9.swift */; };
 		8724B9D72F0C464100E6D8D0 /* SwiftUIFunctionality10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9CD2F0C464100E6D8D0 /* SwiftUIFunctionality10.swift */; };
+		8724B9D92F0C77D300E6D8D0 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9D82F0C77D300E6D8D0 /* AppContext.swift */; };
+		8724B9DB2F0C787800E6D8D0 /* FunctionalityArgumentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9DA2F0C787700E6D8D0 /* FunctionalityArgumentValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		8724B9CB2F0C464100E6D8D0 /* SwiftUIFunctionality8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality8.swift; sourceTree = "<group>"; };
 		8724B9CC2F0C464100E6D8D0 /* SwiftUIFunctionality9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality9.swift; sourceTree = "<group>"; };
 		8724B9CD2F0C464100E6D8D0 /* SwiftUIFunctionality10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality10.swift; sourceTree = "<group>"; };
+		8724B9D82F0C77D300E6D8D0 /* AppContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		8724B9DA2F0C787700E6D8D0 /* FunctionalityArgumentValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityArgumentValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,8 @@
 		8724B9882F0C2EA700E6D8D0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8724B9DA2F0C787700E6D8D0 /* FunctionalityArgumentValue.swift */,
+				8724B9D82F0C77D300E6D8D0 /* AppContext.swift */,
 				8724B9892F0C2EA700E6D8D0 /* UIType.swift */,
 				8724B98A2F0C2EA700E6D8D0 /* SearchResult.swift */,
 				8724B98B2F0C2EA700E6D8D0 /* FunctionalityDataProvider.swift */,
@@ -500,6 +506,7 @@
 				8724B9BC2F0C463100E6D8D0 /* UIKitFunctionality1.swift in Sources */,
 				8724B99F2F0C2EA800E6D8D0 /* SearchView.swift in Sources */,
 				8724B9AD2F0C2EA800E6D8D0 /* BaseFunctionalityViewController.swift in Sources */,
+				8724B9DB2F0C787800E6D8D0 /* FunctionalityArgumentValue.swift in Sources */,
 				8724B9BD2F0C463100E6D8D0 /* UIKitFunctionality6.swift in Sources */,
 				8724B94C2F0C231800E6D8D0 /* ViewController.swift in Sources */,
 				8724B9A52F0C2EA800E6D8D0 /* FunctionalityDataProvider.swift in Sources */,
@@ -523,6 +530,7 @@
 				8724B9A72F0C2EA800E6D8D0 /* FunctionalityViewProtocol.swift in Sources */,
 				8724B9D42F0C464100E6D8D0 /* SwiftUIFunctionality2.swift in Sources */,
 				8724B94A2F0C231800E6D8D0 /* SceneDelegate.swift in Sources */,
+				8724B9D92F0C77D300E6D8D0 /* AppContext.swift in Sources */,
 				8724B9A22F0C2EA800E6D8D0 /* FunctionalityCoordinator.swift in Sources */,
 				8724B9A92F0C2EA800E6D8D0 /* SearchServiceProtocol.swift in Sources */,
 				8724B9C02F0C463100E6D8D0 /* UIKitFunctionality7.swift in Sources */,

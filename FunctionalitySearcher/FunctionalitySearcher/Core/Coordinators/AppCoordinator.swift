@@ -1,10 +1,3 @@
-//
-//  AppCoordinator.swift
-//  FunctionalitySearcher
-//
-//  Created by FernandoDuran on 5/1/26.
-//
-
 import UIKit
 import SwiftUI
 
@@ -34,14 +27,15 @@ class AppCoordinator {
     }
     
     private func showFunctionality(_ functionality: Functionality) {
+        let context = AppContext.current
         let viewController = functionalityFactory.createViewController(
             for: functionality,
+            context: context,
             onDismiss: { [weak self] in
                 self?.dismissFunctionality()
             }
         )
         
-        // Presentar modalmente para mejor experiencia
         if let navigationController = navigationController {
             let modalNavigationController = UINavigationController(rootViewController: viewController)
             navigationController.present(modalNavigationController, animated: true)
