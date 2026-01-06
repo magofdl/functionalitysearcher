@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality4: BaseFunctionalityViewController {
+class UIKitFunctionality4: IndependentFunctionalityViewController {
     private let userId: String
     private let userEmail: String?
     
@@ -28,7 +28,7 @@ class UIKitFunctionality4: BaseFunctionalityViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .systemBackground
-        contentView.insertSubview(collectionView, at: 0)
+        view.addSubview(collectionView)
         
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),

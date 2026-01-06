@@ -12,21 +12,47 @@ struct SwiftUIFunctionalityTemplate: View {
     var onDismiss: (() -> Void)?
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                // Agregar icono decorativo según categoría
-                VStack {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            ZStack(alignment: .topTrailing) {
+                VStack(alignment: .leading, spacing: 12) {
+                    Text(functionality.description)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                    
                     HStack {
-                        Spacer()
-                        Image(systemName: categoryIcon)
-                            .font(.system(size: 40))
+                        Text("Category:")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                        Text(functionality.category)
+                            .font(.caption)
+                            .fontWeight(.semibold)
                             .foregroundColor(categoryColor)
-                            .padding(.trailing, 20)
-                            .padding(.top, 10)
                     }
-                    Spacer()
+                    
+                    HStack {
+                        Text("Code:")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                        Text(functionality.code)
+                            .font(.caption)
+                            .fontWeight(.semibold)
+                    }
+                    
+                    Text("Path: \(functionality.path)")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                        .padding(.top, 4)
                 }
-            )
+                .padding()
+                .background(Color(.systemBackground))
+                .cornerRadius(12)
+                
+                Image(systemName: categoryIcon)
+                    .font(.system(size: 34))
+                    .foregroundColor(categoryColor)
+                    .padding(12)
+            }
+        }
     }
     
     private var categoryIcon: String {

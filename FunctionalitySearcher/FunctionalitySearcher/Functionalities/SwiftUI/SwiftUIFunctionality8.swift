@@ -8,9 +8,8 @@ struct SwiftUIFunctionality8: View {
     @State private var selectedDate = Date()
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                VStack(spacing: 20) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 20) {
                     Text("User: \(userId)")
                         .font(.caption)
                         .padding()
@@ -25,8 +24,7 @@ struct SwiftUIFunctionality8: View {
                     
                     Text(selectedDate, style: .date)
                         .foregroundColor(.secondary)
-                }
-                .padding()
-            )
+            }
+        }
     }
 }

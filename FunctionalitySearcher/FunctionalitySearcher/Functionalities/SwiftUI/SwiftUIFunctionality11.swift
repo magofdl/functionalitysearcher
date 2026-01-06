@@ -28,10 +28,8 @@ struct SwiftUIFunctionality11: View {
     }
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                ScrollView {
-                    VStack(spacing: 20) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 20) {
                         // Subscription Tier Card
                         if let tier = subscriptionTier {
                             VStack(alignment: .leading, spacing: 8) {
@@ -111,10 +109,8 @@ struct SwiftUIFunctionality11: View {
                             .background(Color.secondary.opacity(0.05))
                             .cornerRadius(8)
                         }
-                    }
-                    .padding()
-                }
-            )
+            }
+        }
     }
     
     private func formatDate(_ dateString: String) -> String {

@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality5: BaseFunctionalityViewController {
+class UIKitFunctionality5: IndependentFunctionalityViewController {
     private let userId: String
     private let contractCount: Int
     
@@ -29,8 +29,8 @@ class UIKitFunctionality5: BaseFunctionalityViewController {
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.startAnimating()
         
-        contentView.insertSubview(progressView, at: 0)
-        contentView.insertSubview(activityIndicator, at: 0)
+        view.addSubview(progressView)
+        view.addSubview(activityIndicator)
         
         NSLayoutConstraint.activate([
             progressView.centerXAnchor.constraint(equalTo: view.centerXAnchor),

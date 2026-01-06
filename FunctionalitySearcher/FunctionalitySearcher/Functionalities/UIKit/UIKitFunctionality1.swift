@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality1: BaseFunctionalityViewController {
+class UIKitFunctionality1: IndependentFunctionalityViewController {
     private let userId: String
     
     init(functionality: Functionality, userId: String, onDismiss: @escaping () -> Void) {
@@ -27,7 +27,7 @@ class UIKitFunctionality1: BaseFunctionalityViewController {
         cardView.layer.shadowOpacity = 0.2
         cardView.layer.shadowOffset = CGSize(width: 0, height: 4)
         cardView.layer.shadowRadius = 8
-        contentView.insertSubview(cardView, at: 0)
+        view.addSubview(cardView)
         
         NSLayoutConstraint.activate([
             cardView.centerXAnchor.constraint(equalTo: view.centerXAnchor),

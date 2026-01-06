@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality9: BaseFunctionalityViewController {
+class UIKitFunctionality9: IndependentFunctionalityViewController {
     private let userId: String
     private let contractCount: Int
     
@@ -51,7 +51,7 @@ class UIKitFunctionality9: BaseFunctionalityViewController {
         }
         
         horizontalScrollView.addSubview(horizontalContentView)
-        contentView.insertSubview(horizontalScrollView, at: 0)
+        view.addSubview(horizontalScrollView)
         
         NSLayoutConstraint.activate([
             horizontalScrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor),

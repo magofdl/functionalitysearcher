@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality2: BaseFunctionalityViewController {
+class UIKitFunctionality2: IndependentFunctionalityViewController {
     private let userId: String
     private let timestamp: Date
     
@@ -24,7 +24,7 @@ class UIKitFunctionality2: BaseFunctionalityViewController {
         let tableView = UITableView(frame: .zero, style: .insetGrouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .systemGroupedBackground
-        contentView.insertSubview(tableView, at: 0)
+        view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),

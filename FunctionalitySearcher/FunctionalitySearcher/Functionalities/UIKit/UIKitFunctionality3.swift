@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality3: BaseFunctionalityViewController {
+class UIKitFunctionality3: IndependentFunctionalityViewController {
     private let userId: String
     private let region: String
     
@@ -36,7 +36,7 @@ class UIKitFunctionality3: BaseFunctionalityViewController {
             stackView.addArrangedSubview(button)
         }
         
-        contentView.insertSubview(stackView, at: 0)
+        view.addSubview(stackView)
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),

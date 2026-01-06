@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality7: BaseFunctionalityViewController {
+class UIKitFunctionality7: IndependentFunctionalityViewController {
     private let userId: String
     private let region: String
     
@@ -33,7 +33,7 @@ class UIKitFunctionality7: BaseFunctionalityViewController {
         gradientLayer.cornerRadius = 12
         imageView.layer.insertSublayer(gradientLayer, at: 0)
         
-        contentView.insertSubview(imageView, at: 0)
+        view.addSubview(imageView)
         NSLayoutConstraint.activate([
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),

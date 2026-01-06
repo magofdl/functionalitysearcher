@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality8: BaseFunctionalityViewController {
+class UIKitFunctionality8: IndependentFunctionalityViewController {
     private let userId: String
     
     init(functionality: Functionality, userId: String, onDismiss: @escaping () -> Void) {
@@ -38,10 +38,10 @@ class UIKitFunctionality8: BaseFunctionalityViewController {
         stepperLabel.text = "UIKit Stepper"
         stepperLabel.font = .systemFont(ofSize: 16)
         
-        contentView.insertSubview(switchControl, at: 0)
-        contentView.insertSubview(switchLabel, at: 0)
-        contentView.insertSubview(stepper, at: 0)
-        contentView.insertSubview(stepperLabel, at: 0)
+        view.addSubview(switchControl)
+        view.addSubview(switchLabel)
+        view.addSubview(stepper)
+        view.addSubview(stepperLabel)
         
         NSLayoutConstraint.activate([
             switchLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),

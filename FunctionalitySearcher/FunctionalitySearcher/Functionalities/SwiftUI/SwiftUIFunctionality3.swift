@@ -9,9 +9,8 @@ struct SwiftUIFunctionality3: View {
     @State private var sliderValue: Double = 50
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                VStack(spacing: 30) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 30) {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("User ID: \(userId)")
                             .font(.caption)
@@ -33,7 +32,7 @@ struct SwiftUIFunctionality3: View {
                     .background(Color(.systemBackground))
                     .cornerRadius(12)
                     .padding()
-                }
-            )
+            }
+        }
     }
 }

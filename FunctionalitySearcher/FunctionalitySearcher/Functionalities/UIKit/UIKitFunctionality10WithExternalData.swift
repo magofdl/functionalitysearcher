@@ -2,7 +2,7 @@ import UIKit
 
 /// UIKitFunctionality10 version that uses external data from resolver
 /// This demonstrates how functionalities can access data not stored in AppContext
-class UIKitFunctionality10WithExternalData: BaseFunctionalityViewController {
+class UIKitFunctionality10WithExternalData: IndependentFunctionalityViewController {
     private let userId: String
     
     // External data from resolver (accessed via functionality.arguments) - internal for testing
@@ -51,7 +51,7 @@ class UIKitFunctionality10WithExternalData: BaseFunctionalityViewController {
     private func displayExternalData() {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(scrollView)
+        view.addSubview(scrollView)
         
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
@@ -116,10 +116,10 @@ class UIKitFunctionality10WithExternalData: BaseFunctionalityViewController {
         }
         
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
             containerView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             containerView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),

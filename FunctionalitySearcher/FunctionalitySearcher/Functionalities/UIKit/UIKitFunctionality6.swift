@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality6: BaseFunctionalityViewController {
+class UIKitFunctionality6: IndependentFunctionalityViewController {
     private let userId: String
     private let timestamp: Date
     
@@ -30,8 +30,8 @@ class UIKitFunctionality6: BaseFunctionalityViewController {
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         label.textAlignment = .center
         
-        contentView.insertSubview(segmentedControl, at: 0)
-        contentView.insertSubview(label, at: 0)
+        view.addSubview(segmentedControl)
+        view.addSubview(label)
         
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),

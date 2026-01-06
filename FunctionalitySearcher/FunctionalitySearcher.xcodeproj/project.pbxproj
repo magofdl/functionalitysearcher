@@ -93,6 +93,8 @@
 		87EB9AB42F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9E2F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift */; };
 		87EB9AB52F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9F2F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift */; };
 		87EB9AB62F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9AA02F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift */; };
+		87EB9AB82F0DB4C400E2717E /* IndependentFunctionalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9AB72F0DB4C400E2717E /* IndependentFunctionalityViewController.swift */; };
+		87EB9ABF2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9ABE2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +198,8 @@
 		87EB9A9E2F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality6ComposerUI.swift; sourceTree = "<group>"; };
 		87EB9A9F2F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality4ComposerUI.swift; sourceTree = "<group>"; };
 		87EB9AA02F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality9ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9AB72F0DB4C400E2717E /* IndependentFunctionalityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndependentFunctionalityViewController.swift; sourceTree = "<group>"; };
+		87EB9ABE2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionalityScaffold.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +405,7 @@
 		8724B9982F0C2EA800E6D8D0 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				87EB9AB72F0DB4C400E2717E /* IndependentFunctionalityViewController.swift */,
 				8724B9992F0C2EA800E6D8D0 /* BaseFunctionalityViewController.swift */,
 				8724B99A2F0C2EA800E6D8D0 /* BaseFunctionalityView.swift */,
 			);
@@ -410,6 +415,7 @@
 		8724B99B2F0C2EA800E6D8D0 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				87EB9ABB2F0DB54800E2717E /* Components */,
 				87EB9A812F0D7E4500E2717E /* SwiftUIFunctionality11.swift */,
 				8724B9C52F0C464000E6D8D0 /* SwiftUIFunctionality1.swift */,
 				8724B9CA2F0C464100E6D8D0 /* SwiftUIFunctionality2.swift */,
@@ -470,6 +476,14 @@
 				87EB9AA02F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		87EB9ABB2F0DB54800E2717E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				87EB9ABE2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +597,7 @@
 				8724B9AB2F0C2EA800E6D8D0 /* UIKitFunctionalityTemplate.swift in Sources */,
 				8724B9BC2F0C463100E6D8D0 /* UIKitFunctionality1.swift in Sources */,
 				87EB9AA62F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift in Sources */,
+				87EB9ABF2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift in Sources */,
 				87EB9AA82F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift in Sources */,
 				8724B99F2F0C2EA800E6D8D0 /* SearchView.swift in Sources */,
 				8724B9AD2F0C2EA800E6D8D0 /* BaseFunctionalityViewController.swift in Sources */,
@@ -604,6 +619,7 @@
 				8724B9D72F0C464100E6D8D0 /* SwiftUIFunctionality10.swift in Sources */,
 				8724B9A02F0C2EA800E6D8D0 /* MockSearchService.swift in Sources */,
 				8724B9C22F0C463100E6D8D0 /* UIKitFunctionality4.swift in Sources */,
+				87EB9AB82F0DB4C400E2717E /* IndependentFunctionalityViewController.swift in Sources */,
 				8724B9D12F0C464100E6D8D0 /* SwiftUIFunctionality7.swift in Sources */,
 				8724B9D52F0C464100E6D8D0 /* SwiftUIFunctionality8.swift in Sources */,
 				8724B9C32F0C463100E6D8D0 /* UIKitFunctionality5.swift in Sources */,

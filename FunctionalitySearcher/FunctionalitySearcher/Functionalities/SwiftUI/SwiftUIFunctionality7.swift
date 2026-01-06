@@ -7,9 +7,8 @@ struct SwiftUIFunctionality7: View {
     var onDismiss: (() -> Void)?
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                VStack(spacing: 16) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 16) {
                     Text("Region: \(region)")
                         .font(.caption)
                         .padding()
@@ -25,11 +24,7 @@ struct SwiftUIFunctionality7: View {
                     Text("SwiftUI Progress")
                         .font(.headline)
                         .foregroundColor(.secondary)
-                }
-                .padding()
-                .background(Color(.systemBackground))
-                .cornerRadius(12)
-                .padding()
-            )
+            }
+        }
     }
 }

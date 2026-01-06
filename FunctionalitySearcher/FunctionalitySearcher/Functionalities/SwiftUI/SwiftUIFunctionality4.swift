@@ -7,9 +7,8 @@ struct SwiftUIFunctionality4: View {
     var onDismiss: (() -> Void)?
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                VStack(spacing: 16) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 16) {
                     if let email = userEmail {
                         Text("Email: \(email)")
                             .font(.caption)
@@ -33,8 +32,7 @@ struct SwiftUIFunctionality4: View {
                         }
                         .padding()
                     }
-                }
-                .padding()
-            )
+            }
+        }
     }
 }

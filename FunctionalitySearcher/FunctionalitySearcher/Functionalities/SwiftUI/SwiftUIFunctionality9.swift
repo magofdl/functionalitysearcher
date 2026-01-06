@@ -7,9 +7,8 @@ struct SwiftUIFunctionality9: View {
     var onDismiss: (() -> Void)?
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                VStack(spacing: 16) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 16) {
                     Text("Contracts: \(contractCount)")
                         .font(.caption)
                         .padding()
@@ -32,8 +31,7 @@ struct SwiftUIFunctionality9: View {
                                 )
                         }
                     }
-                }
-                .padding()
-            )
+            }
+        }
     }
 }

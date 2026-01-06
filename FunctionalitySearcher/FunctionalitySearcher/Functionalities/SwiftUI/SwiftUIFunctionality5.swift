@@ -9,9 +9,8 @@ struct SwiftUIFunctionality5: View {
     @State private var isToggleOn = true
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                VStack(spacing: 20) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 20) {
                     Text("Contracts: \(contractCount)")
                         .font(.caption)
                         .padding()
@@ -29,8 +28,7 @@ struct SwiftUIFunctionality5: View {
                     .padding()
                     .background(Color(.systemBackground))
                     .cornerRadius(10)
-                }
-                .padding()
-            )
+            }
+        }
     }
 }

@@ -7,9 +7,8 @@ struct SwiftUIFunctionality2: View {
     var onDismiss: (() -> Void)?
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                VStack(spacing: 16) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 16) {
                     HStack {
                         Image(systemName: "person.fill")
                             .foregroundColor(.blue)
@@ -43,9 +42,8 @@ struct SwiftUIFunctionality2: View {
                         .background(Color(.systemBackground))
                         .cornerRadius(10)
                     }
-                }
-                .padding()
-            )
+            }
+        }
     }
     
     private func formatDate(_ date: Date) -> String {

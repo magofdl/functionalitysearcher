@@ -1,6 +1,6 @@
 import UIKit
 
-class UIKitFunctionality10: BaseFunctionalityViewController {
+class UIKitFunctionality10: IndependentFunctionalityViewController {
     private let userId: String
     private let userRole: String?
     
@@ -31,8 +31,8 @@ class UIKitFunctionality10: BaseFunctionalityViewController {
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         label.textAlignment = .center
         
-        contentView.insertSubview(datePicker, at: 0)
-        contentView.insertSubview(label, at: 0)
+        view.addSubview(datePicker)
+        view.addSubview(label)
         
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),

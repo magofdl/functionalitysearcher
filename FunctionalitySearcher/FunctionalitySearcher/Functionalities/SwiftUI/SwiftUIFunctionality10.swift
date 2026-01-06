@@ -7,9 +7,8 @@ struct SwiftUIFunctionality10: View {
     var onDismiss: (() -> Void)?
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                VStack(spacing: 20) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 20) {
                     if let role = userRole {
                         Text("Role: \(role)")
                             .font(.caption)
@@ -41,8 +40,7 @@ struct SwiftUIFunctionality10: View {
                     Text("SwiftUI Button Styles")
                         .font(.headline)
                         .foregroundColor(.secondary)
-                }
-                .padding()
-            )
+            }
+        }
     }
 }

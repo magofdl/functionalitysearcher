@@ -9,9 +9,8 @@ struct SwiftUIFunctionality6: View {
     @State private var selectedSegment = 0
     
     var body: some View {
-        BaseFunctionalityView(functionality: functionality, onDismiss: onDismiss)
-            .overlay(
-                VStack(spacing: 20) {
+        SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
+            VStack(spacing: 20) {
                     Text("User: \(userId)")
                         .font(.caption)
                         .padding()
@@ -28,8 +27,7 @@ struct SwiftUIFunctionality6: View {
                     
                     Text("Selected: Option \(selectedSegment + 1)")
                         .foregroundColor(.secondary)
-                }
-                .padding()
-            )
+            }
+        }
     }
 }
