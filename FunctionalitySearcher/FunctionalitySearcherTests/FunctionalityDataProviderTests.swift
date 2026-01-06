@@ -40,7 +40,7 @@ final class FunctionalityDataProviderTests: XCTestCase {
         let functionalities = FunctionalityDataProvider.generateMockFunctionalities()
         let profileFunctionalities = functionalities.filter { $0.category == "Profile" }
         
-        XCTAssertEqual(profileFunctionalities.count, 15)
+        XCTAssertEqual(profileFunctionalities.count, 17)
     }
     
     func testProductsFunctionalities() {

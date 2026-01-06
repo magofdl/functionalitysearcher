@@ -64,6 +64,11 @@
 		8724B9ED2F0C7C5700E6D8D0 /* SwiftUIFunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9E32F0C7C5700E6D8D0 /* SwiftUIFunctionalityTests.swift */; };
 		8724B9EE2F0C7C5700E6D8D0 /* ConcreteFunctionalityFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9E42F0C7C5700E6D8D0 /* ConcreteFunctionalityFactoryTests.swift */; };
 		8724B9EF2F0C7C5700E6D8D0 /* FunctionalityArgumentValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9E52F0C7C5700E6D8D0 /* FunctionalityArgumentValueTests.swift */; };
+		87EB9A7B2F0D7DFF00E2717E /* FunctionalityDataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A7A2F0D7DFF00E2717E /* FunctionalityDataResolver.swift */; };
+		87EB9A7F2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A7D2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift */; };
+		87EB9A802F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A7E2F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift */; };
+		87EB9A822F0D7E4500E2717E /* SwiftUIFunctionality11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A812F0D7E4500E2717E /* SwiftUIFunctionality11.swift */; };
+		87EB9A842F0D7E5A00E2717E /* UIKitFunctionality10WithExternalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A832F0D7E5900E2717E /* UIKitFunctionality10WithExternalData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +142,11 @@
 		8724B9E32F0C7C5700E6D8D0 /* SwiftUIFunctionalityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionalityTests.swift; sourceTree = "<group>"; };
 		8724B9E42F0C7C5700E6D8D0 /* ConcreteFunctionalityFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteFunctionalityFactoryTests.swift; sourceTree = "<group>"; };
 		8724B9E52F0C7C5700E6D8D0 /* FunctionalityArgumentValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityArgumentValueTests.swift; sourceTree = "<group>"; };
+		87EB9A7A2F0D7DFF00E2717E /* FunctionalityDataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityDataResolver.swift; sourceTree = "<group>"; };
+		87EB9A7D2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10DataResolver.swift; sourceTree = "<group>"; };
+		87EB9A7E2F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality11DataResolver.swift; sourceTree = "<group>"; };
+		87EB9A812F0D7E4500E2717E /* SwiftUIFunctionality11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality11.swift; sourceTree = "<group>"; };
+		87EB9A832F0D7E5900E2717E /* UIKitFunctionality10WithExternalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10WithExternalData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +289,7 @@
 		8724B98D2F0C2EA700E6D8D0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				87EB9A7A2F0D7DFF00E2717E /* FunctionalityDataResolver.swift */,
 				8724B98E2F0C2EA700E6D8D0 /* FunctionalityViewProtocol.swift */,
 				8724B98F2F0C2EA700E6D8D0 /* FunctionalityFactoryProtocol.swift */,
 				8724B9902F0C2EA700E6D8D0 /* SearchServiceProtocol.swift */,
@@ -290,6 +301,7 @@
 		8724B9922F0C2EA700E6D8D0 /* Functionalities */ = {
 			isa = PBXGroup;
 			children = (
+				87EB9A7C2F0D7E2A00E2717E /* DataResolvers */,
 				8724B9932F0C2EA800E6D8D0 /* UIKit */,
 				8724B9962F0C2EA800E6D8D0 /* Factory */,
 				8724B9982F0C2EA800E6D8D0 /* Base */,
@@ -311,6 +323,7 @@
 				8724B9B02F0C463100E6D8D0 /* UIKitFunctionality8.swift */,
 				8724B9B12F0C463100E6D8D0 /* UIKitFunctionality9.swift */,
 				8724B9B72F0C463100E6D8D0 /* UIKitFunctionality10.swift */,
+				87EB9A832F0D7E5900E2717E /* UIKitFunctionality10WithExternalData.swift */,
 				8724B9942F0C2EA800E6D8D0 /* Templates */,
 			);
 			path = UIKit;
@@ -344,6 +357,7 @@
 		8724B99B2F0C2EA800E6D8D0 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				87EB9A812F0D7E4500E2717E /* SwiftUIFunctionality11.swift */,
 				8724B9C52F0C464000E6D8D0 /* SwiftUIFunctionality1.swift */,
 				8724B9CA2F0C464100E6D8D0 /* SwiftUIFunctionality2.swift */,
 				8724B9C92F0C464100E6D8D0 /* SwiftUIFunctionality3.swift */,
@@ -365,6 +379,15 @@
 				8724B99D2F0C2EA800E6D8D0 /* SwiftUIFunctionalityTemplate.swift */,
 			);
 			path = Templates;
+			sourceTree = "<group>";
+		};
+		87EB9A7C2F0D7E2A00E2717E /* DataResolvers */ = {
+			isa = PBXGroup;
+			children = (
+				87EB9A7D2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift */,
+				87EB9A7E2F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift */,
+			);
+			path = DataResolvers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,8 +504,10 @@
 				8724B94C2F0C231800E6D8D0 /* ViewController.swift in Sources */,
 				8724B9A52F0C2EA800E6D8D0 /* FunctionalityDataProvider.swift in Sources */,
 				8724B9A42F0C2EA800E6D8D0 /* SearchResult.swift in Sources */,
+				87EB9A822F0D7E4500E2717E /* SwiftUIFunctionality11.swift in Sources */,
 				8724B9482F0C231800E6D8D0 /* AppDelegate.swift in Sources */,
 				8724B9D22F0C464100E6D8D0 /* SwiftUIFunctionality6.swift in Sources */,
+				87EB9A7F2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift in Sources */,
 				8724B9D72F0C464100E6D8D0 /* SwiftUIFunctionality10.swift in Sources */,
 				8724B9A02F0C2EA800E6D8D0 /* MockSearchService.swift in Sources */,
 				8724B9C22F0C463100E6D8D0 /* UIKitFunctionality4.swift in Sources */,
@@ -496,12 +521,14 @@
 				8724B9AC2F0C2EA800E6D8D0 /* ConcreteFunctionalityFactory.swift in Sources */,
 				8724B9CF2F0C464100E6D8D0 /* SwiftUIFunctionality1.swift in Sources */,
 				8724B9A62F0C2EA800E6D8D0 /* Functionality.swift in Sources */,
+				87EB9A842F0D7E5A00E2717E /* UIKitFunctionality10WithExternalData.swift in Sources */,
 				8724B99E2F0C2EA800E6D8D0 /* SearchViewModel.swift in Sources */,
 				8724B9A72F0C2EA800E6D8D0 /* FunctionalityViewProtocol.swift in Sources */,
 				8724B9D42F0C464100E6D8D0 /* SwiftUIFunctionality2.swift in Sources */,
 				8724B94A2F0C231800E6D8D0 /* SceneDelegate.swift in Sources */,
 				8724B9D92F0C77D300E6D8D0 /* AppContext.swift in Sources */,
 				8724B9A22F0C2EA800E6D8D0 /* FunctionalityCoordinator.swift in Sources */,
+				87EB9A802F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift in Sources */,
 				8724B9A92F0C2EA800E6D8D0 /* SearchServiceProtocol.swift in Sources */,
 				8724B9C02F0C463100E6D8D0 /* UIKitFunctionality7.swift in Sources */,
 				8724B9AA2F0C2EA800E6D8D0 /* FunctionalityViewControllerProtocol.swift in Sources */,
@@ -511,6 +538,7 @@
 				8724B9BA2F0C463100E6D8D0 /* UIKitFunctionality8.swift in Sources */,
 				8724B9BF2F0C463100E6D8D0 /* UIKitFunctionality2.swift in Sources */,
 				8724B9CE2F0C464100E6D8D0 /* SwiftUIFunctionality5.swift in Sources */,
+				87EB9A7B2F0D7DFF00E2717E /* FunctionalityDataResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

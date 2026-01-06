@@ -151,6 +151,8 @@ struct FunctionalityDataProvider {
             "Payment cards",
             "Activity history",
             "Account settings",
+            "User account details with external data", // PROF_010 - UIKit with external data
+            "User preferences and subscription", // PROF_011 - SwiftUI with external data
             "Edit profile photo",
             "Verify email",
             "Configure security",
@@ -160,8 +162,25 @@ struct FunctionalityDataProvider {
         ]
         
         for (index, name) in names.enumerated() {
-            let uiType: UIType = index < 7 ? .uikit : .swiftui
+            let uiType: UIType
+            if index == 9 {
+                // PROF_010 - UIKit with external data
+                uiType = .uikit
+            } else if index == 10 {
+                // PROF_011 - SwiftUI with external data
+                uiType = .swiftui
+            } else {
+                uiType = index < 7 ? .uikit : .swiftui
+            }
+            
             let code = "PROF_\(String(format: "%03d", index + 1))"
+            
+            var description = "\(name) - Profile functionality"
+            if index == 9 {
+                description = "\(name) - Displays user account details including order history, payment methods, and loyalty points from external data sources"
+            } else if index == 10 {
+                description = "\(name) - Shows user preferences, subscription tier, account balance, and last login information from external data sources"
+            }
             
             functionalities.append(Functionality(
                 id: code,
@@ -169,7 +188,7 @@ struct FunctionalityDataProvider {
                 name: name,
                 path: "/profile/\(index + 1)",
                 category: "Profile",
-                description: "\(name) - Profile functionality",
+                description: description,
                 keywords: baseKeywords + name.lowercased().components(separatedBy: " "),
                 uiType: uiType
             ))

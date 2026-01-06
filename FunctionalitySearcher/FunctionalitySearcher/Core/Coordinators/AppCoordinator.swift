@@ -10,7 +10,14 @@ class AppCoordinator {
     init(window: UIWindow) {
         self.window = window
         self.searchService = MockSearchService()
-        self.functionalityFactory = ConcreteFunctionalityFactory()
+        
+        // Configure data resolvers for functionalities that need external data
+        let dataResolvers: [String: FunctionalityDataResolver] = [
+            "PROF_011": SwiftUIFunctionality11DataResolver(),
+            "PROF_010": UIKitFunctionality10DataResolver()
+        ]
+        
+        self.functionalityFactory = ConcreteFunctionalityFactory(dataResolvers: dataResolvers)
     }
     
     func start() {
