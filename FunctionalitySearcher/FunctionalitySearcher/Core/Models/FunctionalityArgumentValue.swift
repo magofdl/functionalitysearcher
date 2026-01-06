@@ -7,8 +7,8 @@
 
 import Foundation
 
-/// Enum que representa diferentes tipos de valores que pueden ser pasados como argumentos a las funcionalidades
-/// Soporta datos primitivos (String, Int, Double, Bool) y objetos compuestos (Dictionary, Array)
+/// Enum representing various value types that can be passed as parameters to functionalities
+/// Supports primitive types (String, Int, Double, Bool) and composite types (Dictionary, Array)
 enum FunctionalityArgumentValue: Codable, Hashable {
     case string(String)
     case int(Int)
@@ -151,5 +151,20 @@ enum FunctionalityArgumentValue: Codable, Hashable {
             return value
         }
         return nil
+    }
+}
+
+extension FunctionalityArgumentValue: Equatable {
+    static func == (lhs: FunctionalityArgumentValue, rhs: FunctionalityArgumentValue) -> Bool {
+        switch (lhs, rhs) {
+        case (.string(let l), .string(let r)): return l == r
+        case (.int(let l), .int(let r)): return l == r
+        case (.double(let l), .double(let r)): return abs(l - r) < 0.001
+        case (.bool(let l), .bool(let r)): return l == r
+        case (.dictionary(let l), .dictionary(let r)): return l == r
+        case (.array(let l), .array(let r)): return l == r
+        case (.null, .null): return true
+        default: return false
+        }
     }
 }
