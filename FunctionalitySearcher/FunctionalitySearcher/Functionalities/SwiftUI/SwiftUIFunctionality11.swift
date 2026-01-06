@@ -5,8 +5,7 @@ struct SwiftUIFunctionality11: View {
     let userId: String
     var onDismiss: (() -> Void)?
     
-    // External data from resolver
-    private var userPreferences: (theme: String, language: String, notificationsEnabled: Bool)? {
+    var userPreferences: (theme: String, language: String, notificationsEnabled: Bool)? {
         guard let prefsDict = functionality.arguments["userPreferences"]?.dictionaryValue,
               let theme = prefsDict["theme"]?.stringValue,
               let language = prefsDict["language"]?.stringValue,
@@ -16,15 +15,15 @@ struct SwiftUIFunctionality11: View {
         return (theme: theme, language: language, notificationsEnabled: notificationsEnabled)
     }
     
-    private var subscriptionTier: String? {
+    var subscriptionTier: String? {
         functionality.arguments["subscriptionTier"]?.stringValue
     }
     
-    private var lastLoginDate: String? {
+    var lastLoginDate: String? {
         functionality.arguments["lastLoginDate"]?.stringValue
     }
     
-    private var accountBalance: Double? {
+    var accountBalance: Double? {
         functionality.arguments["accountBalance"]?.doubleValue
     }
     

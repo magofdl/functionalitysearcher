@@ -69,6 +69,8 @@
 		87EB9A802F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A7E2F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift */; };
 		87EB9A822F0D7E4500E2717E /* SwiftUIFunctionality11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A812F0D7E4500E2717E /* SwiftUIFunctionality11.swift */; };
 		87EB9A842F0D7E5A00E2717E /* UIKitFunctionality10WithExternalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A832F0D7E5900E2717E /* UIKitFunctionality10WithExternalData.swift */; };
+		87EB9A872F0D809000E2717E /* FunctionalityDataResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */; };
+		87EB9A882F0D809000E2717E /* ExternalDataFunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +149,8 @@
 		87EB9A7E2F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality11DataResolver.swift; sourceTree = "<group>"; };
 		87EB9A812F0D7E4500E2717E /* SwiftUIFunctionality11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality11.swift; sourceTree = "<group>"; };
 		87EB9A832F0D7E5900E2717E /* UIKitFunctionality10WithExternalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10WithExternalData.swift; sourceTree = "<group>"; };
+		87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityDataResolverTests.swift; sourceTree = "<group>"; };
+		87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalDataFunctionalityTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,8 @@
 		8724B95D2F0C231B00E6D8D0 /* FunctionalitySearcherTests */ = {
 			isa = PBXGroup;
 			children = (
+				87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */,
+				87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */,
 				8724B9E02F0C7C5700E6D8D0 /* AppContextTests.swift */,
 				8724B9DE2F0C7C5700E6D8D0 /* AppCoordinatorIntegrationTests.swift */,
 				8724B9E42F0C7C5700E6D8D0 /* ConcreteFunctionalityFactoryTests.swift */,
@@ -547,8 +553,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8724B9E92F0C7C5700E6D8D0 /* FunctionalityDataProviderTests.swift in Sources */,
+				87EB9A882F0D809000E2717E /* ExternalDataFunctionalityTests.swift in Sources */,
 				8724B9E62F0C7C5700E6D8D0 /* FunctionalityIntegrationTests.swift in Sources */,
 				8724B9EB2F0C7C5700E6D8D0 /* FunctionalityTests.swift in Sources */,
+				87EB9A872F0D809000E2717E /* FunctionalityDataResolverTests.swift in Sources */,
 				8724B95F2F0C231B00E6D8D0 /* FunctionalitySearcherTests.swift in Sources */,
 				8724B9EC2F0C7C5700E6D8D0 /* FunctionalityViewControllerTests.swift in Sources */,
 				8724B9ED2F0C7C5700E6D8D0 /* SwiftUIFunctionalityTests.swift in Sources */,

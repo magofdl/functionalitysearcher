@@ -5,8 +5,8 @@ import UIKit
 class UIKitFunctionality10WithExternalData: BaseFunctionalityViewController {
     private let userId: String
     
-    // External data from resolver (accessed via functionality.arguments)
-    private var orderHistory: (totalOrders: Int, lastOrderDate: Date, averageOrderValue: Double)? {
+    // External data from resolver (accessed via functionality.arguments) - internal for testing
+    var orderHistory: (totalOrders: Int, lastOrderDate: Date, averageOrderValue: Double)? {
         guard let historyDict = functionality.arguments["orderHistory"]?.dictionaryValue,
               let totalOrders = historyDict["totalOrders"]?.intValue,
               let lastOrderDateString = historyDict["lastOrderDate"]?.stringValue,
@@ -17,15 +17,15 @@ class UIKitFunctionality10WithExternalData: BaseFunctionalityViewController {
         return (totalOrders: totalOrders, lastOrderDate: lastOrderDate, averageOrderValue: averageOrderValue)
     }
     
-    private var paymentMethods: [String] {
+    var paymentMethods: [String] {
         functionality.arguments["paymentMethods"]?.arrayValue?.compactMap { $0.stringValue } ?? []
     }
     
-    private var loyaltyPoints: Int {
+    var loyaltyPoints: Int {
         functionality.arguments["loyaltyPoints"]?.intValue ?? 0
     }
     
-    private var isVIP: Bool {
+    var isVIP: Bool {
         functionality.arguments["isVIP"]?.boolValue ?? false
     }
     

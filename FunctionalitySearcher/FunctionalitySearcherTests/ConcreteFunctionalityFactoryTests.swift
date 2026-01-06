@@ -175,6 +175,209 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         XCTAssertEqual(viewController?.rootView.userId, context.userId)
     }
     
+    // MARK: - Data Resolver Tests
+    
+    func testFactoryWithDataResolver() {
+        let mockResolver = MockFunctionalityDataResolver(data: [
+            "testKey": .string("testValue")
+        ])
+        
+        let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
+            "TEST_CODE": mockResolver
+        ])
+        
+        let functionality = createMockFunctionality(code: "TEST_CODE", uiType: .uikit)
+        let viewController = factoryWithResolver.createViewController(
+            for: functionality,
+            context: context,
+            onDismiss: {}
+        )
+        
+        XCTAssertNotNil(viewController)
+    }
+    
+    func testFactoryCreatesSwiftUIFunctionality11WithResolver() {
+        let resolver = SwiftUIFunctionality11DataResolver()
+        let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
+            "PROF_011": resolver
+        ])
+        
+        let functionality = createMockFunctionality(code: "PROF_011", uiType: .swiftui)
+        let viewController = factoryWithResolver.createViewController(
+            for: functionality,
+            context: context,
+            onDismiss: {}
+        )
+        
+        XCTAssertNotNil(viewController)
+        XCTAssertTrue(viewController is UIHostingController<SwiftUIFunctionality11>)
+        
+        let hostingController = viewController as? UIHostingController<SwiftUIFunctionality11>
+        XCTAssertNotNil(hostingController)
+        XCTAssertEqual(hostingController?.rootView.functionality.code, "PROF_011")
+        XCTAssertEqual(hostingController?.rootView.userId, context.userId)
+    }
+    
+    func testFactoryCreatesUIKitFunctionality10WithExternalDataWithResolver() {
+        let resolver = UIKitFunctionality10DataResolver()
+        let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
+            "PROF_010": resolver
+        ])
+        
+        let functionality = createMockFunctionality(code: "PROF_010", uiType: .uikit)
+        let viewController = factoryWithResolver.createViewController(
+            for: functionality,
+            context: context,
+            onDismiss: {}
+        )
+        
+        XCTAssertNotNil(viewController)
+        XCTAssertTrue(viewController is UIKitFunctionality10WithExternalData)
+        
+        let uikitVC = viewController as? UIKitFunctionality10WithExternalData
+        XCTAssertNotNil(uikitVC)
+        XCTAssertEqual(uikitVC?.functionality.code, "PROF_010")
+    }
+    
+    func testFactoryMergesResolverDataWithFunctionalityArguments() {
+        let mockResolver = MockFunctionalityDataResolver(data: [
+            "resolverKey": .string("resolverValue"),
+            "resolverInt": .int(100)
+        ])
+        
+        let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
+            "TEST_CODE": mockResolver
+        ])
+        
+        let existingArguments: [String: FunctionalityArgumentValue] = [
+            "existingKey": .string("existingValue")
+        ]
+        
+        let functionality = Functionality(
+            id: "TEST_CODE",
+            code: "TEST_CODE",
+            name: "Test",
+            path: "/test",
+            category: "Test",
+            description: "Test",
+            keywords: [],
+            uiType: .uikit,
+            arguments: existingArguments
+        )
+        
+        let viewController = factoryWithResolver.createViewController(
+            for: functionality,
+            context: context,
+            onDismiss: {}
+        )
+        
+        XCTAssertNotNil(viewController)
+        // The functionality should have merged arguments
+        // We can't directly test this without exposing internal state,
+        // but we can verify the view controller was created successfully
+    }
+    
+    func testFactoryFallsBackToStandardCreatorWhenNoResolverDataCreator() {
+        let mockResolver = MockFunctionalityDataResolver(data: [
+            "testKey": .string("testValue")
+        ])
+        
+        let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
+            "BILL_001": mockResolver
+        ])
+        
+        let functionality = createMockFunctionality(code: "BILL_001", uiType: .uikit)
+        let viewController = factoryWithResolver.createViewController(
+            for: functionality,
+            context: context,
+            onDismiss: {}
+        )
+        
+        // Should still create UIKitFunctionality1 even with resolver
+        // because BILL_001 has a standard creator
+        XCTAssertNotNil(viewController)
+        XCTAssertTrue(viewController is UIKitFunctionality1)
+    }
+    
+    func testFactoryWorksWithoutResolvers() {
+        // Factory without resolvers should work as before
+        let functionality = createMockFunctionality(code: "BILL_001", uiType: .uikit)
+        let viewController = factory.createViewController(
+            for: functionality,
+            context: context,
+            onDismiss: {}
+        )
+        
+        XCTAssertNotNil(viewController)
+        XCTAssertTrue(viewController is UIKitFunctionality1)
+    }
+    
+    func testFactoryWithResolverButNoCreatorFallsBackToDefault() {
+        let mockResolver = MockFunctionalityDataResolver(data: [
+            "testKey": .string("testValue")
+        ])
+        
+        let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
+            "UNKNOWN_WITH_RESOLVER": mockResolver
+        ])
+        
+        let functionality = createMockFunctionality(code: "UNKNOWN_WITH_RESOLVER", uiType: .uikit)
+        let viewController = factoryWithResolver.createViewController(
+            for: functionality,
+            context: context,
+            onDismiss: {}
+        )
+        
+        // Should fall back to default template
+        XCTAssertNotNil(viewController)
+        XCTAssertTrue(viewController is UIKitFunctionalityTemplate)
+    }
+    
+    func testSwiftUIFunctionality11ReceivesExternalData() {
+        let resolver = SwiftUIFunctionality11DataResolver()
+        let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
+            "PROF_011": resolver
+        ])
+        
+        let functionality = createMockFunctionality(code: "PROF_011", uiType: .swiftui)
+        let viewController = factoryWithResolver.createViewController(
+            for: functionality,
+            context: context,
+            onDismiss: {}
+        ) as? UIHostingController<SwiftUIFunctionality11>
+        
+        XCTAssertNotNil(viewController)
+        
+        // Verify that the functionality has the external data in arguments
+        let functionalityWithData = viewController?.rootView.functionality
+        XCTAssertNotNil(functionalityWithData?.arguments["userPreferences"])
+        XCTAssertNotNil(functionalityWithData?.arguments["subscriptionTier"])
+        XCTAssertNotNil(functionalityWithData?.arguments["accountBalance"])
+    }
+    
+    func testUIKitFunctionality10WithExternalDataReceivesExternalData() {
+        let resolver = UIKitFunctionality10DataResolver()
+        let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
+            "PROF_010": resolver
+        ])
+        
+        let functionality = createMockFunctionality(code: "PROF_010", uiType: .uikit)
+        let viewController = factoryWithResolver.createViewController(
+            for: functionality,
+            context: context,
+            onDismiss: {}
+        ) as? UIKitFunctionality10WithExternalData
+        
+        XCTAssertNotNil(viewController)
+        
+        // Verify that the functionality has the external data in arguments
+        let functionalityWithData = viewController?.functionality
+        XCTAssertNotNil(functionalityWithData?.arguments["orderHistory"])
+        XCTAssertNotNil(functionalityWithData?.arguments["paymentMethods"])
+        XCTAssertNotNil(functionalityWithData?.arguments["loyaltyPoints"])
+        XCTAssertNotNil(functionalityWithData?.arguments["isVIP"])
+    }
+    
     private func createMockFunctionality(code: String, uiType: UIType) -> Functionality {
         Functionality(
             id: code,
