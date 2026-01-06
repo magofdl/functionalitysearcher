@@ -31,7 +31,7 @@ struct SwiftUIFunctionality1: View {
                             .foregroundColor(.primary)
                     }
                     .padding()
-                    .background(Color.secondary.opacity(0.1))
+                    .background(Color.secondary.opacity(1.0))
                     .cornerRadius(8)
                 }
                 .padding()

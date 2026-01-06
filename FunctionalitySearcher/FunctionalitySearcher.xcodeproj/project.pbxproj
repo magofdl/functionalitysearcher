@@ -71,6 +71,28 @@
 		87EB9A842F0D7E5A00E2717E /* UIKitFunctionality10WithExternalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A832F0D7E5900E2717E /* UIKitFunctionality10WithExternalData.swift */; };
 		87EB9A872F0D809000E2717E /* FunctionalityDataResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */; };
 		87EB9A882F0D809000E2717E /* ExternalDataFunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */; };
+		87EB9AA12F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8B2F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift */; };
+		87EB9AA22F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8C2F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift */; };
+		87EB9AA32F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8D2F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift */; };
+		87EB9AA42F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8E2F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift */; };
+		87EB9AA52F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8F2F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift */; };
+		87EB9AA62F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A902F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift */; };
+		87EB9AA72F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A912F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift */; };
+		87EB9AA82F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A922F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift */; };
+		87EB9AA92F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A932F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift */; };
+		87EB9AAA2F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A942F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift */; };
+		87EB9AAB2F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A952F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift */; };
+		87EB9AAC2F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A962F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift */; };
+		87EB9AAD2F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A972F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift */; };
+		87EB9AAE2F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A982F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift */; };
+		87EB9AAF2F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A992F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift */; };
+		87EB9AB02F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9A2F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift */; };
+		87EB9AB12F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9B2F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift */; };
+		87EB9AB22F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9C2F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift */; };
+		87EB9AB32F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9D2F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift */; };
+		87EB9AB42F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9E2F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift */; };
+		87EB9AB52F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9F2F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift */; };
+		87EB9AB62F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9AA02F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +174,28 @@
 		87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityDataResolverTests.swift; sourceTree = "<group>"; };
 		87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalDataFunctionalityTests.swift; sourceTree = "<group>"; };
 		87EB9A892F0D9DB100E2717E /* FunctionalitySearcher.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FunctionalitySearcher.xctestplan; sourceTree = "<group>"; };
+		87EB9A8B2F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality1ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A8C2F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality3ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A8D2F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality9ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A8E2F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality4ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A8F2F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality6ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A902F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality10ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A912F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality8ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A922F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality5ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A932F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality7ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A942F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality11ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A952F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality2ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A962F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A972F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality7ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A982F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality5ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A992F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality8ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A9A2F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality2ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A9B2F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality3ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A9C2F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality1ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A9D2F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10WithExternalDataComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A9E2F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality6ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9A9F2F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality4ComposerUI.swift; sourceTree = "<group>"; };
+		87EB9AA02F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality9ComposerUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +353,7 @@
 		8724B9922F0C2EA700E6D8D0 /* Functionalities */ = {
 			isa = PBXGroup;
 			children = (
+				87EB9A8A2F0DAA3D00E2717E /* Composers */,
 				87EB9A7C2F0D7E2A00E2717E /* DataResolvers */,
 				8724B9932F0C2EA800E6D8D0 /* UIKit */,
 				8724B9962F0C2EA800E6D8D0 /* Factory */,
@@ -396,6 +441,35 @@
 				87EB9A7E2F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift */,
 			);
 			path = DataResolvers;
+			sourceTree = "<group>";
+		};
+		87EB9A8A2F0DAA3D00E2717E /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				87EB9A8B2F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift */,
+				87EB9A8C2F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift */,
+				87EB9A8D2F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift */,
+				87EB9A8E2F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift */,
+				87EB9A8F2F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift */,
+				87EB9A902F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift */,
+				87EB9A912F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift */,
+				87EB9A922F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift */,
+				87EB9A932F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift */,
+				87EB9A942F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift */,
+				87EB9A952F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift */,
+				87EB9A962F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift */,
+				87EB9A972F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift */,
+				87EB9A982F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift */,
+				87EB9A992F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift */,
+				87EB9A9A2F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift */,
+				87EB9A9B2F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift */,
+				87EB9A9C2F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift */,
+				87EB9A9D2F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift */,
+				87EB9A9E2F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift */,
+				87EB9A9F2F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift */,
+				87EB9AA02F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,22 +573,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87EB9AA92F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift in Sources */,
 				8724B9AF2F0C2EA800E6D8D0 /* SwiftUIFunctionalityTemplate.swift in Sources */,
 				8724B9A82F0C2EA800E6D8D0 /* FunctionalityFactoryProtocol.swift in Sources */,
 				8724B9AE2F0C2EA800E6D8D0 /* BaseFunctionalityView.swift in Sources */,
 				8724B9D62F0C464100E6D8D0 /* SwiftUIFunctionality9.swift in Sources */,
+				87EB9AB22F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift in Sources */,
+				87EB9AAC2F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift in Sources */,
 				8724B9AB2F0C2EA800E6D8D0 /* UIKitFunctionalityTemplate.swift in Sources */,
 				8724B9BC2F0C463100E6D8D0 /* UIKitFunctionality1.swift in Sources */,
+				87EB9AA62F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift in Sources */,
+				87EB9AA82F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift in Sources */,
 				8724B99F2F0C2EA800E6D8D0 /* SearchView.swift in Sources */,
 				8724B9AD2F0C2EA800E6D8D0 /* BaseFunctionalityViewController.swift in Sources */,
 				8724B9DB2F0C787800E6D8D0 /* FunctionalityArgumentValue.swift in Sources */,
+				87EB9AAB2F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift in Sources */,
+				87EB9AB62F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift in Sources */,
 				8724B9BD2F0C463100E6D8D0 /* UIKitFunctionality6.swift in Sources */,
+				87EB9AB42F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift in Sources */,
 				8724B94C2F0C231800E6D8D0 /* ViewController.swift in Sources */,
 				8724B9A52F0C2EA800E6D8D0 /* FunctionalityDataProvider.swift in Sources */,
 				8724B9A42F0C2EA800E6D8D0 /* SearchResult.swift in Sources */,
+				87EB9AA22F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift in Sources */,
+				87EB9AA42F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift in Sources */,
 				87EB9A822F0D7E4500E2717E /* SwiftUIFunctionality11.swift in Sources */,
 				8724B9482F0C231800E6D8D0 /* AppDelegate.swift in Sources */,
 				8724B9D22F0C464100E6D8D0 /* SwiftUIFunctionality6.swift in Sources */,
+				87EB9AB32F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift in Sources */,
 				87EB9A7F2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift in Sources */,
 				8724B9D72F0C464100E6D8D0 /* SwiftUIFunctionality10.swift in Sources */,
 				8724B9A02F0C2EA800E6D8D0 /* MockSearchService.swift in Sources */,
@@ -528,21 +613,32 @@
 				8724B9BE2F0C463100E6D8D0 /* UIKitFunctionality3.swift in Sources */,
 				8724B9AC2F0C2EA800E6D8D0 /* ConcreteFunctionalityFactory.swift in Sources */,
 				8724B9CF2F0C464100E6D8D0 /* SwiftUIFunctionality1.swift in Sources */,
+				87EB9AAD2F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift in Sources */,
 				8724B9A62F0C2EA800E6D8D0 /* Functionality.swift in Sources */,
+				87EB9AAE2F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift in Sources */,
 				87EB9A842F0D7E5A00E2717E /* UIKitFunctionality10WithExternalData.swift in Sources */,
 				8724B99E2F0C2EA800E6D8D0 /* SearchViewModel.swift in Sources */,
+				87EB9AA12F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift in Sources */,
 				8724B9A72F0C2EA800E6D8D0 /* FunctionalityViewProtocol.swift in Sources */,
 				8724B9D42F0C464100E6D8D0 /* SwiftUIFunctionality2.swift in Sources */,
+				87EB9AA52F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift in Sources */,
+				87EB9AB52F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift in Sources */,
+				87EB9AB02F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift in Sources */,
 				8724B94A2F0C231800E6D8D0 /* SceneDelegate.swift in Sources */,
+				87EB9AA72F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift in Sources */,
 				8724B9D92F0C77D300E6D8D0 /* AppContext.swift in Sources */,
 				8724B9A22F0C2EA800E6D8D0 /* FunctionalityCoordinator.swift in Sources */,
 				87EB9A802F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift in Sources */,
 				8724B9A92F0C2EA800E6D8D0 /* SearchServiceProtocol.swift in Sources */,
+				87EB9AA32F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift in Sources */,
 				8724B9C02F0C463100E6D8D0 /* UIKitFunctionality7.swift in Sources */,
 				8724B9AA2F0C2EA800E6D8D0 /* FunctionalityViewControllerProtocol.swift in Sources */,
+				87EB9AB12F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift in Sources */,
+				87EB9AAF2F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift in Sources */,
 				8724B9D02F0C464100E6D8D0 /* SwiftUIFunctionality4.swift in Sources */,
 				8724B9BB2F0C463100E6D8D0 /* UIKitFunctionality9.swift in Sources */,
 				8724B9A12F0C2EA800E6D8D0 /* AppCoordinator.swift in Sources */,
+				87EB9AAA2F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift in Sources */,
 				8724B9BA2F0C463100E6D8D0 /* UIKitFunctionality8.swift in Sources */,
 				8724B9BF2F0C463100E6D8D0 /* UIKitFunctionality2.swift in Sources */,
 				8724B9CE2F0C464100E6D8D0 /* SwiftUIFunctionality5.swift in Sources */,

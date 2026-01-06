@@ -97,13 +97,7 @@ struct SearchResultRow: View {
                         .font(.headline)
                         .foregroundColor(.primary)
                     Spacer()
-                    Text(result.functionality.uiType.rawValue.uppercased())
-                        .font(.caption)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 4)
-                        .background(result.functionality.uiType == .uikit ? Color.orange.opacity(0.2) : Color.blue.opacity(0.2))
-                        .foregroundColor(result.functionality.uiType == .uikit ? .orange : .blue)
-                        .cornerRadius(4)
+                    
                 }
                 
                 Text(result.functionality.description)

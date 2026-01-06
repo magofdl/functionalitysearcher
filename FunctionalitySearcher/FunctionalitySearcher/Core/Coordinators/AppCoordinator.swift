@@ -45,6 +45,7 @@ class AppCoordinator {
         
         if let navigationController = navigationController {
             let modalNavigationController = UINavigationController(rootViewController: viewController)
+            modalNavigationController.modalPresentationStyle = .fullScreen
             navigationController.present(modalNavigationController, animated: true)
         }
     }

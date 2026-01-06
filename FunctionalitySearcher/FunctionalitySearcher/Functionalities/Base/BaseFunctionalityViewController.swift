@@ -142,25 +142,25 @@ class BaseFunctionalityViewController: UIViewController, FunctionalityViewContro
         
         switch functionality.category {
         case "Billing":
-            backgroundColor = UIColor.systemBlue.withAlphaComponent(0.1)
+            backgroundColor = UIColor.white.withAlphaComponent(1.0)
             accentColor = .systemBlue
         case "Returns":
-            backgroundColor = UIColor.systemRed.withAlphaComponent(0.1)
+            backgroundColor = UIColor.white.withAlphaComponent(1.0)
             accentColor = .systemRed
         case "Certificates":
-            backgroundColor = UIColor.systemGreen.withAlphaComponent(0.1)
+            backgroundColor = UIColor.white.withAlphaComponent(1.0)
             accentColor = .systemGreen
         case "Profile":
-            backgroundColor = UIColor.systemPurple.withAlphaComponent(0.1)
+            backgroundColor = UIColor.white.withAlphaComponent(1.0)
             accentColor = .systemPurple
         case "Products":
-            backgroundColor = UIColor.systemOrange.withAlphaComponent(0.1)
+            backgroundColor = UIColor.white.withAlphaComponent(1.0)
             accentColor = .systemOrange
         case "Orders":
-            backgroundColor = UIColor.systemIndigo.withAlphaComponent(0.1)
+            backgroundColor = UIColor.white.withAlphaComponent(1.0)
             accentColor = .systemIndigo
         default:
-            backgroundColor = UIColor.systemGray.withAlphaComponent(0.1)
+            backgroundColor = UIColor.white.withAlphaComponent(1.0)
             accentColor = .systemGray
         }
         

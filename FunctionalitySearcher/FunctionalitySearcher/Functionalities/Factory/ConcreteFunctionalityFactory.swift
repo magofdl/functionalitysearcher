@@ -15,65 +15,65 @@ class ConcreteFunctionalityFactory: FunctionalityFactoryProtocol {
         var registry: [String: ViewControllerCreator] = [:]
         
         registry["BILL_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality1(functionality: functionality, userId: context.userId, onDismiss: onDismiss)
+            UIKitFunctionality1ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["RET_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality2(functionality: functionality, userId: context.userId, timestamp: context.timestamp, onDismiss: onDismiss)
+            UIKitFunctionality2ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["CERT_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality3(functionality: functionality, userId: context.userId, region: context.region, onDismiss: onDismiss)
+            UIKitFunctionality3ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROF_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality4(functionality: functionality, userId: context.userId, userEmail: context.userEmail, onDismiss: onDismiss)
+            UIKitFunctionality4ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROD_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality5(functionality: functionality, userId: context.userId, contractCount: context.contractCount, onDismiss: onDismiss)
+            UIKitFunctionality5ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["ORD_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality6(functionality: functionality, userId: context.userId, timestamp: context.timestamp, onDismiss: onDismiss)
+            UIKitFunctionality6ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["BILL_003"] = { functionality, context, onDismiss in
-            UIKitFunctionality7(functionality: functionality, userId: context.userId, region: context.region, onDismiss: onDismiss)
+            UIKitFunctionality7ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["RET_003"] = { functionality, context, onDismiss in
-            UIKitFunctionality8(functionality: functionality, userId: context.userId, onDismiss: onDismiss)
+            UIKitFunctionality8ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["CERT_003"] = { functionality, context, onDismiss in
-            UIKitFunctionality9(functionality: functionality, userId: context.userId, contractCount: context.contractCount, onDismiss: onDismiss)
+            UIKitFunctionality9ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROF_003"] = { functionality, context, onDismiss in
-            UIKitFunctionality10(functionality: functionality, userId: context.userId, userRole: context.userRole, onDismiss: onDismiss)
+            UIKitFunctionality10ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         
         registry["BILL_002"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality1(functionality: functionality, userId: context.userId, onDismiss: onDismiss))
+            SwiftUIFunctionality1ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["RET_002"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality2(functionality: functionality, userId: context.userId, timestamp: context.timestamp, onDismiss: onDismiss))
+            SwiftUIFunctionality2ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["CERT_002"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality3(functionality: functionality, userId: context.userId, region: context.region, onDismiss: onDismiss))
+            SwiftUIFunctionality3ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROF_002"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality4(functionality: functionality, userId: context.userId, userEmail: context.userEmail, onDismiss: onDismiss))
+            SwiftUIFunctionality4ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROD_002"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality5(functionality: functionality, userId: context.userId, contractCount: context.contractCount, onDismiss: onDismiss))
+            SwiftUIFunctionality5ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["ORD_002"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality6(functionality: functionality, userId: context.userId, timestamp: context.timestamp, onDismiss: onDismiss))
+            SwiftUIFunctionality6ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["BILL_004"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality7(functionality: functionality, userId: context.userId, region: context.region, onDismiss: onDismiss))
+            SwiftUIFunctionality7ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["RET_004"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality8(functionality: functionality, userId: context.userId, onDismiss: onDismiss))
+            SwiftUIFunctionality8ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["CERT_004"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality9(functionality: functionality, userId: context.userId, contractCount: context.contractCount, onDismiss: onDismiss))
+            SwiftUIFunctionality9ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROF_004"] = { functionality, context, onDismiss in
-            UIHostingController(rootView: SwiftUIFunctionality10(functionality: functionality, userId: context.userId, userRole: context.userRole, onDismiss: onDismiss))
+            SwiftUIFunctionality10ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         
         return registry
@@ -85,13 +85,13 @@ class ConcreteFunctionalityFactory: FunctionalityFactoryProtocol {
         // SwiftUIFunctionality11 with external data
         registry["PROF_011"] = { functionality, context, additionalData, onDismiss in
             // The functionality already has merged arguments from the resolver
-            UIHostingController(rootView: SwiftUIFunctionality11(functionality: functionality, userId: context.userId, onDismiss: onDismiss))
+            SwiftUIFunctionality11ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         
         // UIKitFunctionality10 with external data (using a new code to differentiate)
         registry["PROF_010"] = { functionality, context, additionalData, onDismiss in
             // The functionality already has merged arguments from the resolver
-            UIKitFunctionality10WithExternalData(functionality: functionality, userId: context.userId, onDismiss: onDismiss)
+            UIKitFunctionality10WithExternalDataComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         
         return registry
