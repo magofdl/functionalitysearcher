@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "D47BD85B-4BBE-4D46-95E7-3CE766C7C142",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:FunctionalitySearcher.xcodeproj",
+      "identifier" : "8724B9432F0C231800E6D8D0",
+      "name" : "FunctionalitySearcher"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:FunctionalitySearcher.xcodeproj",
+        "identifier" : "8724B9592F0C231B00E6D8D0",
+        "name" : "FunctionalitySearcherTests"
+      }
+    }
+  ],
+  "version" : 1
+}
