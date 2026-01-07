@@ -96,6 +96,13 @@
 		87A99EF02F0EB99900042EF2 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EE92F0EB99700042EF2 /* ThemeManager.swift */; };
 		87A99EF12F0EB99900042EF2 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EEA2F0EB99700042EF2 /* AppTheme.swift */; };
 		87A99EF22F0EB99900042EF2 /* DesignSystemShowcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EEC2F0EB99700042EF2 /* DesignSystemShowcase.swift */; };
+		87A99EFC2F0EF97C00042EF2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EF52F0EF97C00042EF2 /* ProfileView.swift */; };
+		87A99EFD2F0EF97C00042EF2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EF62F0EF97C00042EF2 /* HomeView.swift */; };
+		87A99EFE2F0EF97C00042EF2 /* BillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EF72F0EF97C00042EF2 /* BillingView.swift */; };
+		87A99EFF2F0EF97C00042EF2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EF82F0EF97C00042EF2 /* MainTabView.swift */; };
+		87A99F002F0EF97C00042EF2 /* FunctionalityCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EFA2F0EF97C00042EF2 /* FunctionalityCardButton.swift */; };
+		87A99F012F0EF97C00042EF2 /* FunctionalityGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EFB2F0EF97C00042EF2 /* FunctionalityGridView.swift */; };
+		87A99F042F0EF9B700042EF2 /* FunctionalityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99F032F0EF9B700042EF2 /* FunctionalityService.swift */; };
 		87EB9A7B2F0D7DFF00E2717E /* FunctionalityDataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A7A2F0D7DFF00E2717E /* FunctionalityDataResolver.swift */; };
 		87EB9A872F0D809000E2717E /* FunctionalityDataResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */; };
 		87EB9A882F0D809000E2717E /* ExternalDataFunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */; };
@@ -206,6 +213,13 @@
 		87A99EE92F0EB99700042EF2 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		87A99EEA2F0EB99700042EF2 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		87A99EEC2F0EB99700042EF2 /* DesignSystemShowcase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemShowcase.swift; sourceTree = "<group>"; };
+		87A99EF52F0EF97C00042EF2 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		87A99EF62F0EF97C00042EF2 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		87A99EF72F0EF97C00042EF2 /* BillingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingView.swift; sourceTree = "<group>"; };
+		87A99EF82F0EF97C00042EF2 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		87A99EFA2F0EF97C00042EF2 /* FunctionalityCardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityCardButton.swift; sourceTree = "<group>"; };
+		87A99EFB2F0EF97C00042EF2 /* FunctionalityGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityGridView.swift; sourceTree = "<group>"; };
+		87A99F032F0EF9B700042EF2 /* FunctionalityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityService.swift; sourceTree = "<group>"; };
 		87EB9A7A2F0D7DFF00E2717E /* FunctionalityDataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityDataResolver.swift; sourceTree = "<group>"; };
 		87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityDataResolverTests.swift; sourceTree = "<group>"; };
 		87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalDataFunctionalityTests.swift; sourceTree = "<group>"; };
@@ -254,6 +268,7 @@
 		8724B9462F0C231800E6D8D0 /* FunctionalitySearcher */ = {
 			isa = PBXGroup;
 			children = (
+				87A99EF32F0EF97C00042EF2 /* UI */,
 				87A99EE32F0EB99700042EF2 /* DesignSystem */,
 				8724B9842F0C2EA700E6D8D0 /* Core */,
 				8724B9922F0C2EA700E6D8D0 /* Functionalities */,
@@ -326,6 +341,7 @@
 		8724B9842F0C2EA700E6D8D0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				87A99F022F0EF9B700042EF2 /* Services */,
 				8724B9852F0C2EA700E6D8D0 /* Coordinators */,
 				8724B9882F0C2EA700E6D8D0 /* Models */,
 				8724B98D2F0C2EA700E6D8D0 /* Protocols */,
@@ -490,6 +506,43 @@
 			path = Examples;
 			sourceTree = "<group>";
 		};
+		87A99EF32F0EF97C00042EF2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				87A99EF42F0EF97C00042EF2 /* Tabs */,
+				87A99EF82F0EF97C00042EF2 /* MainTabView.swift */,
+				87A99EF92F0EF97C00042EF2 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		87A99EF42F0EF97C00042EF2 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				87A99EF52F0EF97C00042EF2 /* ProfileView.swift */,
+				87A99EF62F0EF97C00042EF2 /* HomeView.swift */,
+				87A99EF72F0EF97C00042EF2 /* BillingView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		87A99EF92F0EF97C00042EF2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				87A99EFA2F0EF97C00042EF2 /* FunctionalityCardButton.swift */,
+				87A99EFB2F0EF97C00042EF2 /* FunctionalityGridView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		87A99F022F0EF9B700042EF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				87A99F032F0EF9B700042EF2 /* FunctionalityService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		87EB9A7C2F0D7E2A00E2717E /* DataResolvers */ = {
 			isa = PBXGroup;
 			children = (
@@ -639,6 +692,7 @@
 			files = (
 				87A99EDA2F0EB0E700042EF2 /* UserSubscriptionViewComposerUI.swift in Sources */,
 				87A99E932F0EB0B900042EF2 /* ChangePasswordView.swift in Sources */,
+				87A99F042F0EF9B700042EF2 /* FunctionalityService.swift in Sources */,
 				87A99EB02F0EB0CC00042EF2 /* GetCertificateViewController.swift in Sources */,
 				8724B9AF2F0C2EA800E6D8D0 /* SwiftUIFunctionalityTemplate.swift in Sources */,
 				8724B9A82F0C2EA800E6D8D0 /* FunctionalityFactoryProtocol.swift in Sources */,
@@ -650,12 +704,14 @@
 				87A99ECF2F0EB0E600042EF2 /* DownloadCertificateViewControllerComposerUI.swift in Sources */,
 				8724B99F2F0C2EA800E6D8D0 /* SearchView.swift in Sources */,
 				87A99ECA2F0EB0E600042EF2 /* ExportInvoicesViewComposerUI.swift in Sources */,
+				87A99EFD2F0EF97C00042EF2 /* HomeView.swift in Sources */,
 				87A99E942F0EB0B900042EF2 /* ProductDetailsView.swift in Sources */,
 				87A99ECC2F0EB0E600042EF2 /* TrackReturnViewComposerUI.swift in Sources */,
 				87A99EF02F0EB99900042EF2 /* ThemeManager.swift in Sources */,
 				8724B9AD2F0C2EA800E6D8D0 /* BaseFunctionalityViewController.swift in Sources */,
 				87A99E922F0EB0B900042EF2 /* ActiveCertificatesView.swift in Sources */,
 				87A99E982F0EB0B900042EF2 /* RenewCertificateView.swift in Sources */,
+				87A99F012F0EF97C00042EF2 /* FunctionalityGridView.swift in Sources */,
 				8724B9DB2F0C787800E6D8D0 /* FunctionalityArgumentValue.swift in Sources */,
 				87A99EDD2F0EB0E700042EF2 /* ViewOrdersViewControllerComposerUI.swift in Sources */,
 				87A99EDE2F0EB0E700042EF2 /* GetCertificateViewControllerComposerUI.swift in Sources */,
@@ -679,6 +735,7 @@
 				8724B9A02F0C2EA800E6D8D0 /* MockSearchService.swift in Sources */,
 				87EB9AB82F0DB4C400E2717E /* IndependentFunctionalityViewController.swift in Sources */,
 				8724B9A32F0C2EA800E6D8D0 /* UIType.swift in Sources */,
+				87A99EFE2F0EF97C00042EF2 /* BillingView.swift in Sources */,
 				87A99EAC2F0EB0CC00042EF2 /* DownloadInvoiceViewController.swift in Sources */,
 				87A99EDC2F0EB0E700042EF2 /* InvoiceHistoryViewComposerUI.swift in Sources */,
 				87A99EEF2F0EB99900042EF2 /* ButtonStyles.swift in Sources */,
@@ -692,6 +749,7 @@
 				87A99ED52F0EB0E700042EF2 /* NotificationSettingsViewComposerUI.swift in Sources */,
 				87A99E962F0EB0B900042EF2 /* ExportInvoicesView.swift in Sources */,
 				8724B9A72F0C2EA800E6D8D0 /* FunctionalityViewProtocol.swift in Sources */,
+				87A99EFF2F0EF97C00042EF2 /* MainTabView.swift in Sources */,
 				87A99E9B2F0EB0B900042EF2 /* TrackShipmentView.swift in Sources */,
 				87A99EF12F0EB99900042EF2 /* AppTheme.swift in Sources */,
 				8724B94A2F0C231800E6D8D0 /* SceneDelegate.swift in Sources */,
@@ -713,6 +771,8 @@
 				8724B9A12F0C2EA800E6D8D0 /* AppCoordinator.swift in Sources */,
 				87A99E9A2F0EB0B900042EF2 /* TrackReturnView.swift in Sources */,
 				87A99EE12F0EB10A00042EF2 /* UserAccountDetailsViewControllerDataResolver.swift in Sources */,
+				87A99EFC2F0EF97C00042EF2 /* ProfileView.swift in Sources */,
+				87A99F002F0EF97C00042EF2 /* FunctionalityCardButton.swift in Sources */,
 				87A99EA82F0EB0CC00042EF2 /* UserAccountDetailsViewController.swift in Sources */,
 				87EB9A7B2F0D7DFF00E2717E /* FunctionalityDataResolver.swift in Sources */,
 			);

@@ -32,7 +32,7 @@ struct SearchView: View {
                     // Theme Picker
                     themePickerSection
                     
-                    // Search bar
+                // Search bar
                     searchBarSection
                 }
                 .background(theme.colorPalette.background)
@@ -135,11 +135,11 @@ struct SearchView: View {
     private var loadingView: some View {
         VStack {
             Spacer()
-            ProgressView("Searching...")
+                    ProgressView("Searching...")
                 .bodyStyle()
             Spacer()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(theme.colorPalette.background)
         .contentShape(Rectangle())
         .onTapGesture {
@@ -170,10 +170,10 @@ struct SearchView: View {
             
             List {
                 ForEach(viewModel.searchResults) { result in
-                    SearchResultRow(result: result) {
+                        SearchResultRow(result: result) {
                         isSearchFieldFocused = false
-                        onFunctionalitySelected(result.functionality)
-                    }
+                            onFunctionalitySelected(result.functionality)
+                        }
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
                     .listRowInsets(EdgeInsets(
@@ -183,7 +183,7 @@ struct SearchView: View {
                         trailing: theme.spacing.md
                     ))
                 }
-            }
+                    }
             .listStyle(.plain)
             .scrollContentBackground(.hidden)
             .background(Color.clear)
@@ -304,7 +304,7 @@ struct SearchResultRow: View {
                 // Path
                 HStack(spacing: theme.spacing.xs) {
                     Image(systemName: "arrow.turn.down.right")
-                        .font(.caption2)
+                    .font(.caption2)
                         .foregroundColor(theme.colorPalette.textTertiary)
                     Text(result.functionality.path)
                         .captionStyle()

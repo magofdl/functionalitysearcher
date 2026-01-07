@@ -21,12 +21,15 @@ class AppCoordinator {
     }
     
     func start() {
-        let searchView = SearchView(searchService: searchService) { [weak self] functionality in
-            self?.showFunctionality(functionality)
-        }
+        let mainTabView = MainTabView(
+            searchService: searchService,
+            onFunctionalitySelected: { [weak self] functionality in
+                self?.showFunctionality(functionality)
+            }
+        )
         .themedApp() // Apply theme to the entire app
         
-        let hostingController = UIHostingController(rootView: searchView)
+        let hostingController = UIHostingController(rootView: mainTabView)
         let navigationController = UINavigationController(rootViewController: hostingController)
         
         self.navigationController = navigationController
