@@ -10,6 +10,7 @@ import SwiftUI
 struct SearchView: View {
     @StateObject private var viewModel: SearchViewModel
     let onFunctionalitySelected: (Functionality) -> Void
+    @FocusState private var isSearchFieldFocused: Bool
     
     init(searchService: SearchServiceProtocol, onFunctionalitySelected: @escaping (Functionality) -> Void) {
         _viewModel = StateObject(wrappedValue: SearchViewModel(searchService: searchService))
@@ -23,12 +24,15 @@ struct SearchView: View {
                 HStack {
                     TextField("Search functionality...", text: $viewModel.searchQuery)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .focused($isSearchFieldFocused)
                         .onSubmit {
                             viewModel.search()
+                            isSearchFieldFocused = false
                         }
                     
                     Button(action: {
                         viewModel.search()
+                        isSearchFieldFocused = false
                     }) {
                         Image(systemName: "magnifyingglass")
                             .foregroundColor(.white)
@@ -44,6 +48,10 @@ struct SearchView: View {
                 if viewModel.isSearching {
                     ProgressView("Searching...")
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            isSearchFieldFocused = false
+                        }
                 }
                 
                 // Error message
@@ -61,12 +69,21 @@ struct SearchView: View {
                         }
                     }
                     .listStyle(PlainListStyle())
+                    .simultaneousGesture(
+                        TapGesture().onEnded { _ in
+                            isSearchFieldFocused = false
+                        }
+                    )
                 } else if !viewModel.isSearching && !viewModel.searchQuery.isEmpty {
                     VStack {
                         Spacer()
                         Text("No results found")
                             .foregroundColor(.gray)
                         Spacer()
+                    }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        isSearchFieldFocused = false
                     }
                 } else {
                     VStack {
@@ -77,10 +94,17 @@ struct SearchView: View {
                             .padding()
                         Spacer()
                     }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        isSearchFieldFocused = false
+                    }
                 }
             }
             .navigationTitle("Functionality Searcher")
             .navigationBarTitleDisplayMode(.large)
+            .onTapGesture {
+                isSearchFieldFocused = false
+            }
         }
     }
 }
