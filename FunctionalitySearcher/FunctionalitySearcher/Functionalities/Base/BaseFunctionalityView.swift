@@ -38,7 +38,7 @@ struct BaseFunctionalityView: View {
                 Button(action: {
                     onDismiss?()
                 }) {
-                    Text("Back to Searcher")
+                    Text("Done")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)

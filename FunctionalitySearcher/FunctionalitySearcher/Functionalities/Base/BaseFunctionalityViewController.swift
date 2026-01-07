@@ -79,7 +79,7 @@ class BaseFunctionalityViewController: UIViewController, FunctionalityViewContro
         
         // Dismiss Button
         dismissButton.translatesAutoresizingMaskIntoConstraints = false
-        dismissButton.setTitle("Back to Searcher", for: .normal)
+        dismissButton.setTitle("Done", for: .normal)
         dismissButton.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         dismissButton.backgroundColor = .systemBlue
         dismissButton.setTitleColor(.white, for: .normal)
