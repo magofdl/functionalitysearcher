@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SearchView: View {
     @StateObject private var viewModel: SearchViewModel
@@ -26,24 +27,38 @@ struct SearchView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 0) {
-                // Fixed header section
-                VStack(spacing: theme.spacing.md) {
-                    // Theme Picker
-                    themePickerSection
-                    
-                // Search bar
-                    searchBarSection
-                }
-                .background(theme.colorPalette.background)
+            ZStack {
+                // Background that extends everywhere
+                theme.colorPalette.background
+                    .ignoresSafeArea(edges: .all)
                 
-                // Scrollable content
-                contentSection
+                VStack(spacing: 0) {
+                    // Fixed header section
+                    VStack(spacing: theme.spacing.md) {
+                        // Theme Picker
+                        themePickerSection
+                        
+                    // Search bar
+                        searchBarSection
+                    }
+                    .background(theme.colorPalette.background)
+                    
+                    // Scrollable content
+                    contentSection
+                }
             }
-            .background(theme.colorPalette.background)
             .navigationTitle("Functionality Searcher")
             .navigationBarTitleDisplayMode(.large)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
+            .scrollContentBackground(.hidden)
+            .onAppear {
+                configureNavigationBarAppearance()
+            }
+            .onChange(of: themeManager.currentThemeType) { _ in
+                configureNavigationBarAppearance()
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     if isSearchFieldFocused {
@@ -259,6 +274,22 @@ struct SearchView: View {
         .onTapGesture {
             isSearchFieldFocused = false
         }
+    }
+    
+    private func configureNavigationBarAppearance() {
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.backgroundColor = UIColor(theme.colorPalette.surface)
+        navBarAppearance.largeTitleTextAttributes = [
+            .foregroundColor: UIColor(theme.colorPalette.textPrimary)
+        ]
+        navBarAppearance.titleTextAttributes = [
+            .foregroundColor: UIColor(theme.colorPalette.textPrimary)
+        ]
+        
+        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        UINavigationBar.appearance().compactAppearance = navBarAppearance
     }
 }
 

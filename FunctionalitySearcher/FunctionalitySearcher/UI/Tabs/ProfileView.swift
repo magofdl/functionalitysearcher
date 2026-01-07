@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ProfileView: View {
     @EnvironmentObject var themeManager: ThemeManager
@@ -23,43 +24,57 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(spacing: theme.spacing.lg) {
-                    // User Header
-                    userHeader
-                    
-                    // Account Summary
-                    accountSummary
-                    
-                    // Profile Functionalities Title
-                    Text("Profile Management")
-                        .font(theme.typography.title)
-                        .foregroundColor(theme.colorPalette.textPrimary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal, theme.spacing.md)
-                    
-                    // Grid of Profile Functionalities
-                    LazyVGrid(columns: [
-                        GridItem(.flexible(), spacing: 16),
-                        GridItem(.flexible(), spacing: 16)
-                    ], spacing: theme.spacing.md) {
-                        ForEach(profileFunctionalities) { functionality in
-                            FunctionalityCardButton(
-                                functionality: functionality,
-                                onTap: {
-                                    onFunctionalitySelected(functionality)
-                                }
-                            )
+            ZStack {
+                // Background that extends everywhere
+                theme.colorPalette.background
+                    .ignoresSafeArea(edges: .all)
+                
+                ScrollView {
+                    VStack(spacing: theme.spacing.lg) {
+                        // User Header
+                        userHeader
+                        
+                        // Account Summary
+                        accountSummary
+                        
+                        // Profile Functionalities Title
+                        Text("Profile Management")
+                            .font(theme.typography.title)
+                            .foregroundColor(theme.colorPalette.textPrimary)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, theme.spacing.md)
+                        
+                        // Grid of Profile Functionalities
+                        LazyVGrid(columns: [
+                            GridItem(.flexible(), spacing: 16),
+                            GridItem(.flexible(), spacing: 16)
+                        ], spacing: theme.spacing.md) {
+                            ForEach(profileFunctionalities) { functionality in
+                                FunctionalityCardButton(
+                                    functionality: functionality,
+                                    onTap: {
+                                        onFunctionalitySelected(functionality)
+                                    }
+                                )
+                            }
                         }
+                        .padding(.horizontal, theme.spacing.md)
                     }
-                    .padding(.horizontal, theme.spacing.md)
+                    .padding(.vertical, theme.spacing.md)
                 }
-                .padding(.vertical, theme.spacing.md)
             }
-            .background(theme.colorPalette.background)
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.large)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
+            .scrollContentBackground(.hidden)
+            .onAppear {
+                configureNavigationBarAppearance()
+            }
+            .onChange(of: themeManager.currentThemeType) { _ in
+                configureNavigationBarAppearance()
+            }
         }
     }
     
@@ -134,5 +149,21 @@ struct ProfileView: View {
         .cornerRadius(theme.cornerRadius.medium)
         .shadow(color: Color.black.opacity(0.05), radius: 4, x: 0, y: 2)
         .padding(.horizontal, theme.spacing.md)
+    }
+    
+    private func configureNavigationBarAppearance() {
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.backgroundColor = UIColor(theme.colorPalette.surface)
+        navBarAppearance.largeTitleTextAttributes = [
+            .foregroundColor: UIColor(theme.colorPalette.textPrimary)
+        ]
+        navBarAppearance.titleTextAttributes = [
+            .foregroundColor: UIColor(theme.colorPalette.textPrimary)
+        ]
+        
+        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        UINavigationBar.appearance().compactAppearance = navBarAppearance
     }
 }

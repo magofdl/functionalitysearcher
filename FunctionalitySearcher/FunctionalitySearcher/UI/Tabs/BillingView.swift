@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct BillingView: View {
     @EnvironmentObject var themeManager: ThemeManager
@@ -23,43 +24,57 @@ struct BillingView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(spacing: theme.spacing.lg) {
-                    // Billing Summary Header
-                    billingSummaryHeader
-                    
-                    // Quick Actions
-                    quickActionsSection
-                    
-                    // Billing Functionalities Title
-                    Text("All Billing Options")
-                        .font(theme.typography.title)
-                        .foregroundColor(theme.colorPalette.textPrimary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal, theme.spacing.md)
-                    
-                    // Grid of Billing Functionalities
-                    LazyVGrid(columns: [
-                        GridItem(.flexible(), spacing: 16),
-                        GridItem(.flexible(), spacing: 16)
-                    ], spacing: theme.spacing.md) {
-                        ForEach(billingFunctionalities) { functionality in
-                            FunctionalityCardButton(
-                                functionality: functionality,
-                                onTap: {
-                                    onFunctionalitySelected(functionality)
-                                }
-                            )
+            ZStack {
+                // Background that extends everywhere
+                theme.colorPalette.background
+                    .ignoresSafeArea(edges: .all)
+                
+                ScrollView {
+                    VStack(spacing: theme.spacing.lg) {
+                        // Billing Summary Header
+                        billingSummaryHeader
+                        
+                        // Quick Actions
+                        quickActionsSection
+                        
+                        // Billing Functionalities Title
+                        Text("All Billing Options")
+                            .font(theme.typography.title)
+                            .foregroundColor(theme.colorPalette.textPrimary)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, theme.spacing.md)
+                        
+                        // Grid of Billing Functionalities
+                        LazyVGrid(columns: [
+                            GridItem(.flexible(), spacing: 16),
+                            GridItem(.flexible(), spacing: 16)
+                        ], spacing: theme.spacing.md) {
+                            ForEach(billingFunctionalities) { functionality in
+                                FunctionalityCardButton(
+                                    functionality: functionality,
+                                    onTap: {
+                                        onFunctionalitySelected(functionality)
+                                    }
+                                )
+                            }
                         }
+                        .padding(.horizontal, theme.spacing.md)
                     }
-                    .padding(.horizontal, theme.spacing.md)
+                    .padding(.vertical, theme.spacing.md)
                 }
-                .padding(.vertical, theme.spacing.md)
             }
-            .background(theme.colorPalette.background)
             .navigationTitle("Billing")
             .navigationBarTitleDisplayMode(.large)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
+            .scrollContentBackground(.hidden)
+            .onAppear {
+                configureNavigationBarAppearance()
+            }
+            .onChange(of: themeManager.currentThemeType) { _ in
+                configureNavigationBarAppearance()
+            }
         }
     }
     
@@ -159,5 +174,21 @@ struct BillingView: View {
             .cornerRadius(theme.cornerRadius.small)
         }
         .buttonStyle(PlainButtonStyle())
+    }
+    
+    private func configureNavigationBarAppearance() {
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.backgroundColor = UIColor(theme.colorPalette.surface)
+        navBarAppearance.largeTitleTextAttributes = [
+            .foregroundColor: UIColor(theme.colorPalette.textPrimary)
+        ]
+        navBarAppearance.titleTextAttributes = [
+            .foregroundColor: UIColor(theme.colorPalette.textPrimary)
+        ]
+        
+        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        UINavigationBar.appearance().compactAppearance = navBarAppearance
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct MainTabView: View {
     @EnvironmentObject var themeManager: ThemeManager
@@ -71,5 +72,25 @@ struct MainTabView: View {
             .tag(3)
         }
         .accentColor(theme.colorPalette.primary)
+        .toolbarBackground(theme.colorPalette.surface, for: .tabBar)
+        .toolbarBackground(.visible, for: .tabBar)
+        .onChange(of: themeManager.currentThemeType) { _ in
+            // Update TabBar appearance when theme changes
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithOpaqueBackground()
+            tabBarAppearance.backgroundColor = UIColor(theme.colorPalette.surface)
+            
+            UITabBar.appearance().standardAppearance = tabBarAppearance
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        }
+        .onAppear {
+            // Configure TabBar appearance on first load
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithOpaqueBackground()
+            tabBarAppearance.backgroundColor = UIColor(theme.colorPalette.surface)
+            
+            UITabBar.appearance().standardAppearance = tabBarAppearance
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct HomeView: View {
     @EnvironmentObject var themeManager: ThemeManager
@@ -20,23 +21,37 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(spacing: theme.spacing.lg) {
-                    // Welcome Header
-                    welcomeHeader
-                    
-                    // Summary Cards
-                    summaryCardsSection
-                    
-                    // Quick Access
-                    quickAccessSection
+            ZStack {
+                // Background that extends everywhere
+                theme.colorPalette.background
+                    .ignoresSafeArea(edges: .all)
+                
+                ScrollView {
+                    VStack(spacing: theme.spacing.lg) {
+                        // Welcome Header
+                        welcomeHeader
+                        
+                        // Summary Cards
+                        summaryCardsSection
+                        
+                        // Quick Access
+                        quickAccessSection
+                    }
+                    .padding(theme.spacing.md)
                 }
-                .padding(theme.spacing.md)
             }
-            .background(theme.colorPalette.background)
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.large)
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
+            .scrollContentBackground(.hidden)
+            .onAppear {
+                configureNavigationBarAppearance()
+            }
+            .onChange(of: themeManager.currentThemeType) { _ in
+                configureNavigationBarAppearance()
+            }
         }
     }
     
@@ -150,5 +165,21 @@ struct HomeView: View {
                 }
             }
         }
+    }
+    
+    private func configureNavigationBarAppearance() {
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.backgroundColor = UIColor(theme.colorPalette.surface)
+        navBarAppearance.largeTitleTextAttributes = [
+            .foregroundColor: UIColor(theme.colorPalette.textPrimary)
+        ]
+        navBarAppearance.titleTextAttributes = [
+            .foregroundColor: UIColor(theme.colorPalette.textPrimary)
+        ]
+        
+        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        UINavigationBar.appearance().compactAppearance = navBarAppearance
     }
 }
