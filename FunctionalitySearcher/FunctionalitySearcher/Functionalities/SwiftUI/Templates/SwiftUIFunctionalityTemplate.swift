@@ -13,45 +13,51 @@ struct SwiftUIFunctionalityTemplate: View {
     
     var body: some View {
         SwiftUIFunctionalityScaffold(title: functionality.name, onDismiss: onDismiss) {
-            ZStack(alignment: .topTrailing) {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text(functionality.description)
-                        .font(.body)
-                        .foregroundColor(.secondary)
-                    
-                    HStack {
-                        Text("Category:")
-                            .font(.caption)
+            VStack(alignment: .leading, spacing: 12) {
+                // Header with icon
+                HStack(alignment: .top) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text(functionality.description)
+                            .font(.body)
                             .foregroundColor(.secondary)
-                        Text(functionality.category)
-                            .font(.caption)
-                            .fontWeight(.semibold)
-                            .foregroundColor(categoryColor)
-                    }
-                    
-                    HStack {
-                        Text("Code:")
-                            .font(.caption)
+                        
+                        HStack {
+                            Text("Category:")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                            Text(functionality.category)
+                                .font(.caption)
+                                .fontWeight(.semibold)
+                                .foregroundColor(categoryColor)
+                        }
+                        
+                        HStack {
+                            Text("Code:")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                            Text(functionality.code)
+                                .font(.caption)
+                                .fontWeight(.semibold)
+                        }
+                        
+                        Text("Path: \(functionality.path)")
+                            .font(.caption2)
                             .foregroundColor(.secondary)
-                        Text(functionality.code)
-                            .font(.caption)
-                            .fontWeight(.semibold)
+                            .padding(.top, 4)
                     }
                     
-                    Text("Path: \(functionality.path)")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
-                        .padding(.top, 4)
-                    }
-                .padding()
-                .background(Color(.systemBackground))
-                .cornerRadius(12)
-                
-                Image(systemName: categoryIcon)
-                    .font(.system(size: 34))
-                    .foregroundColor(categoryColor)
-                    .padding(12)
+                    Spacer()
+                    
+                    // Icon positioned to the right
+                    Image(systemName: categoryIcon)
+                        .font(.system(size: 34))
+                        .foregroundColor(categoryColor)
+                        .frame(width: 50, height: 50)
                 }
+            }
+            .padding()
+            .background(Color(.systemBackground))
+            .cornerRadius(12)
         }
     }
     
