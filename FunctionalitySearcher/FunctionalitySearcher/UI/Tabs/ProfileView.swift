@@ -23,58 +23,56 @@ struct ProfileView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                // Background that extends everywhere
-                theme.colorPalette.background
-                    .ignoresSafeArea(edges: .all)
-                
-                ScrollView {
-                    VStack(spacing: theme.spacing.lg) {
-                        // User Header
-                        userHeader
-                        
-                        // Account Summary
-                        accountSummary
-                        
-                        // Profile Functionalities Title
-                        Text("Profile Management")
-                            .font(theme.typography.title)
-                            .foregroundColor(theme.colorPalette.textPrimary)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.horizontal, theme.spacing.md)
-                        
-                        // Grid of Profile Functionalities
-                        LazyVGrid(columns: [
-                            GridItem(.flexible(), spacing: 16),
-                            GridItem(.flexible(), spacing: 16)
-                        ], spacing: theme.spacing.md) {
-                            ForEach(profileFunctionalities) { functionality in
-                                FunctionalityCardButton(
-                                    functionality: functionality,
-                                    onTap: {
-                                        onFunctionalitySelected(functionality)
-                                    }
-                                )
-                            }
-                        }
+        ZStack {
+            // Background that extends everywhere
+            theme.colorPalette.background
+                .ignoresSafeArea(edges: .all)
+            
+            ScrollView {
+                VStack(spacing: theme.spacing.lg) {
+                    // User Header
+                    userHeader
+                    
+                    // Account Summary
+                    accountSummary
+                    
+                    // Profile Functionalities Title
+                    Text("Profile Management")
+                        .font(theme.typography.title)
+                        .foregroundColor(theme.colorPalette.textPrimary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal, theme.spacing.md)
+                    
+                    // Grid of Profile Functionalities
+                    LazyVGrid(columns: [
+                        GridItem(.flexible(), spacing: 16),
+                        GridItem(.flexible(), spacing: 16)
+                    ], spacing: theme.spacing.md) {
+                        ForEach(profileFunctionalities) { functionality in
+                            FunctionalityCardButton(
+                                functionality: functionality,
+                                onTap: {
+                                    onFunctionalitySelected(functionality)
+                                }
+                            )
+                        }
                     }
-                    .padding(.vertical, theme.spacing.md)
+                    .padding(.horizontal, theme.spacing.md)
                 }
+                .padding(.vertical, theme.spacing.md)
             }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
-            .scrollContentBackground(.hidden)
-            .onAppear {
-                configureNavigationBarAppearance()
-            }
-            .onChange(of: themeManager.currentThemeType) { _ in
-                configureNavigationBarAppearance()
-            }
+        }
+        .navigationTitle("Profile")
+        .navigationBarTitleDisplayMode(.large)
+        .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
+        .scrollContentBackground(.hidden)
+        .onAppear {
+            configureNavigationBarAppearance()
+        }
+        .onChange(of: themeManager.currentThemeType) { _ in
+            configureNavigationBarAppearance()
         }
     }
     

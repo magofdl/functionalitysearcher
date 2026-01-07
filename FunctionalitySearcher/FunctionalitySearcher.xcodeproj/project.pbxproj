@@ -103,6 +103,11 @@
 		87A99F002F0EF97C00042EF2 /* FunctionalityCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EFA2F0EF97C00042EF2 /* FunctionalityCardButton.swift */; };
 		87A99F012F0EF97C00042EF2 /* FunctionalityGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EFB2F0EF97C00042EF2 /* FunctionalityGridView.swift */; };
 		87A99F042F0EF9B700042EF2 /* FunctionalityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99F032F0EF9B700042EF2 /* FunctionalityService.swift */; };
+		87A99F0A2F0EFF0C00042EF2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99F052F0EFF0B00042EF2 /* HomeCoordinator.swift */; };
+		87A99F0B2F0EFF0C00042EF2 /* BillingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99F062F0EFF0B00042EF2 /* BillingCoordinator.swift */; };
+		87A99F0C2F0EFF0C00042EF2 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99F072F0EFF0C00042EF2 /* SearchCoordinator.swift */; };
+		87A99F0D2F0EFF0C00042EF2 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99F082F0EFF0C00042EF2 /* TabCoordinator.swift */; };
+		87A99F0E2F0EFF0C00042EF2 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99F092F0EFF0C00042EF2 /* ProfileCoordinator.swift */; };
 		87EB9A7B2F0D7DFF00E2717E /* FunctionalityDataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A7A2F0D7DFF00E2717E /* FunctionalityDataResolver.swift */; };
 		87EB9A872F0D809000E2717E /* FunctionalityDataResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */; };
 		87EB9A882F0D809000E2717E /* ExternalDataFunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */; };
@@ -220,6 +225,11 @@
 		87A99EFA2F0EF97C00042EF2 /* FunctionalityCardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityCardButton.swift; sourceTree = "<group>"; };
 		87A99EFB2F0EF97C00042EF2 /* FunctionalityGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityGridView.swift; sourceTree = "<group>"; };
 		87A99F032F0EF9B700042EF2 /* FunctionalityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityService.swift; sourceTree = "<group>"; };
+		87A99F052F0EFF0B00042EF2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		87A99F062F0EFF0B00042EF2 /* BillingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingCoordinator.swift; sourceTree = "<group>"; };
+		87A99F072F0EFF0C00042EF2 /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		87A99F082F0EFF0C00042EF2 /* TabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		87A99F092F0EFF0C00042EF2 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		87EB9A7A2F0D7DFF00E2717E /* FunctionalityDataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityDataResolver.swift; sourceTree = "<group>"; };
 		87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityDataResolverTests.swift; sourceTree = "<group>"; };
 		87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalDataFunctionalityTests.swift; sourceTree = "<group>"; };
@@ -352,6 +362,11 @@
 		8724B9852F0C2EA700E6D8D0 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				87A99F062F0EFF0B00042EF2 /* BillingCoordinator.swift */,
+				87A99F052F0EFF0B00042EF2 /* HomeCoordinator.swift */,
+				87A99F092F0EFF0C00042EF2 /* ProfileCoordinator.swift */,
+				87A99F072F0EFF0C00042EF2 /* SearchCoordinator.swift */,
+				87A99F082F0EFF0C00042EF2 /* TabCoordinator.swift */,
 				8724B9862F0C2EA700E6D8D0 /* AppCoordinator.swift */,
 				8724B9872F0C2EA700E6D8D0 /* FunctionalityCoordinator.swift */,
 			);
@@ -692,6 +707,7 @@
 			files = (
 				87A99EDA2F0EB0E700042EF2 /* UserSubscriptionViewComposerUI.swift in Sources */,
 				87A99E932F0EB0B900042EF2 /* ChangePasswordView.swift in Sources */,
+				87A99F0D2F0EFF0C00042EF2 /* TabCoordinator.swift in Sources */,
 				87A99F042F0EF9B700042EF2 /* FunctionalityService.swift in Sources */,
 				87A99EB02F0EB0CC00042EF2 /* GetCertificateViewController.swift in Sources */,
 				8724B9AF2F0C2EA800E6D8D0 /* SwiftUIFunctionalityTemplate.swift in Sources */,
@@ -699,6 +715,7 @@
 				8724B9AE2F0C2EA800E6D8D0 /* BaseFunctionalityView.swift in Sources */,
 				87A99ED72F0EB0E700042EF2 /* ChangePasswordViewComposerUI.swift in Sources */,
 				8724B9AB2F0C2EA800E6D8D0 /* UIKitFunctionalityTemplate.swift in Sources */,
+				87A99F0A2F0EFF0C00042EF2 /* HomeCoordinator.swift in Sources */,
 				87A99E9C2F0EB0B900042EF2 /* UserSubscriptionView.swift in Sources */,
 				87EB9ABF2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift in Sources */,
 				87A99ECF2F0EB0E600042EF2 /* DownloadCertificateViewControllerComposerUI.swift in Sources */,
@@ -757,6 +774,7 @@
 				87A99EF22F0EB99900042EF2 /* DesignSystemShowcase.swift in Sources */,
 				87A99ED02F0EB0E600042EF2 /* ReturnHistoryViewComposerUI.swift in Sources */,
 				87A99ECE2F0EB0E600042EF2 /* ActiveCertificatesViewComposerUI.swift in Sources */,
+				87A99F0C2F0EFF0C00042EF2 /* SearchCoordinator.swift in Sources */,
 				87A99ED42F0EB0E700042EF2 /* SearchProductsViewControllerComposerUI.swift in Sources */,
 				87A99EDB2F0EB0E700042EF2 /* ReturnStatusViewControllerComposerUI.swift in Sources */,
 				87A99E992F0EB0B900042EF2 /* ReturnHistoryView.swift in Sources */,
@@ -767,6 +785,7 @@
 				8724B9AA2F0C2EA800E6D8D0 /* FunctionalityViewControllerProtocol.swift in Sources */,
 				87A99ED82F0EB0E700042EF2 /* TrackShipmentViewComposerUI.swift in Sources */,
 				87A99EB12F0EB0CC00042EF2 /* ReturnStatusViewController.swift in Sources */,
+				87A99F0B2F0EFF0C00042EF2 /* BillingCoordinator.swift in Sources */,
 				87A99EAE2F0EB0CC00042EF2 /* DownloadCertificateViewController.swift in Sources */,
 				8724B9A12F0C2EA800E6D8D0 /* AppCoordinator.swift in Sources */,
 				87A99E9A2F0EB0B900042EF2 /* TrackReturnView.swift in Sources */,
@@ -774,6 +793,7 @@
 				87A99EFC2F0EF97C00042EF2 /* ProfileView.swift in Sources */,
 				87A99F002F0EF97C00042EF2 /* FunctionalityCardButton.swift in Sources */,
 				87A99EA82F0EB0CC00042EF2 /* UserAccountDetailsViewController.swift in Sources */,
+				87A99F0E2F0EFF0C00042EF2 /* ProfileCoordinator.swift in Sources */,
 				87EB9A7B2F0D7DFF00E2717E /* FunctionalityDataResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

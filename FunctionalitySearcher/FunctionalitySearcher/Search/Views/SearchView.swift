@@ -26,60 +26,58 @@ struct SearchView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                // Background that extends everywhere
-                theme.colorPalette.background
-                    .ignoresSafeArea(edges: .all)
-                
-                VStack(spacing: 0) {
-                    // Fixed header section
-                    VStack(spacing: theme.spacing.md) {
-                        // Theme Picker
-                        themePickerSection
-                        
-                    // Search bar
-                        searchBarSection
-                    }
-                    .background(theme.colorPalette.background)
+        ZStack {
+            // Background that extends everywhere
+            theme.colorPalette.background
+                .ignoresSafeArea(edges: .all)
+            
+            VStack(spacing: 0) {
+                // Fixed header section
+                VStack(spacing: theme.spacing.md) {
+                    // Theme Picker
+                    themePickerSection
                     
-                    // Scrollable content
-                    contentSection
+                // Search bar
+                    searchBarSection
                 }
+                .background(theme.colorPalette.background)
+                
+                // Scrollable content
+                contentSection
             }
-            .navigationTitle("Functionality Searcher")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
-            .scrollContentBackground(.hidden)
-            .onAppear {
-                configureNavigationBarAppearance()
-            }
-            .onChange(of: themeManager.currentThemeType) { _ in
-                configureNavigationBarAppearance()
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    if isSearchFieldFocused {
-                        Button {
-                            isSearchFieldFocused = false
-                        } label: {
-                            Image(systemName: "keyboard.chevron.compact.down")
-                                .foregroundColor(theme.colorPalette.primary)
-                        }
-                    }
-                }
-            }
-            .gesture(
-                TapGesture()
-                    .onEnded { _ in
-                        if isSearchFieldFocused {
-                            isSearchFieldFocused = false
-                        }
-                    }
-            )
         }
+        .navigationTitle("Functionality Searcher")
+        .navigationBarTitleDisplayMode(.large)
+        .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
+        .scrollContentBackground(.hidden)
+        .onAppear {
+            configureNavigationBarAppearance()
+        }
+        .onChange(of: themeManager.currentThemeType) { _ in
+            configureNavigationBarAppearance()
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                if isSearchFieldFocused {
+                    Button {
+                        isSearchFieldFocused = false
+                    } label: {
+                        Image(systemName: "keyboard.chevron.compact.down")
+                            .foregroundColor(theme.colorPalette.primary)
+                    }
+                }
+            }
+        }
+        .gesture(
+            TapGesture()
+                .onEnded { _ in
+                    if isSearchFieldFocused {
+                        isSearchFieldFocused = false
+                    }
+                }
+        )
     }
     
     // MARK: - View Sections

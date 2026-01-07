@@ -20,38 +20,36 @@ struct HomeView: View {
     let onSeeAllTapped: () -> Void
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                // Background that extends everywhere
-                theme.colorPalette.background
-                    .ignoresSafeArea(edges: .all)
-                
-                ScrollView {
-                    VStack(spacing: theme.spacing.lg) {
-                        // Welcome Header
-                        welcomeHeader
-                        
-                        // Summary Cards
-                        summaryCardsSection
-                        
-                        // Quick Access
-                        quickAccessSection
-                    }
-                    .padding(theme.spacing.md)
+        ZStack {
+            // Background that extends everywhere
+            theme.colorPalette.background
+                .ignoresSafeArea(edges: .all)
+            
+            ScrollView {
+                VStack(spacing: theme.spacing.lg) {
+                    // Welcome Header
+                    welcomeHeader
+                    
+                    // Summary Cards
+                    summaryCardsSection
+                    
+                    // Quick Access
+                    quickAccessSection
                 }
+                .padding(theme.spacing.md)
             }
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
-            .scrollContentBackground(.hidden)
-            .onAppear {
-                configureNavigationBarAppearance()
-            }
-            .onChange(of: themeManager.currentThemeType) { _ in
-                configureNavigationBarAppearance()
-            }
+        }
+        .navigationTitle("Home")
+        .navigationBarTitleDisplayMode(.large)
+        .toolbarBackground(theme.colorPalette.surface, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarColorScheme(themeManager.currentThemeType == .dark ? .dark : .light, for: .navigationBar)
+        .scrollContentBackground(.hidden)
+        .onAppear {
+            configureNavigationBarAppearance()
+        }
+        .onChange(of: themeManager.currentThemeType) { _ in
+            configureNavigationBarAppearance()
         }
     }
     
