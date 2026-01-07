@@ -35,10 +35,10 @@ final class FunctionalityViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testUIKitFunctionality1Initialization() {
+    func testDownloadInvoiceViewControllerInitialization() {
         var dismissCalled = false
         
-        let viewController = UIKitFunctionality1(
+        let viewController = DownloadInvoiceViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: { dismissCalled = true }
@@ -51,8 +51,8 @@ final class FunctionalityViewControllerTests: XCTestCase {
         XCTAssertTrue(dismissCalled)
     }
     
-    func testUIKitFunctionality2Initialization() {
-        let viewController = UIKitFunctionality2(
+    func testInitiateReturnViewControllerInitialization() {
+        let viewController = InitiateReturnViewController(
             functionality: functionality,
             userId: context.userId,
             timestamp: context.timestamp,
@@ -62,8 +62,8 @@ final class FunctionalityViewControllerTests: XCTestCase {
         XCTAssertEqual(viewController.functionality.code, functionality.code)
     }
     
-    func testUIKitFunctionality3Initialization() {
-        let viewController = UIKitFunctionality3(
+    func testGetCertificateViewControllerInitialization() {
+        let viewController = GetCertificateViewController(
             functionality: functionality,
             userId: context.userId,
             region: context.region,
@@ -73,8 +73,8 @@ final class FunctionalityViewControllerTests: XCTestCase {
         XCTAssertEqual(viewController.functionality.code, functionality.code)
     }
     
-    func testUIKitFunctionality4Initialization() {
-        let viewController = UIKitFunctionality4(
+    func testEditProfileViewControllerInitialization() {
+        let viewController = EditProfileViewController(
             functionality: functionality,
             userId: context.userId,
             userEmail: context.userEmail,
@@ -84,8 +84,8 @@ final class FunctionalityViewControllerTests: XCTestCase {
         XCTAssertEqual(viewController.functionality.code, functionality.code)
     }
     
-    func testUIKitFunctionality5Initialization() {
-        let viewController = UIKitFunctionality5(
+    func testSearchProductsViewControllerInitialization() {
+        let viewController = SearchProductsViewController(
             functionality: functionality,
             userId: context.userId,
             contractCount: context.contractCount,
@@ -96,7 +96,7 @@ final class FunctionalityViewControllerTests: XCTestCase {
     }
     
     func testBaseFunctionalityViewControllerProperties() {
-        let viewController = UIKitFunctionality1(
+        let viewController = DownloadInvoiceViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: {}
@@ -110,7 +110,7 @@ final class FunctionalityViewControllerTests: XCTestCase {
     func testBaseFunctionalityViewControllerOnDismiss() {
         var dismissCount = 0
         
-        let viewController = UIKitFunctionality1(
+        let viewController = DownloadInvoiceViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: { dismissCount += 1 }

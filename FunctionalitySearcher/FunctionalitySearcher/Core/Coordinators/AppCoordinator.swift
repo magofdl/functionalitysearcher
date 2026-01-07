@@ -13,8 +13,8 @@ class AppCoordinator {
         
         // Configure data resolvers for functionalities that need external data
         let dataResolvers: [String: FunctionalityDataResolver] = [
-            "PROF_011": SwiftUIFunctionality11DataResolver(),
-            "PROF_010": UIKitFunctionality10DataResolver()
+            "PROF_011": UserSubscriptionViewDataResolver(),
+            "PROF_010": UserAccountDetailsViewControllerDataResolver()
         ]
         
         self.functionalityFactory = ConcreteFunctionalityFactory(dataResolvers: dataResolvers)

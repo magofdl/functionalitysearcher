@@ -15,65 +15,65 @@ class ConcreteFunctionalityFactory: FunctionalityFactoryProtocol {
         var registry: [String: ViewControllerCreator] = [:]
         
         registry["BILL_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality1ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            DownloadInvoiceViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["RET_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality2ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            InitiateReturnViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["CERT_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality3ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            GetCertificateViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROF_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality4ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            EditProfileViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROD_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality5ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            SearchProductsViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["ORD_001"] = { functionality, context, onDismiss in
-            UIKitFunctionality6ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            ViewOrdersViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["BILL_003"] = { functionality, context, onDismiss in
-            UIKitFunctionality7ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            MonthlyBillingViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["RET_003"] = { functionality, context, onDismiss in
-            UIKitFunctionality8ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            ReturnStatusViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["CERT_003"] = { functionality, context, onDismiss in
-            UIKitFunctionality9ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            DownloadCertificateViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROF_003"] = { functionality, context, onDismiss in
-            UIKitFunctionality10ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            ViewPersonalInfoViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         
         registry["BILL_002"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality1ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            InvoiceHistoryViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["RET_002"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality2ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            TrackReturnViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["CERT_002"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality3ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            RenewCertificateViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROF_002"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality4ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            ChangePasswordViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROD_002"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality5ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            ProductDetailsViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["ORD_002"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality6ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            TrackShipmentViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["BILL_004"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality7ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            ExportInvoicesViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["RET_004"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality8ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            ReturnHistoryViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["CERT_004"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality9ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            ActiveCertificatesViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         registry["PROF_004"] = { functionality, context, onDismiss in
-            SwiftUIFunctionality10ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            NotificationSettingsViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         
         return registry
@@ -82,16 +82,16 @@ class ConcreteFunctionalityFactory: FunctionalityFactoryProtocol {
     private static var creatorsWithData: [String: ViewControllerCreatorWithData] = {
         var registry: [String: ViewControllerCreatorWithData] = [:]
         
-        // SwiftUIFunctionality11 with external data
+        // UserSubscriptionView with external data
         registry["PROF_011"] = { functionality, context, additionalData, onDismiss in
             // The functionality already has merged arguments from the resolver
-            SwiftUIFunctionality11ComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            UserSubscriptionViewComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         
-        // UIKitFunctionality10 with external data (using a new code to differentiate)
+        // UserAccountDetailsViewController with external data (using a new code to differentiate)
         registry["PROF_010"] = { functionality, context, additionalData, onDismiss in
             // The functionality already has merged arguments from the resolver
-            UIKitFunctionality10WithExternalDataComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
+            UserAccountDetailsViewControllerComposerUI.make(functionality: functionality, context: context, onDismiss: onDismiss)
         }
         
         return registry

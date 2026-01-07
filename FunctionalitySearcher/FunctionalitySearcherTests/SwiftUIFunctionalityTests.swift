@@ -35,10 +35,10 @@ final class SwiftUIFunctionalityTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSwiftUIFunctionality1Initialization() {
+    func testInvoiceHistoryViewInitialization() {
         var dismissCalled = false
         
-        let view = SwiftUIFunctionality1(
+        let view = InvoiceHistoryView(
             functionality: functionality,
             userId: context.userId,
             onDismiss: { dismissCalled = true }
@@ -52,8 +52,8 @@ final class SwiftUIFunctionalityTests: XCTestCase {
         XCTAssertTrue(dismissCalled)
     }
     
-    func testSwiftUIFunctionality2Initialization() {
-        let view = SwiftUIFunctionality2(
+    func testTrackReturnViewInitialization() {
+        let view = TrackReturnView(
             functionality: functionality,
             userId: context.userId,
             timestamp: context.timestamp,
@@ -65,8 +65,8 @@ final class SwiftUIFunctionalityTests: XCTestCase {
         XCTAssertEqual(view.timestamp, context.timestamp)
     }
     
-    func testSwiftUIFunctionality3Initialization() {
-        let view = SwiftUIFunctionality3(
+    func testRenewCertificateViewInitialization() {
+        let view = RenewCertificateView(
             functionality: functionality,
             userId: context.userId,
             region: context.region,
@@ -78,8 +78,8 @@ final class SwiftUIFunctionalityTests: XCTestCase {
         XCTAssertEqual(view.region, context.region)
     }
     
-    func testSwiftUIFunctionality4Initialization() {
-        let view = SwiftUIFunctionality4(
+    func testChangePasswordViewInitialization() {
+        let view = ChangePasswordView(
             functionality: functionality,
             userId: context.userId,
             userEmail: context.userEmail,
@@ -91,8 +91,8 @@ final class SwiftUIFunctionalityTests: XCTestCase {
         XCTAssertEqual(view.userEmail, context.userEmail)
     }
     
-    func testSwiftUIFunctionality5Initialization() {
-        let view = SwiftUIFunctionality5(
+    func testProductDetailsViewInitialization() {
+        let view = ProductDetailsView(
             functionality: functionality,
             userId: context.userId,
             contractCount: context.contractCount,
@@ -114,7 +114,7 @@ final class SwiftUIFunctionalityTests: XCTestCase {
             userRole: nil
         )
         
-        let view4 = SwiftUIFunctionality4(
+        let view4 = ChangePasswordView(
             functionality: functionality,
             userId: contextWithNil.userId,
             userEmail: contextWithNil.userEmail,
@@ -123,7 +123,7 @@ final class SwiftUIFunctionalityTests: XCTestCase {
         
         XCTAssertNil(view4.userEmail)
         
-        let view10 = SwiftUIFunctionality10(
+        let view10 = InvoiceHistoryView0(
             functionality: functionality,
             userId: contextWithNil.userId,
             userRole: contextWithNil.userRole,

@@ -22,10 +22,10 @@ final class FunctionalityDataResolverTests: XCTestCase {
         super.tearDown()
     }
     
-    // MARK: - SwiftUIFunctionality11DataResolver Tests
+    // MARK: - InvoiceHistoryView1DataResolver Tests
     
-    func testSwiftUIFunctionality11DataResolverResolvesData() {
-        let resolver = SwiftUIFunctionality11DataResolver()
+    func testInvoiceHistoryView1DataResolverResolvesData() {
+        let resolver = InvoiceHistoryView1DataResolver()
         let functionality = createMockFunctionality(code: "PROF_011")
         
         let data = resolver.resolveData(for: functionality, context: context)
@@ -37,8 +37,8 @@ final class FunctionalityDataResolverTests: XCTestCase {
         XCTAssertNotNil(data["accountBalance"], "Should include accountBalance")
     }
     
-    func testSwiftUIFunctionality11DataResolverUserPreferences() {
-        let resolver = SwiftUIFunctionality11DataResolver()
+    func testInvoiceHistoryView1DataResolverUserPreferences() {
+        let resolver = InvoiceHistoryView1DataResolver()
         let functionality = createMockFunctionality(code: "PROF_011")
         
         let data = resolver.resolveData(for: functionality, context: context)
@@ -50,8 +50,8 @@ final class FunctionalityDataResolverTests: XCTestCase {
         XCTAssertNotNil(prefs?["notificationsEnabled"]?.boolValue, "Should have notificationsEnabled")
     }
     
-    func testSwiftUIFunctionality11DataResolverSubscriptionTier() {
-        let resolver = SwiftUIFunctionality11DataResolver()
+    func testInvoiceHistoryView1DataResolverSubscriptionTier() {
+        let resolver = InvoiceHistoryView1DataResolver()
         let functionality = createMockFunctionality(code: "PROF_011")
         
         let data = resolver.resolveData(for: functionality, context: context)
@@ -61,8 +61,8 @@ final class FunctionalityDataResolverTests: XCTestCase {
         XCTAssertFalse(tier!.isEmpty, "Subscription tier should not be empty")
     }
     
-    func testSwiftUIFunctionality11DataResolverAccountBalance() {
-        let resolver = SwiftUIFunctionality11DataResolver()
+    func testInvoiceHistoryView1DataResolverAccountBalance() {
+        let resolver = InvoiceHistoryView1DataResolver()
         let functionality = createMockFunctionality(code: "PROF_011")
         
         let data = resolver.resolveData(for: functionality, context: context)
@@ -72,10 +72,10 @@ final class FunctionalityDataResolverTests: XCTestCase {
         XCTAssertGreaterThan(balance!, 0, "Balance should be positive")
     }
     
-    // MARK: - UIKitFunctionality10DataResolver Tests
+    // MARK: - DownloadInvoiceViewController0DataResolver Tests
     
-    func testUIKitFunctionality10DataResolverResolvesData() {
-        let resolver = UIKitFunctionality10DataResolver()
+    func testDownloadInvoiceViewController0DataResolverResolvesData() {
+        let resolver = DownloadInvoiceViewController0DataResolver()
         let functionality = createMockFunctionality(code: "PROF_010")
         
         let data = resolver.resolveData(for: functionality, context: context)
@@ -87,8 +87,8 @@ final class FunctionalityDataResolverTests: XCTestCase {
         XCTAssertNotNil(data["isVIP"], "Should include isVIP")
     }
     
-    func testUIKitFunctionality10DataResolverOrderHistory() {
-        let resolver = UIKitFunctionality10DataResolver()
+    func testDownloadInvoiceViewController0DataResolverOrderHistory() {
+        let resolver = DownloadInvoiceViewController0DataResolver()
         let functionality = createMockFunctionality(code: "PROF_010")
         
         let data = resolver.resolveData(for: functionality, context: context)
@@ -103,8 +103,8 @@ final class FunctionalityDataResolverTests: XCTestCase {
         XCTAssertGreaterThan(totalOrders!, 0, "Total orders should be positive")
     }
     
-    func testUIKitFunctionality10DataResolverPaymentMethods() {
-        let resolver = UIKitFunctionality10DataResolver()
+    func testDownloadInvoiceViewController0DataResolverPaymentMethods() {
+        let resolver = DownloadInvoiceViewController0DataResolver()
         let functionality = createMockFunctionality(code: "PROF_010")
         
         let data = resolver.resolveData(for: functionality, context: context)
@@ -117,8 +117,8 @@ final class FunctionalityDataResolverTests: XCTestCase {
         XCTAssertNotNil(firstMethod, "Payment methods should be strings")
     }
     
-    func testUIKitFunctionality10DataResolverLoyaltyPoints() {
-        let resolver = UIKitFunctionality10DataResolver()
+    func testDownloadInvoiceViewController0DataResolverLoyaltyPoints() {
+        let resolver = DownloadInvoiceViewController0DataResolver()
         let functionality = createMockFunctionality(code: "PROF_010")
         
         let data = resolver.resolveData(for: functionality, context: context)
@@ -128,8 +128,8 @@ final class FunctionalityDataResolverTests: XCTestCase {
         XCTAssertGreaterThanOrEqual(points!, 0, "Loyalty points should be non-negative")
     }
     
-    func testUIKitFunctionality10DataResolverIsVIP() {
-        let resolver = UIKitFunctionality10DataResolver()
+    func testDownloadInvoiceViewController0DataResolverIsVIP() {
+        let resolver = DownloadInvoiceViewController0DataResolver()
         let functionality = createMockFunctionality(code: "PROF_010")
         
         let data = resolver.resolveData(for: functionality, context: context)

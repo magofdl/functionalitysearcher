@@ -38,7 +38,7 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         )
         
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIKitFunctionality1)
+        XCTAssertTrue(viewController is DownloadInvoiceViewController)
         XCTAssertFalse(dismissCalled)
     }
     
@@ -52,7 +52,7 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         )
         
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIHostingController<SwiftUIFunctionality1>)
+        XCTAssertTrue(viewController is UIHostingController<InvoiceHistoryView>)
     }
     
     func testCreateViewControllerForRET001() {
@@ -65,7 +65,7 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         )
         
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIKitFunctionality2)
+        XCTAssertTrue(viewController is InitiateReturnViewController)
     }
     
     func testCreateViewControllerForCERT001() {
@@ -78,7 +78,7 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         )
         
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIKitFunctionality3)
+        XCTAssertTrue(viewController is GetCertificateViewController)
     }
     
     func testCreateViewControllerForPROF001() {
@@ -91,7 +91,7 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         )
         
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIKitFunctionality4)
+        XCTAssertTrue(viewController is EditProfileViewController)
     }
     
     func testCreateViewControllerForPROD001() {
@@ -104,7 +104,7 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         )
         
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIKitFunctionality5)
+        XCTAssertTrue(viewController is SearchProductsViewController)
     }
     
     func testCreateViewControllerForUnknownCode() {
@@ -141,34 +141,34 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
             for: functionality,
             context: context,
             onDismiss: { dismissCalled = true }
-        ) as? UIKitFunctionality1
+        ) as? DownloadInvoiceViewController
         
         XCTAssertNotNil(viewController)
         viewController?.onDismiss?()
         XCTAssertTrue(dismissCalled)
     }
     
-    func testContextPassedToUIKitFunctionality1() {
+    func testContextPassedToDownloadInvoiceViewController() {
         let functionality = createMockFunctionality(code: "BILL_001", uiType: .uikit)
         
         let viewController = factory.createViewController(
             for: functionality,
             context: context,
             onDismiss: {}
-        ) as? UIKitFunctionality1
+        ) as? DownloadInvoiceViewController
         
         XCTAssertNotNil(viewController)
         XCTAssertEqual(viewController?.functionality.code, "BILL_001")
     }
     
-    func testContextPassedToSwiftUIFunctionality1() {
+    func testContextPassedToInvoiceHistoryView() {
         let functionality = createMockFunctionality(code: "BILL_002", uiType: .swiftui)
         
         let viewController = factory.createViewController(
             for: functionality,
             context: context,
             onDismiss: {}
-        ) as? UIHostingController<SwiftUIFunctionality1>
+        ) as? UIHostingController<InvoiceHistoryView>
         
         XCTAssertNotNil(viewController)
         XCTAssertEqual(viewController?.rootView.functionality.code, "BILL_002")
@@ -196,8 +196,8 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         XCTAssertNotNil(viewController)
     }
     
-    func testFactoryCreatesSwiftUIFunctionality11WithResolver() {
-        let resolver = SwiftUIFunctionality11DataResolver()
+    func testFactoryCreatesInvoiceHistoryView1WithResolver() {
+        let resolver = InvoiceHistoryView1DataResolver()
         let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
             "PROF_011": resolver
         ])
@@ -210,16 +210,16 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         )
         
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIHostingController<SwiftUIFunctionality11>)
+        XCTAssertTrue(viewController is UIHostingController<InvoiceHistoryView1>)
         
-        let hostingController = viewController as? UIHostingController<SwiftUIFunctionality11>
+        let hostingController = viewController as? UIHostingController<InvoiceHistoryView1>
         XCTAssertNotNil(hostingController)
         XCTAssertEqual(hostingController?.rootView.functionality.code, "PROF_011")
         XCTAssertEqual(hostingController?.rootView.userId, context.userId)
     }
     
-    func testFactoryCreatesUIKitFunctionality10WithExternalDataWithResolver() {
-        let resolver = UIKitFunctionality10DataResolver()
+    func testFactoryCreatesDownloadInvoiceViewController0WithExternalDataWithResolver() {
+        let resolver = DownloadInvoiceViewController0DataResolver()
         let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
             "PROF_010": resolver
         ])
@@ -232,9 +232,9 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         )
         
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIKitFunctionality10WithExternalData)
+        XCTAssertTrue(viewController is DownloadInvoiceViewController0WithExternalData)
         
-        let uikitVC = viewController as? UIKitFunctionality10WithExternalData
+        let uikitVC = viewController as? DownloadInvoiceViewController0WithExternalData
         XCTAssertNotNil(uikitVC)
         XCTAssertEqual(uikitVC?.functionality.code, "PROF_010")
     }
@@ -293,10 +293,10 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
             onDismiss: {}
         )
         
-        // Should still create UIKitFunctionality1 even with resolver
+        // Should still create DownloadInvoiceViewController even with resolver
         // because BILL_001 has a standard creator
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIKitFunctionality1)
+        XCTAssertTrue(viewController is DownloadInvoiceViewController)
     }
     
     func testFactoryWorksWithoutResolvers() {
@@ -309,7 +309,7 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         )
         
         XCTAssertNotNil(viewController)
-        XCTAssertTrue(viewController is UIKitFunctionality1)
+        XCTAssertTrue(viewController is DownloadInvoiceViewController)
     }
     
     func testFactoryWithResolverButNoCreatorFallsBackToDefault() {
@@ -333,8 +333,8 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         XCTAssertTrue(viewController is UIKitFunctionalityTemplate)
     }
     
-    func testSwiftUIFunctionality11ReceivesExternalData() {
-        let resolver = SwiftUIFunctionality11DataResolver()
+    func testInvoiceHistoryView1ReceivesExternalData() {
+        let resolver = InvoiceHistoryView1DataResolver()
         let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
             "PROF_011": resolver
         ])
@@ -344,7 +344,7 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
             for: functionality,
             context: context,
             onDismiss: {}
-        ) as? UIHostingController<SwiftUIFunctionality11>
+        ) as? UIHostingController<InvoiceHistoryView1>
         
         XCTAssertNotNil(viewController)
         
@@ -355,8 +355,8 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
         XCTAssertNotNil(functionalityWithData?.arguments["accountBalance"])
     }
     
-    func testUIKitFunctionality10WithExternalDataReceivesExternalData() {
-        let resolver = UIKitFunctionality10DataResolver()
+    func testDownloadInvoiceViewController0WithExternalDataReceivesExternalData() {
+        let resolver = DownloadInvoiceViewController0DataResolver()
         let factoryWithResolver = ConcreteFunctionalityFactory(dataResolvers: [
             "PROF_010": resolver
         ])
@@ -366,7 +366,7 @@ final class ConcreteFunctionalityFactoryTests: XCTestCase {
             for: functionality,
             context: context,
             onDismiss: {}
-        ) as? UIKitFunctionality10WithExternalData
+        ) as? DownloadInvoiceViewController0WithExternalData
         
         XCTAssertNotNil(viewController)
         

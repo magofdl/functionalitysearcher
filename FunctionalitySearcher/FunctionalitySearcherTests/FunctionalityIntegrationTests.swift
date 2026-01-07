@@ -27,7 +27,7 @@ final class FunctionalityIntegrationTests: XCTestCase {
         super.tearDown()
     }
     
-    func testFullFlowUIKitFunctionality1() {
+    func testFullFlowDownloadInvoiceViewController() {
         let functionality = Functionality(
             id: "BILL_001",
             code: "BILL_001",
@@ -44,7 +44,7 @@ final class FunctionalityIntegrationTests: XCTestCase {
             for: functionality,
             context: context,
             onDismiss: { dismissCalled = true }
-        ) as? UIKitFunctionality1
+        ) as? DownloadInvoiceViewController
         
         XCTAssertNotNil(viewController)
         XCTAssertEqual(viewController?.functionality.code, "BILL_001")
@@ -54,7 +54,7 @@ final class FunctionalityIntegrationTests: XCTestCase {
         XCTAssertTrue(dismissCalled)
     }
     
-    func testFullFlowSwiftUIFunctionality1() {
+    func testFullFlowInvoiceHistoryView() {
         let functionality = Functionality(
             id: "BILL_002",
             code: "BILL_002",
@@ -70,14 +70,14 @@ final class FunctionalityIntegrationTests: XCTestCase {
             for: functionality,
             context: context,
             onDismiss: {}
-        ) as? UIHostingController<SwiftUIFunctionality1>
+        ) as? UIHostingController<InvoiceHistoryView>
         
         XCTAssertNotNil(viewController)
         XCTAssertEqual(viewController?.rootView.functionality.code, "BILL_002")
         XCTAssertEqual(viewController?.rootView.userId, context.userId)
     }
     
-    func testContextValuesPassedToUIKitFunctionality2() {
+    func testContextValuesPassedToInitiateReturnViewController() {
         let functionality = Functionality(
             id: "RET_001",
             code: "RET_001",
@@ -93,13 +93,13 @@ final class FunctionalityIntegrationTests: XCTestCase {
             for: functionality,
             context: context,
             onDismiss: {}
-        ) as? UIKitFunctionality2
+        ) as? InitiateReturnViewController
         
         XCTAssertNotNil(viewController)
         XCTAssertEqual(viewController?.functionality.code, "RET_001")
     }
     
-    func testContextValuesPassedToSwiftUIFunctionality2() {
+    func testContextValuesPassedToTrackReturnView() {
         let functionality = Functionality(
             id: "RET_002",
             code: "RET_002",
@@ -115,7 +115,7 @@ final class FunctionalityIntegrationTests: XCTestCase {
             for: functionality,
             context: context,
             onDismiss: {}
-        ) as? UIHostingController<SwiftUIFunctionality2>
+        ) as? UIHostingController<TrackReturnView>
         
         XCTAssertNotNil(viewController)
         XCTAssertEqual(viewController?.rootView.userId, context.userId)
@@ -190,13 +190,13 @@ final class FunctionalityIntegrationTests: XCTestCase {
             for: functionality,
             context: context1,
             onDismiss: {}
-        ) as? UIKitFunctionality1
+        ) as? DownloadInvoiceViewController
         
         let viewController2 = factory.createViewController(
             for: functionality,
             context: context2,
             onDismiss: {}
-        ) as? UIKitFunctionality1
+        ) as? DownloadInvoiceViewController
         
         XCTAssertNotNil(viewController1)
         XCTAssertNotNil(viewController2)

@@ -32,26 +32,6 @@
 		8724B9AD2F0C2EA800E6D8D0 /* BaseFunctionalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9992F0C2EA800E6D8D0 /* BaseFunctionalityViewController.swift */; };
 		8724B9AE2F0C2EA800E6D8D0 /* BaseFunctionalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B99A2F0C2EA800E6D8D0 /* BaseFunctionalityView.swift */; };
 		8724B9AF2F0C2EA800E6D8D0 /* SwiftUIFunctionalityTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B99D2F0C2EA800E6D8D0 /* SwiftUIFunctionalityTemplate.swift */; };
-		8724B9BA2F0C463100E6D8D0 /* UIKitFunctionality8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B02F0C463100E6D8D0 /* UIKitFunctionality8.swift */; };
-		8724B9BB2F0C463100E6D8D0 /* UIKitFunctionality9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B12F0C463100E6D8D0 /* UIKitFunctionality9.swift */; };
-		8724B9BC2F0C463100E6D8D0 /* UIKitFunctionality1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B22F0C463100E6D8D0 /* UIKitFunctionality1.swift */; };
-		8724B9BD2F0C463100E6D8D0 /* UIKitFunctionality6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B32F0C463100E6D8D0 /* UIKitFunctionality6.swift */; };
-		8724B9BE2F0C463100E6D8D0 /* UIKitFunctionality3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B42F0C463100E6D8D0 /* UIKitFunctionality3.swift */; };
-		8724B9BF2F0C463100E6D8D0 /* UIKitFunctionality2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B52F0C463100E6D8D0 /* UIKitFunctionality2.swift */; };
-		8724B9C02F0C463100E6D8D0 /* UIKitFunctionality7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B62F0C463100E6D8D0 /* UIKitFunctionality7.swift */; };
-		8724B9C12F0C463100E6D8D0 /* UIKitFunctionality10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B72F0C463100E6D8D0 /* UIKitFunctionality10.swift */; };
-		8724B9C22F0C463100E6D8D0 /* UIKitFunctionality4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B82F0C463100E6D8D0 /* UIKitFunctionality4.swift */; };
-		8724B9C32F0C463100E6D8D0 /* UIKitFunctionality5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9B92F0C463100E6D8D0 /* UIKitFunctionality5.swift */; };
-		8724B9CE2F0C464100E6D8D0 /* SwiftUIFunctionality5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9C42F0C464000E6D8D0 /* SwiftUIFunctionality5.swift */; };
-		8724B9CF2F0C464100E6D8D0 /* SwiftUIFunctionality1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9C52F0C464000E6D8D0 /* SwiftUIFunctionality1.swift */; };
-		8724B9D02F0C464100E6D8D0 /* SwiftUIFunctionality4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9C62F0C464000E6D8D0 /* SwiftUIFunctionality4.swift */; };
-		8724B9D12F0C464100E6D8D0 /* SwiftUIFunctionality7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9C72F0C464100E6D8D0 /* SwiftUIFunctionality7.swift */; };
-		8724B9D22F0C464100E6D8D0 /* SwiftUIFunctionality6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9C82F0C464100E6D8D0 /* SwiftUIFunctionality6.swift */; };
-		8724B9D32F0C464100E6D8D0 /* SwiftUIFunctionality3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9C92F0C464100E6D8D0 /* SwiftUIFunctionality3.swift */; };
-		8724B9D42F0C464100E6D8D0 /* SwiftUIFunctionality2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9CA2F0C464100E6D8D0 /* SwiftUIFunctionality2.swift */; };
-		8724B9D52F0C464100E6D8D0 /* SwiftUIFunctionality8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9CB2F0C464100E6D8D0 /* SwiftUIFunctionality8.swift */; };
-		8724B9D62F0C464100E6D8D0 /* SwiftUIFunctionality9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9CC2F0C464100E6D8D0 /* SwiftUIFunctionality9.swift */; };
-		8724B9D72F0C464100E6D8D0 /* SwiftUIFunctionality10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9CD2F0C464100E6D8D0 /* SwiftUIFunctionality10.swift */; };
 		8724B9D92F0C77D300E6D8D0 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9D82F0C77D300E6D8D0 /* AppContext.swift */; };
 		8724B9DB2F0C787800E6D8D0 /* FunctionalityArgumentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9DA2F0C787700E6D8D0 /* FunctionalityArgumentValue.swift */; };
 		8724B9E62F0C7C5700E6D8D0 /* FunctionalityIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9DC2F0C7C5700E6D8D0 /* FunctionalityIntegrationTests.swift */; };
@@ -64,35 +44,55 @@
 		8724B9ED2F0C7C5700E6D8D0 /* SwiftUIFunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9E32F0C7C5700E6D8D0 /* SwiftUIFunctionalityTests.swift */; };
 		8724B9EE2F0C7C5700E6D8D0 /* ConcreteFunctionalityFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9E42F0C7C5700E6D8D0 /* ConcreteFunctionalityFactoryTests.swift */; };
 		8724B9EF2F0C7C5700E6D8D0 /* FunctionalityArgumentValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9E52F0C7C5700E6D8D0 /* FunctionalityArgumentValueTests.swift */; };
+		87A99E922F0EB0B900042EF2 /* ActiveCertificatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E872F0EB0B800042EF2 /* ActiveCertificatesView.swift */; };
+		87A99E932F0EB0B900042EF2 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E882F0EB0B800042EF2 /* ChangePasswordView.swift */; };
+		87A99E942F0EB0B900042EF2 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E892F0EB0B800042EF2 /* ProductDetailsView.swift */; };
+		87A99E952F0EB0B900042EF2 /* InvoiceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E8A2F0EB0B800042EF2 /* InvoiceHistoryView.swift */; };
+		87A99E962F0EB0B900042EF2 /* ExportInvoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E8B2F0EB0B800042EF2 /* ExportInvoicesView.swift */; };
+		87A99E972F0EB0B900042EF2 /* NotificationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E8C2F0EB0B800042EF2 /* NotificationSettingsView.swift */; };
+		87A99E982F0EB0B900042EF2 /* RenewCertificateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E8D2F0EB0B800042EF2 /* RenewCertificateView.swift */; };
+		87A99E992F0EB0B900042EF2 /* ReturnHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E8E2F0EB0B800042EF2 /* ReturnHistoryView.swift */; };
+		87A99E9A2F0EB0B900042EF2 /* TrackReturnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E8F2F0EB0B800042EF2 /* TrackReturnView.swift */; };
+		87A99E9B2F0EB0B900042EF2 /* TrackShipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E902F0EB0B800042EF2 /* TrackShipmentView.swift */; };
+		87A99E9C2F0EB0B900042EF2 /* UserSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E912F0EB0B800042EF2 /* UserSubscriptionView.swift */; };
+		87A99EA82F0EB0CC00042EF2 /* UserAccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E9D2F0EB0CB00042EF2 /* UserAccountDetailsViewController.swift */; };
+		87A99EA92F0EB0CC00042EF2 /* InitiateReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E9E2F0EB0CB00042EF2 /* InitiateReturnViewController.swift */; };
+		87A99EAA2F0EB0CC00042EF2 /* ViewOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99E9F2F0EB0CB00042EF2 /* ViewOrdersViewController.swift */; };
+		87A99EAB2F0EB0CC00042EF2 /* ViewPersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EA02F0EB0CB00042EF2 /* ViewPersonalInfoViewController.swift */; };
+		87A99EAC2F0EB0CC00042EF2 /* DownloadInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EA12F0EB0CB00042EF2 /* DownloadInvoiceViewController.swift */; };
+		87A99EAD2F0EB0CC00042EF2 /* MonthlyBillingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EA22F0EB0CB00042EF2 /* MonthlyBillingViewController.swift */; };
+		87A99EAE2F0EB0CC00042EF2 /* DownloadCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EA32F0EB0CB00042EF2 /* DownloadCertificateViewController.swift */; };
+		87A99EAF2F0EB0CC00042EF2 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EA42F0EB0CB00042EF2 /* EditProfileViewController.swift */; };
+		87A99EB02F0EB0CC00042EF2 /* GetCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EA52F0EB0CB00042EF2 /* GetCertificateViewController.swift */; };
+		87A99EB12F0EB0CC00042EF2 /* ReturnStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EA62F0EB0CB00042EF2 /* ReturnStatusViewController.swift */; };
+		87A99EB22F0EB0CC00042EF2 /* SearchProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EA72F0EB0CC00042EF2 /* SearchProductsViewController.swift */; };
+		87A99EC92F0EB0E600042EF2 /* RenewCertificateViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EB32F0EB0E500042EF2 /* RenewCertificateViewComposerUI.swift */; };
+		87A99ECA2F0EB0E600042EF2 /* ExportInvoicesViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EB42F0EB0E500042EF2 /* ExportInvoicesViewComposerUI.swift */; };
+		87A99ECB2F0EB0E600042EF2 /* MonthlyBillingViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EB52F0EB0E500042EF2 /* MonthlyBillingViewControllerComposerUI.swift */; };
+		87A99ECC2F0EB0E600042EF2 /* TrackReturnViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EB62F0EB0E500042EF2 /* TrackReturnViewComposerUI.swift */; };
+		87A99ECD2F0EB0E600042EF2 /* InitiateReturnViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EB72F0EB0E500042EF2 /* InitiateReturnViewControllerComposerUI.swift */; };
+		87A99ECE2F0EB0E600042EF2 /* ActiveCertificatesViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EB82F0EB0E600042EF2 /* ActiveCertificatesViewComposerUI.swift */; };
+		87A99ECF2F0EB0E600042EF2 /* DownloadCertificateViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EB92F0EB0E600042EF2 /* DownloadCertificateViewControllerComposerUI.swift */; };
+		87A99ED02F0EB0E600042EF2 /* ReturnHistoryViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EBA2F0EB0E600042EF2 /* ReturnHistoryViewComposerUI.swift */; };
+		87A99ED12F0EB0E600042EF2 /* ViewPersonalInfoViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EBB2F0EB0E600042EF2 /* ViewPersonalInfoViewControllerComposerUI.swift */; };
+		87A99ED22F0EB0E600042EF2 /* DownloadInvoiceViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EBC2F0EB0E600042EF2 /* DownloadInvoiceViewControllerComposerUI.swift */; };
+		87A99ED32F0EB0E700042EF2 /* ProductDetailsViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EBD2F0EB0E600042EF2 /* ProductDetailsViewComposerUI.swift */; };
+		87A99ED42F0EB0E700042EF2 /* SearchProductsViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EBE2F0EB0E600042EF2 /* SearchProductsViewControllerComposerUI.swift */; };
+		87A99ED52F0EB0E700042EF2 /* NotificationSettingsViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EBF2F0EB0E600042EF2 /* NotificationSettingsViewComposerUI.swift */; };
+		87A99ED62F0EB0E700042EF2 /* EditProfileViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EC02F0EB0E600042EF2 /* EditProfileViewControllerComposerUI.swift */; };
+		87A99ED72F0EB0E700042EF2 /* ChangePasswordViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EC12F0EB0E600042EF2 /* ChangePasswordViewComposerUI.swift */; };
+		87A99ED82F0EB0E700042EF2 /* TrackShipmentViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EC22F0EB0E600042EF2 /* TrackShipmentViewComposerUI.swift */; };
+		87A99ED92F0EB0E700042EF2 /* UserAccountDetailsViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EC32F0EB0E600042EF2 /* UserAccountDetailsViewControllerComposerUI.swift */; };
+		87A99EDA2F0EB0E700042EF2 /* UserSubscriptionViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EC42F0EB0E600042EF2 /* UserSubscriptionViewComposerUI.swift */; };
+		87A99EDB2F0EB0E700042EF2 /* ReturnStatusViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EC52F0EB0E600042EF2 /* ReturnStatusViewControllerComposerUI.swift */; };
+		87A99EDC2F0EB0E700042EF2 /* InvoiceHistoryViewComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EC62F0EB0E600042EF2 /* InvoiceHistoryViewComposerUI.swift */; };
+		87A99EDD2F0EB0E700042EF2 /* ViewOrdersViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EC72F0EB0E600042EF2 /* ViewOrdersViewControllerComposerUI.swift */; };
+		87A99EDE2F0EB0E700042EF2 /* GetCertificateViewControllerComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EC82F0EB0E600042EF2 /* GetCertificateViewControllerComposerUI.swift */; };
+		87A99EE12F0EB10A00042EF2 /* UserAccountDetailsViewControllerDataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EDF2F0EB10A00042EF2 /* UserAccountDetailsViewControllerDataResolver.swift */; };
+		87A99EE22F0EB10A00042EF2 /* UserSubscriptionViewDataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A99EE02F0EB10A00042EF2 /* UserSubscriptionViewDataResolver.swift */; };
 		87EB9A7B2F0D7DFF00E2717E /* FunctionalityDataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A7A2F0D7DFF00E2717E /* FunctionalityDataResolver.swift */; };
-		87EB9A7F2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A7D2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift */; };
-		87EB9A802F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A7E2F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift */; };
-		87EB9A822F0D7E4500E2717E /* SwiftUIFunctionality11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A812F0D7E4500E2717E /* SwiftUIFunctionality11.swift */; };
-		87EB9A842F0D7E5A00E2717E /* UIKitFunctionality10WithExternalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A832F0D7E5900E2717E /* UIKitFunctionality10WithExternalData.swift */; };
 		87EB9A872F0D809000E2717E /* FunctionalityDataResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */; };
 		87EB9A882F0D809000E2717E /* ExternalDataFunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */; };
-		87EB9AA12F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8B2F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift */; };
-		87EB9AA22F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8C2F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift */; };
-		87EB9AA32F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8D2F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift */; };
-		87EB9AA42F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8E2F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift */; };
-		87EB9AA52F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A8F2F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift */; };
-		87EB9AA62F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A902F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift */; };
-		87EB9AA72F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A912F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift */; };
-		87EB9AA82F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A922F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift */; };
-		87EB9AA92F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A932F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift */; };
-		87EB9AAA2F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A942F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift */; };
-		87EB9AAB2F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A952F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift */; };
-		87EB9AAC2F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A962F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift */; };
-		87EB9AAD2F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A972F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift */; };
-		87EB9AAE2F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A982F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift */; };
-		87EB9AAF2F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A992F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift */; };
-		87EB9AB02F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9A2F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift */; };
-		87EB9AB12F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9B2F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift */; };
-		87EB9AB22F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9C2F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift */; };
-		87EB9AB32F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9D2F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift */; };
-		87EB9AB42F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9E2F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift */; };
-		87EB9AB52F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9A9F2F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift */; };
-		87EB9AB62F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9AA02F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift */; };
 		87EB9AB82F0DB4C400E2717E /* IndependentFunctionalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9AB72F0DB4C400E2717E /* IndependentFunctionalityViewController.swift */; };
 		87EB9ABF2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB9ABE2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift */; };
 /* End PBXBuildFile section */
@@ -136,26 +136,6 @@
 		8724B9992F0C2EA800E6D8D0 /* BaseFunctionalityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFunctionalityViewController.swift; sourceTree = "<group>"; };
 		8724B99A2F0C2EA800E6D8D0 /* BaseFunctionalityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFunctionalityView.swift; sourceTree = "<group>"; };
 		8724B99D2F0C2EA800E6D8D0 /* SwiftUIFunctionalityTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionalityTemplate.swift; sourceTree = "<group>"; };
-		8724B9B02F0C463100E6D8D0 /* UIKitFunctionality8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality8.swift; sourceTree = "<group>"; };
-		8724B9B12F0C463100E6D8D0 /* UIKitFunctionality9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality9.swift; sourceTree = "<group>"; };
-		8724B9B22F0C463100E6D8D0 /* UIKitFunctionality1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality1.swift; sourceTree = "<group>"; };
-		8724B9B32F0C463100E6D8D0 /* UIKitFunctionality6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality6.swift; sourceTree = "<group>"; };
-		8724B9B42F0C463100E6D8D0 /* UIKitFunctionality3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality3.swift; sourceTree = "<group>"; };
-		8724B9B52F0C463100E6D8D0 /* UIKitFunctionality2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality2.swift; sourceTree = "<group>"; };
-		8724B9B62F0C463100E6D8D0 /* UIKitFunctionality7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality7.swift; sourceTree = "<group>"; };
-		8724B9B72F0C463100E6D8D0 /* UIKitFunctionality10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10.swift; sourceTree = "<group>"; };
-		8724B9B82F0C463100E6D8D0 /* UIKitFunctionality4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality4.swift; sourceTree = "<group>"; };
-		8724B9B92F0C463100E6D8D0 /* UIKitFunctionality5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality5.swift; sourceTree = "<group>"; };
-		8724B9C42F0C464000E6D8D0 /* SwiftUIFunctionality5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality5.swift; sourceTree = "<group>"; };
-		8724B9C52F0C464000E6D8D0 /* SwiftUIFunctionality1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality1.swift; sourceTree = "<group>"; };
-		8724B9C62F0C464000E6D8D0 /* SwiftUIFunctionality4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality4.swift; sourceTree = "<group>"; };
-		8724B9C72F0C464100E6D8D0 /* SwiftUIFunctionality7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality7.swift; sourceTree = "<group>"; };
-		8724B9C82F0C464100E6D8D0 /* SwiftUIFunctionality6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality6.swift; sourceTree = "<group>"; };
-		8724B9C92F0C464100E6D8D0 /* SwiftUIFunctionality3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality3.swift; sourceTree = "<group>"; };
-		8724B9CA2F0C464100E6D8D0 /* SwiftUIFunctionality2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality2.swift; sourceTree = "<group>"; };
-		8724B9CB2F0C464100E6D8D0 /* SwiftUIFunctionality8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality8.swift; sourceTree = "<group>"; };
-		8724B9CC2F0C464100E6D8D0 /* SwiftUIFunctionality9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality9.swift; sourceTree = "<group>"; };
-		8724B9CD2F0C464100E6D8D0 /* SwiftUIFunctionality10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality10.swift; sourceTree = "<group>"; };
 		8724B9D82F0C77D300E6D8D0 /* AppContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
 		8724B9DA2F0C787700E6D8D0 /* FunctionalityArgumentValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityArgumentValue.swift; sourceTree = "<group>"; };
 		8724B9DC2F0C7C5700E6D8D0 /* FunctionalityIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityIntegrationTests.swift; sourceTree = "<group>"; };
@@ -168,36 +148,56 @@
 		8724B9E32F0C7C5700E6D8D0 /* SwiftUIFunctionalityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionalityTests.swift; sourceTree = "<group>"; };
 		8724B9E42F0C7C5700E6D8D0 /* ConcreteFunctionalityFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteFunctionalityFactoryTests.swift; sourceTree = "<group>"; };
 		8724B9E52F0C7C5700E6D8D0 /* FunctionalityArgumentValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityArgumentValueTests.swift; sourceTree = "<group>"; };
+		87A99E872F0EB0B800042EF2 /* ActiveCertificatesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveCertificatesView.swift; sourceTree = "<group>"; };
+		87A99E882F0EB0B800042EF2 /* ChangePasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		87A99E892F0EB0B800042EF2 /* ProductDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
+		87A99E8A2F0EB0B800042EF2 /* InvoiceHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceHistoryView.swift; sourceTree = "<group>"; };
+		87A99E8B2F0EB0B800042EF2 /* ExportInvoicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportInvoicesView.swift; sourceTree = "<group>"; };
+		87A99E8C2F0EB0B800042EF2 /* NotificationSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingsView.swift; sourceTree = "<group>"; };
+		87A99E8D2F0EB0B800042EF2 /* RenewCertificateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenewCertificateView.swift; sourceTree = "<group>"; };
+		87A99E8E2F0EB0B800042EF2 /* ReturnHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnHistoryView.swift; sourceTree = "<group>"; };
+		87A99E8F2F0EB0B800042EF2 /* TrackReturnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackReturnView.swift; sourceTree = "<group>"; };
+		87A99E902F0EB0B800042EF2 /* TrackShipmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackShipmentView.swift; sourceTree = "<group>"; };
+		87A99E912F0EB0B800042EF2 /* UserSubscriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSubscriptionView.swift; sourceTree = "<group>"; };
+		87A99E9D2F0EB0CB00042EF2 /* UserAccountDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountDetailsViewController.swift; sourceTree = "<group>"; };
+		87A99E9E2F0EB0CB00042EF2 /* InitiateReturnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiateReturnViewController.swift; sourceTree = "<group>"; };
+		87A99E9F2F0EB0CB00042EF2 /* ViewOrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOrdersViewController.swift; sourceTree = "<group>"; };
+		87A99EA02F0EB0CB00042EF2 /* ViewPersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPersonalInfoViewController.swift; sourceTree = "<group>"; };
+		87A99EA12F0EB0CB00042EF2 /* DownloadInvoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadInvoiceViewController.swift; sourceTree = "<group>"; };
+		87A99EA22F0EB0CB00042EF2 /* MonthlyBillingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyBillingViewController.swift; sourceTree = "<group>"; };
+		87A99EA32F0EB0CB00042EF2 /* DownloadCertificateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadCertificateViewController.swift; sourceTree = "<group>"; };
+		87A99EA42F0EB0CB00042EF2 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		87A99EA52F0EB0CB00042EF2 /* GetCertificateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCertificateViewController.swift; sourceTree = "<group>"; };
+		87A99EA62F0EB0CB00042EF2 /* ReturnStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnStatusViewController.swift; sourceTree = "<group>"; };
+		87A99EA72F0EB0CC00042EF2 /* SearchProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProductsViewController.swift; sourceTree = "<group>"; };
+		87A99EB32F0EB0E500042EF2 /* RenewCertificateViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenewCertificateViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EB42F0EB0E500042EF2 /* ExportInvoicesViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportInvoicesViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EB52F0EB0E500042EF2 /* MonthlyBillingViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyBillingViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EB62F0EB0E500042EF2 /* TrackReturnViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackReturnViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EB72F0EB0E500042EF2 /* InitiateReturnViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiateReturnViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EB82F0EB0E600042EF2 /* ActiveCertificatesViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveCertificatesViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EB92F0EB0E600042EF2 /* DownloadCertificateViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadCertificateViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EBA2F0EB0E600042EF2 /* ReturnHistoryViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnHistoryViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EBB2F0EB0E600042EF2 /* ViewPersonalInfoViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPersonalInfoViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EBC2F0EB0E600042EF2 /* DownloadInvoiceViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadInvoiceViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EBD2F0EB0E600042EF2 /* ProductDetailsViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EBE2F0EB0E600042EF2 /* SearchProductsViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProductsViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EBF2F0EB0E600042EF2 /* NotificationSettingsViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingsViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EC02F0EB0E600042EF2 /* EditProfileViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EC12F0EB0E600042EF2 /* ChangePasswordViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EC22F0EB0E600042EF2 /* TrackShipmentViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackShipmentViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EC32F0EB0E600042EF2 /* UserAccountDetailsViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountDetailsViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EC42F0EB0E600042EF2 /* UserSubscriptionViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSubscriptionViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EC52F0EB0E600042EF2 /* ReturnStatusViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnStatusViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EC62F0EB0E600042EF2 /* InvoiceHistoryViewComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceHistoryViewComposerUI.swift; sourceTree = "<group>"; };
+		87A99EC72F0EB0E600042EF2 /* ViewOrdersViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOrdersViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EC82F0EB0E600042EF2 /* GetCertificateViewControllerComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCertificateViewControllerComposerUI.swift; sourceTree = "<group>"; };
+		87A99EDF2F0EB10A00042EF2 /* UserAccountDetailsViewControllerDataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountDetailsViewControllerDataResolver.swift; sourceTree = "<group>"; };
+		87A99EE02F0EB10A00042EF2 /* UserSubscriptionViewDataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSubscriptionViewDataResolver.swift; sourceTree = "<group>"; };
 		87EB9A7A2F0D7DFF00E2717E /* FunctionalityDataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityDataResolver.swift; sourceTree = "<group>"; };
-		87EB9A7D2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10DataResolver.swift; sourceTree = "<group>"; };
-		87EB9A7E2F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality11DataResolver.swift; sourceTree = "<group>"; };
-		87EB9A812F0D7E4500E2717E /* SwiftUIFunctionality11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality11.swift; sourceTree = "<group>"; };
-		87EB9A832F0D7E5900E2717E /* UIKitFunctionality10WithExternalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10WithExternalData.swift; sourceTree = "<group>"; };
 		87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityDataResolverTests.swift; sourceTree = "<group>"; };
 		87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalDataFunctionalityTests.swift; sourceTree = "<group>"; };
 		87EB9A892F0D9DB100E2717E /* FunctionalitySearcher.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FunctionalitySearcher.xctestplan; sourceTree = "<group>"; };
-		87EB9A8B2F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality1ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A8C2F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality3ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A8D2F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality9ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A8E2F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality4ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A8F2F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality6ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A902F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality10ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A912F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality8ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A922F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality5ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A932F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality7ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A942F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality11ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A952F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality2ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A962F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A972F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality7ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A982F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality5ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A992F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality8ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A9A2F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality2ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A9B2F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality3ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A9C2F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality1ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A9D2F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality10WithExternalDataComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A9E2F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality6ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9A9F2F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFunctionality4ComposerUI.swift; sourceTree = "<group>"; };
-		87EB9AA02F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionality9ComposerUI.swift; sourceTree = "<group>"; };
 		87EB9AB72F0DB4C400E2717E /* IndependentFunctionalityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndependentFunctionalityViewController.swift; sourceTree = "<group>"; };
 		87EB9ABE2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIFunctionalityScaffold.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -370,17 +370,17 @@
 		8724B9932F0C2EA800E6D8D0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8724B9B22F0C463100E6D8D0 /* UIKitFunctionality1.swift */,
-				8724B9B52F0C463100E6D8D0 /* UIKitFunctionality2.swift */,
-				8724B9B42F0C463100E6D8D0 /* UIKitFunctionality3.swift */,
-				8724B9B82F0C463100E6D8D0 /* UIKitFunctionality4.swift */,
-				8724B9B92F0C463100E6D8D0 /* UIKitFunctionality5.swift */,
-				8724B9B32F0C463100E6D8D0 /* UIKitFunctionality6.swift */,
-				8724B9B62F0C463100E6D8D0 /* UIKitFunctionality7.swift */,
-				8724B9B02F0C463100E6D8D0 /* UIKitFunctionality8.swift */,
-				8724B9B12F0C463100E6D8D0 /* UIKitFunctionality9.swift */,
-				8724B9B72F0C463100E6D8D0 /* UIKitFunctionality10.swift */,
-				87EB9A832F0D7E5900E2717E /* UIKitFunctionality10WithExternalData.swift */,
+				87A99EA32F0EB0CB00042EF2 /* DownloadCertificateViewController.swift */,
+				87A99EA12F0EB0CB00042EF2 /* DownloadInvoiceViewController.swift */,
+				87A99EA42F0EB0CB00042EF2 /* EditProfileViewController.swift */,
+				87A99EA52F0EB0CB00042EF2 /* GetCertificateViewController.swift */,
+				87A99E9E2F0EB0CB00042EF2 /* InitiateReturnViewController.swift */,
+				87A99EA22F0EB0CB00042EF2 /* MonthlyBillingViewController.swift */,
+				87A99EA62F0EB0CB00042EF2 /* ReturnStatusViewController.swift */,
+				87A99EA72F0EB0CC00042EF2 /* SearchProductsViewController.swift */,
+				87A99E9D2F0EB0CB00042EF2 /* UserAccountDetailsViewController.swift */,
+				87A99E9F2F0EB0CB00042EF2 /* ViewOrdersViewController.swift */,
+				87A99EA02F0EB0CB00042EF2 /* ViewPersonalInfoViewController.swift */,
 				8724B9942F0C2EA800E6D8D0 /* Templates */,
 			);
 			path = UIKit;
@@ -415,18 +415,18 @@
 		8724B99B2F0C2EA800E6D8D0 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				87A99E872F0EB0B800042EF2 /* ActiveCertificatesView.swift */,
+				87A99E882F0EB0B800042EF2 /* ChangePasswordView.swift */,
+				87A99E8B2F0EB0B800042EF2 /* ExportInvoicesView.swift */,
+				87A99E8A2F0EB0B800042EF2 /* InvoiceHistoryView.swift */,
+				87A99E8C2F0EB0B800042EF2 /* NotificationSettingsView.swift */,
+				87A99E892F0EB0B800042EF2 /* ProductDetailsView.swift */,
+				87A99E8D2F0EB0B800042EF2 /* RenewCertificateView.swift */,
+				87A99E8E2F0EB0B800042EF2 /* ReturnHistoryView.swift */,
+				87A99E8F2F0EB0B800042EF2 /* TrackReturnView.swift */,
+				87A99E902F0EB0B800042EF2 /* TrackShipmentView.swift */,
+				87A99E912F0EB0B800042EF2 /* UserSubscriptionView.swift */,
 				87EB9ABB2F0DB54800E2717E /* Components */,
-				87EB9A812F0D7E4500E2717E /* SwiftUIFunctionality11.swift */,
-				8724B9C52F0C464000E6D8D0 /* SwiftUIFunctionality1.swift */,
-				8724B9CA2F0C464100E6D8D0 /* SwiftUIFunctionality2.swift */,
-				8724B9C92F0C464100E6D8D0 /* SwiftUIFunctionality3.swift */,
-				8724B9C62F0C464000E6D8D0 /* SwiftUIFunctionality4.swift */,
-				8724B9C42F0C464000E6D8D0 /* SwiftUIFunctionality5.swift */,
-				8724B9C82F0C464100E6D8D0 /* SwiftUIFunctionality6.swift */,
-				8724B9C72F0C464100E6D8D0 /* SwiftUIFunctionality7.swift */,
-				8724B9CB2F0C464100E6D8D0 /* SwiftUIFunctionality8.swift */,
-				8724B9CC2F0C464100E6D8D0 /* SwiftUIFunctionality9.swift */,
-				8724B9CD2F0C464100E6D8D0 /* SwiftUIFunctionality10.swift */,
 				8724B99C2F0C2EA800E6D8D0 /* Templates */,
 			);
 			path = SwiftUI;
@@ -443,8 +443,8 @@
 		87EB9A7C2F0D7E2A00E2717E /* DataResolvers */ = {
 			isa = PBXGroup;
 			children = (
-				87EB9A7D2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift */,
-				87EB9A7E2F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift */,
+				87A99EDF2F0EB10A00042EF2 /* UserAccountDetailsViewControllerDataResolver.swift */,
+				87A99EE02F0EB10A00042EF2 /* UserSubscriptionViewDataResolver.swift */,
 			);
 			path = DataResolvers;
 			sourceTree = "<group>";
@@ -452,28 +452,28 @@
 		87EB9A8A2F0DAA3D00E2717E /* Composers */ = {
 			isa = PBXGroup;
 			children = (
-				87EB9A8B2F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift */,
-				87EB9A8C2F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift */,
-				87EB9A8D2F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift */,
-				87EB9A8E2F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift */,
-				87EB9A8F2F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift */,
-				87EB9A902F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift */,
-				87EB9A912F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift */,
-				87EB9A922F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift */,
-				87EB9A932F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift */,
-				87EB9A942F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift */,
-				87EB9A952F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift */,
-				87EB9A962F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift */,
-				87EB9A972F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift */,
-				87EB9A982F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift */,
-				87EB9A992F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift */,
-				87EB9A9A2F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift */,
-				87EB9A9B2F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift */,
-				87EB9A9C2F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift */,
-				87EB9A9D2F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift */,
-				87EB9A9E2F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift */,
-				87EB9A9F2F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift */,
-				87EB9AA02F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift */,
+				87A99EB82F0EB0E600042EF2 /* ActiveCertificatesViewComposerUI.swift */,
+				87A99EC12F0EB0E600042EF2 /* ChangePasswordViewComposerUI.swift */,
+				87A99EB92F0EB0E600042EF2 /* DownloadCertificateViewControllerComposerUI.swift */,
+				87A99EBC2F0EB0E600042EF2 /* DownloadInvoiceViewControllerComposerUI.swift */,
+				87A99EC02F0EB0E600042EF2 /* EditProfileViewControllerComposerUI.swift */,
+				87A99EB42F0EB0E500042EF2 /* ExportInvoicesViewComposerUI.swift */,
+				87A99EC82F0EB0E600042EF2 /* GetCertificateViewControllerComposerUI.swift */,
+				87A99EB72F0EB0E500042EF2 /* InitiateReturnViewControllerComposerUI.swift */,
+				87A99EC62F0EB0E600042EF2 /* InvoiceHistoryViewComposerUI.swift */,
+				87A99EB52F0EB0E500042EF2 /* MonthlyBillingViewControllerComposerUI.swift */,
+				87A99EBF2F0EB0E600042EF2 /* NotificationSettingsViewComposerUI.swift */,
+				87A99EBD2F0EB0E600042EF2 /* ProductDetailsViewComposerUI.swift */,
+				87A99EB32F0EB0E500042EF2 /* RenewCertificateViewComposerUI.swift */,
+				87A99EBA2F0EB0E600042EF2 /* ReturnHistoryViewComposerUI.swift */,
+				87A99EC52F0EB0E600042EF2 /* ReturnStatusViewControllerComposerUI.swift */,
+				87A99EBE2F0EB0E600042EF2 /* SearchProductsViewControllerComposerUI.swift */,
+				87A99EB62F0EB0E500042EF2 /* TrackReturnViewComposerUI.swift */,
+				87A99EC22F0EB0E600042EF2 /* TrackShipmentViewComposerUI.swift */,
+				87A99EC32F0EB0E600042EF2 /* UserAccountDetailsViewControllerComposerUI.swift */,
+				87A99EC42F0EB0E600042EF2 /* UserSubscriptionViewComposerUI.swift */,
+				87A99EC72F0EB0E600042EF2 /* ViewOrdersViewControllerComposerUI.swift */,
+				87A99EBB2F0EB0E600042EF2 /* ViewPersonalInfoViewControllerComposerUI.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
@@ -587,77 +587,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87EB9AA92F0DAA3D00E2717E /* UIKitFunctionality7ComposerUI.swift in Sources */,
+				87A99EDA2F0EB0E700042EF2 /* UserSubscriptionViewComposerUI.swift in Sources */,
+				87A99E932F0EB0B900042EF2 /* ChangePasswordView.swift in Sources */,
+				87A99EB02F0EB0CC00042EF2 /* GetCertificateViewController.swift in Sources */,
 				8724B9AF2F0C2EA800E6D8D0 /* SwiftUIFunctionalityTemplate.swift in Sources */,
 				8724B9A82F0C2EA800E6D8D0 /* FunctionalityFactoryProtocol.swift in Sources */,
 				8724B9AE2F0C2EA800E6D8D0 /* BaseFunctionalityView.swift in Sources */,
-				8724B9D62F0C464100E6D8D0 /* SwiftUIFunctionality9.swift in Sources */,
-				87EB9AB22F0DAA3D00E2717E /* SwiftUIFunctionality1ComposerUI.swift in Sources */,
-				87EB9AAC2F0DAA3D00E2717E /* UIKitFunctionality10ComposerUI.swift in Sources */,
+				87A99ED72F0EB0E700042EF2 /* ChangePasswordViewComposerUI.swift in Sources */,
 				8724B9AB2F0C2EA800E6D8D0 /* UIKitFunctionalityTemplate.swift in Sources */,
-				8724B9BC2F0C463100E6D8D0 /* UIKitFunctionality1.swift in Sources */,
-				87EB9AA62F0DAA3D00E2717E /* SwiftUIFunctionality10ComposerUI.swift in Sources */,
+				87A99E9C2F0EB0B900042EF2 /* UserSubscriptionView.swift in Sources */,
 				87EB9ABF2F0DB56C00E2717E /* SwiftUIFunctionalityScaffold.swift in Sources */,
-				87EB9AA82F0DAA3D00E2717E /* SwiftUIFunctionality5ComposerUI.swift in Sources */,
+				87A99ECF2F0EB0E600042EF2 /* DownloadCertificateViewControllerComposerUI.swift in Sources */,
 				8724B99F2F0C2EA800E6D8D0 /* SearchView.swift in Sources */,
+				87A99ECA2F0EB0E600042EF2 /* ExportInvoicesViewComposerUI.swift in Sources */,
+				87A99E942F0EB0B900042EF2 /* ProductDetailsView.swift in Sources */,
+				87A99ECC2F0EB0E600042EF2 /* TrackReturnViewComposerUI.swift in Sources */,
 				8724B9AD2F0C2EA800E6D8D0 /* BaseFunctionalityViewController.swift in Sources */,
+				87A99E922F0EB0B900042EF2 /* ActiveCertificatesView.swift in Sources */,
+				87A99E982F0EB0B900042EF2 /* RenewCertificateView.swift in Sources */,
 				8724B9DB2F0C787800E6D8D0 /* FunctionalityArgumentValue.swift in Sources */,
-				87EB9AAB2F0DAA3D00E2717E /* SwiftUIFunctionality2ComposerUI.swift in Sources */,
-				87EB9AB62F0DAA3D00E2717E /* SwiftUIFunctionality9ComposerUI.swift in Sources */,
-				8724B9BD2F0C463100E6D8D0 /* UIKitFunctionality6.swift in Sources */,
-				87EB9AB42F0DAA3D00E2717E /* SwiftUIFunctionality6ComposerUI.swift in Sources */,
+				87A99EDD2F0EB0E700042EF2 /* ViewOrdersViewControllerComposerUI.swift in Sources */,
+				87A99EDE2F0EB0E700042EF2 /* GetCertificateViewControllerComposerUI.swift in Sources */,
+				87A99ED92F0EB0E700042EF2 /* UserAccountDetailsViewControllerComposerUI.swift in Sources */,
 				8724B94C2F0C231800E6D8D0 /* ViewController.swift in Sources */,
+				87A99ED22F0EB0E600042EF2 /* DownloadInvoiceViewControllerComposerUI.swift in Sources */,
+				87A99ECB2F0EB0E600042EF2 /* MonthlyBillingViewControllerComposerUI.swift in Sources */,
 				8724B9A52F0C2EA800E6D8D0 /* FunctionalityDataProvider.swift in Sources */,
+				87A99E972F0EB0B900042EF2 /* NotificationSettingsView.swift in Sources */,
 				8724B9A42F0C2EA800E6D8D0 /* SearchResult.swift in Sources */,
-				87EB9AA22F0DAA3D00E2717E /* SwiftUIFunctionality3ComposerUI.swift in Sources */,
-				87EB9AA42F0DAA3D00E2717E /* SwiftUIFunctionality4ComposerUI.swift in Sources */,
-				87EB9A822F0D7E4500E2717E /* SwiftUIFunctionality11.swift in Sources */,
+				87A99E952F0EB0B900042EF2 /* InvoiceHistoryView.swift in Sources */,
 				8724B9482F0C231800E6D8D0 /* AppDelegate.swift in Sources */,
-				8724B9D22F0C464100E6D8D0 /* SwiftUIFunctionality6.swift in Sources */,
-				87EB9AB32F0DAA3D00E2717E /* UIKitFunctionality10WithExternalDataComposerUI.swift in Sources */,
-				87EB9A7F2F0D7E2A00E2717E /* UIKitFunctionality10DataResolver.swift in Sources */,
-				8724B9D72F0C464100E6D8D0 /* SwiftUIFunctionality10.swift in Sources */,
+				87A99EE22F0EB10A00042EF2 /* UserSubscriptionViewDataResolver.swift in Sources */,
+				87A99EB22F0EB0CC00042EF2 /* SearchProductsViewController.swift in Sources */,
+				87A99ED12F0EB0E600042EF2 /* ViewPersonalInfoViewControllerComposerUI.swift in Sources */,
+				87A99EC92F0EB0E600042EF2 /* RenewCertificateViewComposerUI.swift in Sources */,
+				87A99EA92F0EB0CC00042EF2 /* InitiateReturnViewController.swift in Sources */,
+				87A99ECD2F0EB0E600042EF2 /* InitiateReturnViewControllerComposerUI.swift in Sources */,
 				8724B9A02F0C2EA800E6D8D0 /* MockSearchService.swift in Sources */,
-				8724B9C22F0C463100E6D8D0 /* UIKitFunctionality4.swift in Sources */,
 				87EB9AB82F0DB4C400E2717E /* IndependentFunctionalityViewController.swift in Sources */,
-				8724B9D12F0C464100E6D8D0 /* SwiftUIFunctionality7.swift in Sources */,
-				8724B9D52F0C464100E6D8D0 /* SwiftUIFunctionality8.swift in Sources */,
-				8724B9C32F0C463100E6D8D0 /* UIKitFunctionality5.swift in Sources */,
-				8724B9D32F0C464100E6D8D0 /* SwiftUIFunctionality3.swift in Sources */,
 				8724B9A32F0C2EA800E6D8D0 /* UIType.swift in Sources */,
-				8724B9C12F0C463100E6D8D0 /* UIKitFunctionality10.swift in Sources */,
-				8724B9BE2F0C463100E6D8D0 /* UIKitFunctionality3.swift in Sources */,
+				87A99EAC2F0EB0CC00042EF2 /* DownloadInvoiceViewController.swift in Sources */,
+				87A99EDC2F0EB0E700042EF2 /* InvoiceHistoryViewComposerUI.swift in Sources */,
+				87A99ED62F0EB0E700042EF2 /* EditProfileViewControllerComposerUI.swift in Sources */,
 				8724B9AC2F0C2EA800E6D8D0 /* ConcreteFunctionalityFactory.swift in Sources */,
-				8724B9CF2F0C464100E6D8D0 /* SwiftUIFunctionality1.swift in Sources */,
-				87EB9AAD2F0DAA3D00E2717E /* SwiftUIFunctionality7ComposerUI.swift in Sources */,
 				8724B9A62F0C2EA800E6D8D0 /* Functionality.swift in Sources */,
-				87EB9AAE2F0DAA3D00E2717E /* UIKitFunctionality5ComposerUI.swift in Sources */,
-				87EB9A842F0D7E5A00E2717E /* UIKitFunctionality10WithExternalData.swift in Sources */,
+				87A99ED32F0EB0E700042EF2 /* ProductDetailsViewComposerUI.swift in Sources */,
+				87A99EAB2F0EB0CC00042EF2 /* ViewPersonalInfoViewController.swift in Sources */,
+				87A99EAF2F0EB0CC00042EF2 /* EditProfileViewController.swift in Sources */,
 				8724B99E2F0C2EA800E6D8D0 /* SearchViewModel.swift in Sources */,
-				87EB9AA12F0DAA3D00E2717E /* UIKitFunctionality1ComposerUI.swift in Sources */,
+				87A99ED52F0EB0E700042EF2 /* NotificationSettingsViewComposerUI.swift in Sources */,
+				87A99E962F0EB0B900042EF2 /* ExportInvoicesView.swift in Sources */,
 				8724B9A72F0C2EA800E6D8D0 /* FunctionalityViewProtocol.swift in Sources */,
-				8724B9D42F0C464100E6D8D0 /* SwiftUIFunctionality2.swift in Sources */,
-				87EB9AA52F0DAA3D00E2717E /* UIKitFunctionality6ComposerUI.swift in Sources */,
-				87EB9AB52F0DAA3D00E2717E /* UIKitFunctionality4ComposerUI.swift in Sources */,
-				87EB9AB02F0DAA3D00E2717E /* UIKitFunctionality2ComposerUI.swift in Sources */,
+				87A99E9B2F0EB0B900042EF2 /* TrackShipmentView.swift in Sources */,
 				8724B94A2F0C231800E6D8D0 /* SceneDelegate.swift in Sources */,
-				87EB9AA72F0DAA3D00E2717E /* UIKitFunctionality8ComposerUI.swift in Sources */,
 				8724B9D92F0C77D300E6D8D0 /* AppContext.swift in Sources */,
+				87A99ED02F0EB0E600042EF2 /* ReturnHistoryViewComposerUI.swift in Sources */,
+				87A99ECE2F0EB0E600042EF2 /* ActiveCertificatesViewComposerUI.swift in Sources */,
+				87A99ED42F0EB0E700042EF2 /* SearchProductsViewControllerComposerUI.swift in Sources */,
+				87A99EDB2F0EB0E700042EF2 /* ReturnStatusViewControllerComposerUI.swift in Sources */,
+				87A99E992F0EB0B900042EF2 /* ReturnHistoryView.swift in Sources */,
 				8724B9A22F0C2EA800E6D8D0 /* FunctionalityCoordinator.swift in Sources */,
-				87EB9A802F0D7E2A00E2717E /* SwiftUIFunctionality11DataResolver.swift in Sources */,
+				87A99EAA2F0EB0CC00042EF2 /* ViewOrdersViewController.swift in Sources */,
 				8724B9A92F0C2EA800E6D8D0 /* SearchServiceProtocol.swift in Sources */,
-				87EB9AA32F0DAA3D00E2717E /* UIKitFunctionality9ComposerUI.swift in Sources */,
-				8724B9C02F0C463100E6D8D0 /* UIKitFunctionality7.swift in Sources */,
+				87A99EAD2F0EB0CC00042EF2 /* MonthlyBillingViewController.swift in Sources */,
 				8724B9AA2F0C2EA800E6D8D0 /* FunctionalityViewControllerProtocol.swift in Sources */,
-				87EB9AB12F0DAA3D00E2717E /* UIKitFunctionality3ComposerUI.swift in Sources */,
-				87EB9AAF2F0DAA3D00E2717E /* SwiftUIFunctionality8ComposerUI.swift in Sources */,
-				8724B9D02F0C464100E6D8D0 /* SwiftUIFunctionality4.swift in Sources */,
-				8724B9BB2F0C463100E6D8D0 /* UIKitFunctionality9.swift in Sources */,
+				87A99ED82F0EB0E700042EF2 /* TrackShipmentViewComposerUI.swift in Sources */,
+				87A99EB12F0EB0CC00042EF2 /* ReturnStatusViewController.swift in Sources */,
+				87A99EAE2F0EB0CC00042EF2 /* DownloadCertificateViewController.swift in Sources */,
 				8724B9A12F0C2EA800E6D8D0 /* AppCoordinator.swift in Sources */,
-				87EB9AAA2F0DAA3D00E2717E /* SwiftUIFunctionality11ComposerUI.swift in Sources */,
-				8724B9BA2F0C463100E6D8D0 /* UIKitFunctionality8.swift in Sources */,
-				8724B9BF2F0C463100E6D8D0 /* UIKitFunctionality2.swift in Sources */,
-				8724B9CE2F0C464100E6D8D0 /* SwiftUIFunctionality5.swift in Sources */,
+				87A99E9A2F0EB0B900042EF2 /* TrackReturnView.swift in Sources */,
+				87A99EE12F0EB10A00042EF2 /* UserAccountDetailsViewControllerDataResolver.swift in Sources */,
+				87A99EA82F0EB0CC00042EF2 /* UserAccountDetailsViewController.swift in Sources */,
 				87EB9A7B2F0D7DFF00E2717E /* FunctionalityDataResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

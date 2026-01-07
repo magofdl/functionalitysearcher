@@ -56,7 +56,7 @@ final class FunctionalityCoordinatorTests: XCTestCase {
         coordinator.showFunctionality(functionality)
         
         XCTAssertEqual(navigationController.viewControllers.count, 1)
-        XCTAssertTrue(navigationController.viewControllers.first is UIKitFunctionality1)
+        XCTAssertTrue(navigationController.viewControllers.first is DownloadInvoiceViewController)
     }
     
     func testShowFunctionalityWithSwiftUI() {
@@ -74,7 +74,7 @@ final class FunctionalityCoordinatorTests: XCTestCase {
         coordinator.showFunctionality(functionality)
         
         XCTAssertEqual(navigationController.viewControllers.count, 1)
-        XCTAssertTrue(navigationController.viewControllers.first is UIHostingController<SwiftUIFunctionality1>)
+        XCTAssertTrue(navigationController.viewControllers.first is UIHostingController<InvoiceHistoryView>)
     }
     
     func testMultipleFunctionalities() {
