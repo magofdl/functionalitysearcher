@@ -149,6 +149,7 @@ class ConcreteFunctionalityFactory: FunctionalityFactoryProtocol {
             return UIKitFunctionalityTemplate(functionality: functionality, onDismiss: onDismiss)
         case .swiftui:
             let swiftUIView = SwiftUIFunctionalityTemplate(functionality: functionality, onDismiss: onDismiss)
+                .environmentObject(ThemeManager.shared)
             return UIHostingController(rootView: swiftUIView)
         }
     }
