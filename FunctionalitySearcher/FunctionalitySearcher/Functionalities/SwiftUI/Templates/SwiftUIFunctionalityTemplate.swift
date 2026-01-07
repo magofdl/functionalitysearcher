@@ -42,7 +42,7 @@ struct SwiftUIFunctionalityTemplate: View {
                         .font(.caption2)
                         .foregroundColor(.secondary)
                         .padding(.top, 4)
-                }
+                    }
                 .padding()
                 .background(Color(.systemBackground))
                 .cornerRadius(12)
@@ -51,7 +51,7 @@ struct SwiftUIFunctionalityTemplate: View {
                     .font(.system(size: 34))
                     .foregroundColor(categoryColor)
                     .padding(12)
-            }
+                }
         }
     }
     

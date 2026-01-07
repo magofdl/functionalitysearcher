@@ -24,6 +24,7 @@ class AppCoordinator {
         let searchView = SearchView(searchService: searchService) { [weak self] functionality in
             self?.showFunctionality(functionality)
         }
+        .themedApp() // Apply theme to the entire app
         
         let hostingController = UIHostingController(rootView: searchView)
         let navigationController = UINavigationController(rootViewController: hostingController)
