@@ -114,22 +114,63 @@ final class SwiftUIFunctionalityTests: XCTestCase {
             userRole: nil
         )
         
-        let view4 = ChangePasswordView(
+        let view = ChangePasswordView(
             functionality: functionality,
             userId: contextWithNil.userId,
             userEmail: contextWithNil.userEmail,
             onDismiss: {}
         )
         
-        XCTAssertNil(view4.userEmail)
-        
-        let view10 = InvoiceHistoryView0(
+        XCTAssertNil(view.userEmail)
+    }
+    
+    func testExportInvoicesViewInitialization() {
+        let view = ExportInvoicesView(
             functionality: functionality,
-            userId: contextWithNil.userId,
-            userRole: contextWithNil.userRole,
+            userId: context.userId,
+            region: context.region,
             onDismiss: {}
         )
         
-        XCTAssertNil(view10.userRole)
+        XCTAssertEqual(view.functionality.code, functionality.code)
+        XCTAssertEqual(view.userId, context.userId)
+        XCTAssertEqual(view.region, context.region)
+    }
+    
+    func testReturnHistoryViewInitialization() {
+        let view = ReturnHistoryView(
+            functionality: functionality,
+            userId: context.userId,
+            onDismiss: {}
+        )
+        
+        XCTAssertEqual(view.functionality.code, functionality.code)
+        XCTAssertEqual(view.userId, context.userId)
+    }
+    
+    func testActiveCertificatesViewInitialization() {
+        let view = ActiveCertificatesView(
+            functionality: functionality,
+            userId: context.userId,
+            contractCount: context.contractCount,
+            onDismiss: {}
+        )
+        
+        XCTAssertEqual(view.functionality.code, functionality.code)
+        XCTAssertEqual(view.userId, context.userId)
+        XCTAssertEqual(view.contractCount, context.contractCount)
+    }
+    
+    func testNotificationSettingsViewInitialization() {
+        let view = NotificationSettingsView(
+            functionality: functionality,
+            userId: context.userId,
+            userRole: context.userRole,
+            onDismiss: {}
+        )
+        
+        XCTAssertEqual(view.functionality.code, functionality.code)
+        XCTAssertEqual(view.userId, context.userId)
+        XCTAssertEqual(view.userRole, context.userRole)
     }
 }

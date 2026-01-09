@@ -122,4 +122,58 @@ final class FunctionalityViewControllerTests: XCTestCase {
         viewController.onDismiss?()
         XCTAssertEqual(dismissCount, 2)
     }
+    
+    func testViewOrdersViewControllerInitialization() {
+        let viewController = ViewOrdersViewController(
+            functionality: functionality,
+            userId: context.userId,
+            timestamp: context.timestamp,
+            onDismiss: {}
+        )
+        
+        XCTAssertEqual(viewController.functionality.code, functionality.code)
+    }
+    
+    func testMonthlyBillingViewControllerInitialization() {
+        let viewController = MonthlyBillingViewController(
+            functionality: functionality,
+            userId: context.userId,
+            region: context.region,
+            onDismiss: {}
+        )
+        
+        XCTAssertEqual(viewController.functionality.code, functionality.code)
+    }
+    
+    func testReturnStatusViewControllerInitialization() {
+        let viewController = ReturnStatusViewController(
+            functionality: functionality,
+            userId: context.userId,
+            onDismiss: {}
+        )
+        
+        XCTAssertEqual(viewController.functionality.code, functionality.code)
+    }
+    
+    func testDownloadCertificateViewControllerInitialization() {
+        let viewController = DownloadCertificateViewController(
+            functionality: functionality,
+            userId: context.userId,
+            contractCount: context.contractCount,
+            onDismiss: {}
+        )
+        
+        XCTAssertEqual(viewController.functionality.code, functionality.code)
+    }
+    
+    func testViewPersonalInfoViewControllerInitialization() {
+        let viewController = ViewPersonalInfoViewController(
+            functionality: functionality,
+            userId: context.userId,
+            userRole: context.userRole,
+            onDismiss: {}
+        )
+        
+        XCTAssertEqual(viewController.functionality.code, functionality.code)
+    }
 }

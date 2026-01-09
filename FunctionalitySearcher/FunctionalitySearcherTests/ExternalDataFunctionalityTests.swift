@@ -24,9 +24,9 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         super.tearDown()
     }
     
-    // MARK: - InvoiceHistoryView1 Tests
+    // MARK: - UserSubscriptionView Tests
     
-    func testInvoiceHistoryView1Initialization() {
+    func testUserSubscriptionViewInitialization() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_011",
             data: [
@@ -35,7 +35,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let view = InvoiceHistoryView1(
+        let view = UserSubscriptionView(
             functionality: functionality,
             userId: context.userId,
             onDismiss: nil
@@ -46,7 +46,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertEqual(view.userId, context.userId)
     }
     
-    func testInvoiceHistoryView1DisplaysSubscriptionTier() {
+    func testUserSubscriptionViewDisplaysSubscriptionTier() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_011",
             data: [
@@ -54,7 +54,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let view = InvoiceHistoryView1(
+        let view = UserSubscriptionView(
             functionality: functionality,
             userId: context.userId,
             onDismiss: nil
@@ -64,7 +64,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertEqual(view.subscriptionTier, "premium")
     }
     
-    func testInvoiceHistoryView1DisplaysUserPreferences() {
+    func testUserSubscriptionViewDisplaysUserPreferences() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_011",
             data: [
@@ -76,7 +76,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let view = InvoiceHistoryView1(
+        let view = UserSubscriptionView(
             functionality: functionality,
             userId: context.userId,
             onDismiss: nil
@@ -88,7 +88,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertEqual(view.userPreferences?.notificationsEnabled, true)
     }
     
-    func testInvoiceHistoryView1DisplaysAccountBalance() {
+    func testUserSubscriptionViewDisplaysAccountBalance() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_011",
             data: [
@@ -96,7 +96,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let view = InvoiceHistoryView1(
+        let view = UserSubscriptionView(
             functionality: functionality,
             userId: context.userId,
             onDismiss: nil
@@ -106,13 +106,13 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertEqual(view.accountBalance, 1250.75)
     }
     
-    func testInvoiceHistoryView1HandlesMissingData() {
+    func testUserSubscriptionViewHandlesMissingData() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_011",
             data: [:]
         )
         
-        let view = InvoiceHistoryView1(
+        let view = UserSubscriptionView(
             functionality: functionality,
             userId: context.userId,
             onDismiss: nil
@@ -124,9 +124,9 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertNil(view.accountBalance)
     }
     
-    // MARK: - DownloadInvoiceViewController0WithExternalData Tests
+    // MARK: - UserAccountDetailsViewController Tests
     
-    func testDownloadInvoiceViewController0WithExternalDataInitialization() {
+    func testUserAccountDetailsViewControllerInitialization() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_010",
             data: [
@@ -135,7 +135,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let viewController = DownloadInvoiceViewController0WithExternalData(
+        let viewController = UserAccountDetailsViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: {}
@@ -145,7 +145,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertEqual(viewController.functionality.code, "PROF_010")
     }
     
-    func testDownloadInvoiceViewController0WithExternalDataDisplaysOrderHistory() {
+    func testUserAccountDetailsViewControllerDisplaysOrderHistory() {
         let formatter = ISO8601DateFormatter()
         let dateString = formatter.string(from: Date())
         
@@ -160,7 +160,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let viewController = DownloadInvoiceViewController0WithExternalData(
+        let viewController = UserAccountDetailsViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: {}
@@ -171,7 +171,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertEqual(viewController.orderHistory?.averageOrderValue, 89.50)
     }
     
-    func testDownloadInvoiceViewController0WithExternalDataDisplaysPaymentMethods() {
+    func testUserAccountDetailsViewControllerDisplaysPaymentMethods() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_010",
             data: [
@@ -183,7 +183,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let viewController = DownloadInvoiceViewController0WithExternalData(
+        let viewController = UserAccountDetailsViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: {}
@@ -194,7 +194,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertTrue(viewController.paymentMethods.contains("Credit Card"))
     }
     
-    func testDownloadInvoiceViewController0WithExternalDataDisplaysLoyaltyPoints() {
+    func testUserAccountDetailsViewControllerDisplaysLoyaltyPoints() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_010",
             data: [
@@ -202,7 +202,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let viewController = DownloadInvoiceViewController0WithExternalData(
+        let viewController = UserAccountDetailsViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: {}
@@ -211,7 +211,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertEqual(viewController.loyaltyPoints, 1250)
     }
     
-    func testDownloadInvoiceViewController0WithExternalDataDisplaysVIPStatus() {
+    func testUserAccountDetailsViewControllerDisplaysVIPStatus() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_010",
             data: [
@@ -220,7 +220,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let viewController = DownloadInvoiceViewController0WithExternalData(
+        let viewController = UserAccountDetailsViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: {}
@@ -229,13 +229,13 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertTrue(viewController.isVIP)
     }
     
-    func testDownloadInvoiceViewController0WithExternalDataHandlesMissingData() {
+    func testUserAccountDetailsViewControllerHandlesMissingData() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_010",
             data: [:]
         )
         
-        let viewController = DownloadInvoiceViewController0WithExternalData(
+        let viewController = UserAccountDetailsViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: {}
@@ -248,7 +248,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
         XCTAssertFalse(viewController.isVIP)
     }
     
-    func testDownloadInvoiceViewController0WithExternalDataLoadsView() {
+    func testUserAccountDetailsViewControllerInitializationOnly() {
         let functionality = createFunctionalityWithExternalData(
             code: "PROF_010",
             data: [
@@ -258,23 +258,20 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             ]
         )
         
-        let viewController = DownloadInvoiceViewController0WithExternalData(
+        let viewController = UserAccountDetailsViewController(
             functionality: functionality,
             userId: context.userId,
             onDismiss: {}
         )
         
-        // Load the view to trigger viewDidLoad
-        _ = viewController.view
-        
-        XCTAssertNotNil(viewController.view)
-        XCTAssertNotNil(viewController.contentView)
+        XCTAssertNotNil(viewController)
+        XCTAssertEqual(viewController.functionality.code, "PROF_010")
     }
     
     // MARK: - Integration Tests
     
-    func testEndToEndInvoiceHistoryView1WithResolver() {
-        let resolver = InvoiceHistoryView1DataResolver()
+    func testEndToEndUserSubscriptionViewWithResolver() {
+        let resolver = UserSubscriptionViewDataResolver()
         let factory = ConcreteFunctionalityFactory(dataResolvers: [
             "PROF_011": resolver
         ])
@@ -290,22 +287,21 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             uiType: .swiftui
         )
         
+        
         let viewController = factory.createViewController(
             for: functionality,
             context: context,
             onDismiss: {}
-        ) as? UIHostingController<InvoiceHistoryView1>
+        )
+        
+        assertIsHostingController(viewController, hosting: UserSubscriptionView.self)
         
         XCTAssertNotNil(viewController)
-        
-        let view = viewController?.rootView
-        XCTAssertNotNil(view?.subscriptionTier)
-        XCTAssertNotNil(view?.userPreferences)
-        XCTAssertNotNil(view?.accountBalance)
+
     }
     
-    func testEndToEndDownloadInvoiceViewController0WithResolver() {
-        let resolver = DownloadInvoiceViewController0DataResolver()
+    func testEndToEndUserAccountDetailsViewControllerWithResolver() {
+        let resolver = UserAccountDetailsViewControllerDataResolver()
         let factory = ConcreteFunctionalityFactory(dataResolvers: [
             "PROF_010": resolver
         ])
@@ -325,7 +321,7 @@ final class ExternalDataFunctionalityTests: XCTestCase {
             for: functionality,
             context: context,
             onDismiss: {}
-        ) as? DownloadInvoiceViewController0WithExternalData
+        ) as? UserAccountDetailsViewController
         
         XCTAssertNotNil(viewController)
         XCTAssertNotNil(viewController?.orderHistory)

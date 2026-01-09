@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		872127322F10146600CEAE2F /* TabCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872127312F10146600CEAE2F /* TabCoordinatorTests.swift */; };
 		8724B9482F0C231800E6D8D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9472F0C231800E6D8D0 /* AppDelegate.swift */; };
 		8724B94A2F0C231800E6D8D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B9492F0C231800E6D8D0 /* SceneDelegate.swift */; };
 		8724B94C2F0C231800E6D8D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724B94B2F0C231800E6D8D0 /* ViewController.swift */; };
@@ -126,6 +127,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		872127312F10146600CEAE2F /* TabCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCoordinatorTests.swift; sourceTree = "<group>"; };
 		8724B9442F0C231800E6D8D0 /* FunctionalitySearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionalitySearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8724B9472F0C231800E6D8D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8724B9492F0C231800E6D8D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 		8724B95D2F0C231B00E6D8D0 /* FunctionalitySearcherTests */ = {
 			isa = PBXGroup;
 			children = (
+				872127312F10146600CEAE2F /* TabCoordinatorTests.swift */,
 				87EB9A862F0D808F00E2717E /* ExternalDataFunctionalityTests.swift */,
 				87EB9A852F0D808F00E2717E /* FunctionalityDataResolverTests.swift */,
 				8724B9E02F0C7C5700E6D8D0 /* AppContextTests.swift */,
@@ -804,6 +807,7 @@
 			files = (
 				8724B9E92F0C7C5700E6D8D0 /* FunctionalityDataProviderTests.swift in Sources */,
 				87EB9A882F0D809000E2717E /* ExternalDataFunctionalityTests.swift in Sources */,
+				872127322F10146600CEAE2F /* TabCoordinatorTests.swift in Sources */,
 				8724B9E62F0C7C5700E6D8D0 /* FunctionalityIntegrationTests.swift in Sources */,
 				8724B9EB2F0C7C5700E6D8D0 /* FunctionalityTests.swift in Sources */,
 				87EB9A872F0D809000E2717E /* FunctionalityDataResolverTests.swift in Sources */,
